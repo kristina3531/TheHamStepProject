@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		title The Ham
+		link(rel="stylesheet", href="css/main.css")
+	body
+		include includes/icons.svg
+		header.header
+			.container
+				a.header-logo(href="index.html")
+					img.header-logo__img(src="img/logo.png", alt="The Ham")
+				nav.header-menu
+					.header-menu__item
+						a.header-menu__link.active(href="#") home
+					.header-menu__item
+						a.header-menu__link(href="#") about
+					.header-menu__item
+						a.header-menu__link(href="#") skills
+					.header-menu__item
+						a.header-menu__link(href="#") service
+					.header-menu__item
+						a.header-menu__link(href="#") work
+					.header-menu__item
+						a.header-menu__link(href="#") testimonial
+					.header-menu__item
+						a.header-menu__link(href="#") blog
+					.header-menu__item
+						a.header-menu__link(href="#") team
+					.header-menu__item
+						a.header-menu__link(href="#") contact
+					button.header-menu__search
+						svg.search
+							use(xlink:href='#search')
+	
+		main.main(style="background: url(img/main-bg.jpg)")
+			.container
+				.main-container
+					p.main-descr The Ham is 
+						span Wordpress theme
+					h.main-heading we are creative
+					p.main-text Just Buy And Enjoy These Awesome Features
+					.btn-wrap
+						a.btn(href="#") explore now
+						a.btn.btn--blue(href="#") purchase now
+		
+		section.advantages
+			.advantages-item
+				svg.touch
+					use(xlink:href="#touch")
+
+				span.advantages-item__descr Different theme option
+			.advantages-item
+				svg.diamond
+					use(xlink:href='#diamond')
+				span.advantages-item__descr fully customizable
+			.advantages-item
+				svg.light
+					use(xlink:href='#light')
+				span.advantages-item__descr unlimited support
+			.advantages-item
+				svg.devices
+					use(xlink:href='#devices')
+				span.advantages-item__descr responsive all device
+
+		section.services
+			.container
+				h3.section-heading Our Services
+				
+				.tabs-wrap
+					.tabs-wrap__buttons
+						button.tabBtn(data-tab="tab-1") Web Design
+						button.tabBtn(data-tab="tab-2") Graphic Design
+						button.tabBtn(data-tab="tab-3") Online Support
+						button.tabBtn(data-tab="tab-4") App Design 
+						button.tabBtn(data-tab="tab-5") Online Marketing
+						button.tabBtn(data-tab="tab-6") Seo Service
+					.tabs-wrap__content
+						.tabContent#tab-1(style="display: none;")
+							.tabContent__img
+								img(src="img/web-design/web-design-8.jpg", alt="Web Design")
+							p.tabContent__descr Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						.tabContent#tab-2(style="display: none;")
+							.tabContent__img
+								img(src="img/web-design/web-design1.jpg", alt="Web Design")
+							p.tabContent__descr Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						.tabContent#tab-3(style="display: none;")
+							.tabContent__img
+								img(src="img/web-design/web-design2.jpg", alt="Web Design")
+							p.tabContent__descr Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						.tabContent#tab-4(style="display: none;")
+							.tabContent__img
+								img(src="img/web-design/web-design3.jpg", alt="Web Design")
+							p.tabContent__descr Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						.tabContent#tab-5(style="display: none;")
+							.tabContent__img
+								img(src="img/web-design/web-design4.jpg", alt="Web Design")
+							p.tabContent__descr Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						.tabContent#tab-6(style="display: none;")
+							.tabContent__img
+								img(src="img/web-design/web-design5.jpg", alt="Web Design")
+							p.tabContent__descr Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+
+		section.ready(style="background: url(img/ready-bg.jpg)")
+			.container
+				h2.ready__heading Everything is ready. just buy and install now
+				p.ready__descr Smooth reliable, responsive ready, perfect portfolio, unique blog layout and many many options for you
+				a.btn(href="#") purchase now
+
+		section.work
+			.container
+				h3.section-heading Our Amazing Work
+				.tabs-wrap
+					.tabs-wrap__buttons
+						button.tabBtn(data-tab="tab-7") All
+						button.tabBtn(data-tab="tab-8") Graphic Design
+						button.tabBtn(data-tab="tab-9") Web Design
+						button.tabBtn(data-tab="tab-10") Landing Pages
+						button.tabBtn(data-tab="tab-11") Wordpress
+						
+					.tabs-wrap__content
+						.tabContent.work-gallery#tab-7(style="display: none;")
+							
+
+						.tabContent.work-gallery#tab-8(style="display: none;")
+							.work-gallery__item
+								.work-gallery__img
+									img(src="img/graphic-design/graphic-design1.jpg", alt="Graphic Design")
+								.work-gallery__info
+									.work-gallery__icons
+										a(href="#").work-gallery__icon
+											svg.link
+												//- use(xlink:href='img/icons/icons.svg#link')
+												use(xlink:href='#link')
+										a(href="#").work-gallery__icon
+											svg.search
+												//- use(xlink:href='img/icons/icons.svg#search')
+												use(xlink:href='#search')
+									h5.work-gallery__heading creative design
+									span.work-gallery__cath Graphic Design
+							.work-gallery__item
+								.work-gallery__img
+									img(src="img/graphic-design/graphic-design2.jpg", alt="Graphic Design")
+								.work-gallery__info
+									.work-gallery__icons
+									h5.work-gallery__heading creative design
+									span.work-gallery__cath Graphic Design
+							.work-gallery__item
+								.work-gallery__img
+									img(src="img/graphic-design/graphic-design3.jpg", alt="Graphic Design")
+								.work-gallery__info
+									.work-gallery__icons
+									h5.work-gallery__heading creative design
+									span.work-gallery__cath Graphic Design
+							.work-gallery__item
+								.work-gallery__img
+									img(src="img/graphic-design/graphic-design4.jpg", alt="Graphic Design")
+								.work-gallery__info
+									.work-gallery__icons
+									h5.work-gallery__heading creative design
+									span.work-gallery__cath Graphic Design
+							.work-gallery__item
+								.work-gallery__img
+									img(src="img/graphic-design/graphic-design5.jpg", alt="Graphic Design")
+								.work-gallery__info
+									.work-gallery__icons
+									h5.work-gallery__heading creative design
+									span.work-gallery__cath Graphic Design
+							.work-gallery__item
+								.work-gallery__img
+									img(src="img/graphic-design/graphic-design6.jpg", alt="Graphic Design")
+								.work-gallery__info
+									.work-gallery__icons
+									h5.work-gallery__heading creative design
+									span.work-gallery__cath Graphic Design
+							.work-gallery__item
+								.work-gallery__img
+									img(src="img/graphic-design/graphic-design7.jpg", alt="Graphic Design")
+								.work-gallery__info
+									.work-gallery__icons
+									h5.work-gallery__heading creative design
+									span.work-gallery__cath Graphic Design
+							.work-gallery__item
+								.work-gallery__img
+									img(src="img/graphic-design/graphic-design8.jpg", alt="Graphic Design")
+								.work-gallery__info
+									.work-gallery__icons
+									h5.work-gallery__heading creative design
+									span.work-gallery__cath Graphic Design
+							.work-gallery__item
+								.work-gallery__img
+									img(src="img/graphic-design/graphic-design9.jpg", alt="Graphic Design")
+								.work-gallery__info
+									.work-gallery__icons
+									h5.work-gallery__heading creative design
+									span.work-gallery__cath Graphic Design
+							.work-gallery__item
+								.work-gallery__img
+									img(src="img/graphic-design/graphic-design10.jpg", alt="Graphic Design")
+								.work-gallery__info
+									.work-gallery__icons
+									h5.work-gallery__heading creative design
+									span.work-gallery__cath Graphic Design
+							.work-gallery__item
+								.work-gallery__img
+									img(src="img/graphic-design/graphic-design11.jpg", alt="Graphic Design")
+								.work-gallery__info
+									.work-gallery__icons
+									h5.work-gallery__heading creative design
+									span.work-gallery__cath Graphic Design
+							.work-gallery__item
+								.work-gallery__img
+									img(src="img/graphic-design/graphic-design12.jpg", alt="Graphic Design")
+								.work-gallery__info
+									.work-gallery__icons
+									h5.work-gallery__heading creative design
+									span.work-gallery__cath Graphic Design
+
+						.tabContent.work-gallery#tab-9(style="display: none;")
+							.work-gallery__item
+								.work-gallery__img
+									img(src="img/web-design/web-design1.jpg", alt="Web Design")
+							.work-gallery__item
+								.work-gallery__img
+									img(src="img/web-design/web-design2.jpg", alt="Web Design")
+							.work-gallery__item
+								.work-gallery__img
+									img(src="img/web-design/web-design3.jpg", alt="Web Design")
+							.work-gallery__item
+								.work-gallery__img
+									img(src="img/web-design/web-design4.jpg", alt="Web Design")
+							.work-gallery__item
+								.work-gallery__img
+									img(src="img/web-design/web-design5.jpg", alt="Web Design")
+							.work-gallery__item
+								.work-gallery__img
+									img(src="img/web-design/web-design6.jpg", alt="Web Design")
+							.work-gallery__item
+								.work-gallery__img
+									img(src="img/web-design/web-design7.jpg", alt="Web Design")
+							.work-gallery__item
+								.work-gallery__img
+									img(src="img/web-design/web-design-8.jpg", alt="Web Design")
+
+						.tabContent.work-gallery#tab-10(style="display: none;")
+							.work-gallery__item
+								.work-gallery__img
+									img(src="img/landing-page/landing-page1.jpg", alt="Landing Page")
+							.work-gallery__item
+								.work-gallery__img
+									img(src="img/landing-page/landing-page2.jpg", alt="Landing Page")
+							.work-gallery__item
+								.work-gallery__img
+									img(src="img/landing-page/landing-page3.jpg", alt="Landing Page")
+							.work-gallery__item
+								.work-gallery__img
+									img(src="img/landing-page/landing-page4.jpg", alt="Landing Page")
+							.work-gallery__item
+								.work-gallery__img
+									img(src="img/landing-page/landing-page5.jpg", alt="Landing Page")
+							.work-gallery__item
+								.work-gallery__img
+									img(src="img/landing-page/landing-page6.jpg", alt="Landing Page")
+							.work-gallery__item
+								.work-gallery__img
+									img(src="img/landing-page/landing-page7.jpg", alt="Landing Page")
+
+						.tabContent.work-gallery#tab-11(style="display: none;")
+							.work-gallery__item
+								.work-gallery__img
+									img(src="img/wordpress/wordpress1.jpg", alt="Wordpress")
+							.work-gallery__item
+								.work-gallery__img
+									img(src="img/wordpress/wordpress2.jpg", alt="Wordpress")
+							.work-gallery__item
+								.work-gallery__img
+									img(src="img/wordpress/wordpress3.jpg", alt="Wordpress")
+							.work-gallery__item
+								.work-gallery__img
+									img(src="img/wordpress/wordpress4.jpg", alt="Wordpress")
+							.work-gallery__item
+								.work-gallery__img
+									img(src="img/wordpress/wordpress5.jpg", alt="Wordpress")
+							.work-gallery__item
+								.work-gallery__img
+									img(src="img/wordpress/wordpress6.jpg", alt="Wordpress")
+							.work-gallery__item
+								.work-gallery__img
+									img(src="img/wordpress/wordpress7.jpg", alt="Wordpress")
+							.work-gallery__item
+								.work-gallery__img
+									img(src="img/wordpress/wordpress8.jpg", alt="Wordpress")
+							.work-gallery__item
+								.work-gallery__img
+									img(src="img/wordpress/wordpress9.jpg", alt="Wordpress")
+							.work-gallery__item
+								.work-gallery__img
+									img(src="img/wordpress/wordpress10.jpg", alt="Wordpress")
+				a.btn(href="#") Load more
+
+		section.news
+			.container
+				h3.section-heading Breaking News
+				.news-list
+
+					.news-list__item
+						.news-list__img
+							a.news-list__link(href="#")
+								img(src="img/news/news1.jpg", alt="Image")
+							span.news-list__date
+								span.news-list__number 12
+								span.news-list__month Feb
+						.news-list__info
+							h6.news-list__heading Amazing Image Post
+							a.news-list__comments(href="#") By admin | 2 comment
+
+					.news-list__item
+						.news-list__img
+							a.news-list__link(href="#")
+								img(src="img/news/news2.jpg", alt="Image")
+							span.news-list__date
+								span.news-list__number 12
+								span.news-list__month Feb
+						.news-list__info
+							h6.news-list__heading Amazing Image Post
+							a.news-list__comments(href="#") By admin | 2 comment
+					.news-list__item
+
+						.news-list__img
+							a.news-list__link(href="#")
+								img(src="img/news/news3.jpg", alt="Image")
+							span.news-list__date
+								span.news-list__number 12
+								span.news-list__month Feb
+						.news-list__info
+							h6.news-list__heading Amazing Image Post
+							a.news-list__comments(href="#") By admin | 2 comment
+
+					.news-list__item
+						.news-list__img
+							a.news-list__link(href="#")
+								img(src="img/news/news4.jpg", alt="Image")
+							span.news-list__date
+								span.news-list__number 12
+								span.news-list__month Feb
+						.news-list__info
+							h6.news-list__heading Amazing Image Post
+							a.news-list__comments(href="#") By admin | 2 comment
+
+					.news-list__item
+						.news-list__img
+							a.news-list__link(href="#")
+								img(src="img/news/news5.jpg", alt="Image")
+							span.news-list__date
+								span.news-list__number 12
+								span.news-list__month Feb
+						.news-list__info
+							h6.news-list__heading Amazing Image Post
+							a.news-list__comments(href="#") By admin | 2 comment
+ 
+					.news-list__item
+						.news-list__img
+							a.news-list__link(href="#")
+								img(src="img/news/news6.jpg", alt="Image")
+							span.news-list__date
+								span.news-list__number 12
+								span.news-list__month Feb
+						.news-list__info
+							h6.news-list__heading Amazing Image Post
+							a.news-list__comments(href="#") By admin | 2 comment
+
+					.news-list__item
+						.news-list__img
+							a.news-list__link(href="#")
+								img(src="img/news/news7.jpg", alt="Image")
+							span.news-list__date
+								span.news-list__number 12
+								span.news-list__month Feb
+						.news-list__info
+							h6.news-list__heading Amazing Image Post
+							a.news-list__comments(href="#") By admin | 2 comment
+
+					.news-list__item
+						.news-list__img
+							a.news-list__link(href="#")
+								img(src="img/news/news8.jpg", alt="Image")
+							span.news-list__date
+								span.news-list__number 12
+								span.news-list__month Feb
+						.news-list__info
+							h6.news-list__heading Amazing Image Post
+							a.news-list__comments(href="#") By admin | 2 comment
+
+		section.about(style="background: url(img/about-bg.jpg);")
+			.container
+				h3.section-heading What People Say About the Ham
+				.about-slider
+
+					.about-slider__item
+						blockquote.blockquote
+							.blockquote__icon
+								svg.blockqouteIcon
+									use(xlink:href='#quote')
+							p.blockquote__text Integer dignissim, augue tempus ultricies luctus, quam dui laoreet sem, non dictum odio nisi quis massa. Morbi pulvinar odio eget aliquam facilisis. Tempus ultricies luctus, quam dui laoreet sem, non dictum odio nisi quis massa. Morbi pulvinar odio eget aliquam facilisis.
+
+
+					.about-slider__item
+						blockquote.blockquote
+							.blockquote__icon
+								svg.blockqouteIcon
+									use(xlink:href='#quote')
+							p.blockquote__text
+
+					.about-slider__item
+						blockquote.blockquote
+							.blockquote__icon
+								svg.blockqouteIcon
+									use(xlink:href='#quote')
+							p.blockquote__text
+
+					.about-slider__item
+						blockquote.blockquote
+							.blockquote__icon
+								svg.blockqouteIcon
+									use(xlink:href='#quote')
+							p.blockquote__text
+
+
+
+		script(src="js/jquery-3.3.1.slim.min.js")
+		script(src="js/main.js")

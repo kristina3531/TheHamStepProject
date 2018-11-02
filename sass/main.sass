@@ -1,0 +1,521 @@
+@import normalize
+@import ../fonts/montserrat
+
+//Variables
+$accentColor: #18cfab
+$headingColor: #4e4e4e
+$blueColor: #00cbf6
+$overlayColor: #49473f
+$borderColor: #ebebeb
+$sectionBg: #f8fcfe
+$fontFamily: Montserrat, Arial, sans-serif
+
+//Functions
+@function rem($value)
+	@return unquote(($value/1px)/16 + "rem")
+
+//Mixins
+=arrow($width, $height, $bg, $direction)
+  width: 0
+  height: 0
+  border-style: solid
+  @if $direction == top
+    border-width: 0 $width / 2 + px $height + px $width / 2 + px
+    border-color: transparent transparent $bg transparent
+  @if $direction == bottom
+    border-width: $height + px $width / 2 + px 0 $width / 2 + px
+    border-color: $bg transparent transparent transparent
+  @if $direction == right
+    border-width: $height / 2 + px 0 $height / 2 + px $width + px
+    border-color: transparent transparent transparent $bg
+  @if $direction == left
+    border-width: $height / 2 + px $width + px $height / 2 + px 0
+    border-color: transparent $bg transparent transparent
+
+=overlay($bgColor, $opacity)
+	content: ''
+	position: absolute
+	left: 0
+	top: 0
+	width: 100%
+	height: 100%
+	background-color: rgba($bgColor, $opacity)
+
+=btnLine
+	box-shadow: 0 rem(-5px) 0 #fff
+	&:hover
+		box-shadow: 0 rem(-4px) 0 #fff
+		top: 1px
+	&:active
+		top: rem(4px)
+		box-shadow: 0 0 0 #fff
+
+
+//For tabs
+.selected
+	display: block
+
+.tabs-wrap
+	&__buttons, &__content, .tabContent
+		display: flex
+	&__buttons
+		justify-content: center
+		.tabBtn
+			font-size: rem(16px)
+			color: #717171
+			border: 1px solid $borderColor
+			background-color: transparent
+			position: relative
+			transition: all .3s
+			&:not(:first-child)
+				border-left: none
+
+
+//Buttons
+.btn
+	display: inline-block
+	margin: 0 14px
+	padding: 0 10px
+	text-align: center
+	line-height: rem(61px)
+	width: rem(165px)
+	height: rem(60px)
+	border-radius: rem(5px)
+	background-color: $accentColor
+	font-size: rem(13px)
+	font-weight: 700
+	color: #fff
+	text-transform: uppercase
+	text-decoration: none
+	transition: all .3s
+	position: relative
+	&:hover
+		background-color: darken($accentColor, 5%)
+	&:active
+		background-color: darken($accentColor, 10%)
+	&--blue
+		background-color: $blueColor
+		&:hover
+			background-color: darken($blueColor, 5%)
+		&:active
+			background-color: darken($blueColor, 10%)
+	&-wrap
+		margin-top: rem(125px)
+	
+
+//Section-heading
+.section-heading
+	margin-bottom: rem(70px)
+	padding-bottom: rem(30px)
+	color: $headingColor
+	font-family: $fontFamily
+	text-align: center
+	font-size: 36px
+	font-weight: 400
+	line-height: 40px
+	position: relative
+	&::before, &::after
+		content: ''
+		position: absolute
+		display: block
+		width: 76px
+		height: 1px
+		background-color: $accentColor
+		left: 50%
+		transform: translateX(-50%)
+	&::before
+		bottom: -4px
+		margin-left: 12px
+	&::after
+		bottom: 0
+
+.container
+	max-width: 1200px
+	padding: 0 15px
+	margin: 0 auto
+
+body
+	font: rem(14px)/rem(25px) $fontFamily
+	letter-spacing: rem(.7px)
+	color: #777
+
+.header
+	position: fixed
+	z-index: 5
+	left: 0
+	right: 0
+	height: rem(120px)
+	background-color: rgba($overlayColor, .6)
+	.container, .header-menu
+		display: flex
+	.container
+		align-items: center
+		justify-content: space-between
+	&-logo
+		&__img
+			display: block
+	&-menu
+		&__item
+			margin-left: rem(22px)
+			overflow: hidden
+		&__link
+			display: block
+			line-height: rem(120px)
+			color: #b8b8b8
+			font-size: 13px
+			font-weight: 700
+			text-transform: uppercase
+			text-decoration: none
+			transition: all .3s
+			position: relative
+			&::after
+				content: ""
+				position: absolute
+				left: 0
+				bottom: 0
+				width: 0
+				height: 2px
+				background-color: $accentColor
+				transition: all ease-in-out .3s
+			&:hover, &.active
+				color: $accentColor
+				&::after
+					width: 100%
+		&__search
+			border: none
+			padding: 0
+			margin-left: rem(17px)
+			background-color: transparent
+			.search
+				width: rem(22px)
+				height: rem(22px)
+				fill: #bbb
+				transition: all .3s
+			&:hover
+				.search
+					fill: $accentColor
+
+.advantages
+	display: flex
+	&-item
+		width: 25%
+		height: rem(374px)
+		display: flex
+		flex-direction: column
+		align-items: center
+		justify-content: center
+		.touch
+			width: rem(58px)
+			height: rem(97px)
+		.diamond
+			width: rem(93px)
+			height: rem(97px)
+		.light
+			width: rem(60px)
+			height: rem(97px)
+		.devices
+			width: rem(99px)
+			height: rem(97px)
+		&__descr
+			margin-top: rem(45px)
+			font-size: rem(20px)
+			font-weight: 700
+			text-transform: uppercase
+		&:nth-child(odd)
+			background-color: #1c2a33
+			border-top: rem(7px) solid $accentColor
+			.advantages-item__descr
+				color: $accentColor
+			.touch, .light
+				fill: $accentColor
+		&:nth-child(even)
+			background-color: $accentColor
+			border-top: rem(7px) solid #fff
+			.advantages-item__descr
+				color: #fff
+			.diamond, .devices
+				fill: #fff
+
+.main
+	background-repeat: no-repeat
+	background-position: center
+	background-size: cover
+	text-align: center
+	&-container
+		padding-top: rem(120px)
+		display: flex
+		flex-direction: column
+		justify-content: center
+		height: 100vh
+	&-descr
+		font-size: rem(35px)
+		line-height: rem(75px)
+		font-weight: 700
+		color: #fff
+		text-transform: uppercase
+		span
+			color: $accentColor
+	&-heading
+		font-size: rem(79px)
+		line-height: rem(85px)
+		text-transform: uppercase
+		font-weight: 700
+		color: #fff
+	&-text
+		color: #d4d4d4
+		font-size: rem(34px)
+		line-height: rem(85px)
+		font-weight: 300
+	.btn
+		+btnLine
+
+.services
+	padding: 80px 0 100px
+	.tabs-wrap
+		.tabBtn
+			width: rem(193px)
+			height: rem(73px)
+			background-color: $sectionBg
+			transition: all .3s
+			&:hover, &.selected
+				background-color: $accentColor
+				color: #fff
+				&::after
+					+arrow(25, 14, $accentColor, bottom)
+			&::after
+				content: ''
+				position: absolute
+				bottom: rem(-14px)
+				left: 50%
+				margin-left: rem(-12.5px)
+				+arrow(25, 14, transparent, bottom)
+				transition: all .3s
+		&__content
+			margin-top: rem(25px)
+			.tabContent
+				&__img
+					width: rem(195px)
+					height: rem(140px)
+					overflow: hidden
+					flex: none
+					margin-right: rem(20px)
+					img
+						width: 100%
+						transition: all .5s
+					&:hover
+						img
+							transform: rotate(10deg) scale(1.1)
+
+.ready
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: center
+	height: rem(476px)
+	position: relative
+	&::after
+		+overlay(#000, .78)
+	.container
+		height: 100%
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		position: relative
+		z-index: 2
+	.btn
+		+btnLine
+	&__heading
+		font-size: rem(40px)
+		line-height: rem(50px)
+		font-weight: 700
+		color: $accentColor
+		text-transform: uppercase
+	&__descr
+		margin: rem(25px) 0 rem(70px)
+		color: #d8d8d8
+		font-size: rem(16px)      
+	        
+.work
+	padding: rem(100px) 0
+	background-color: $sectionBg
+	border-bottom: 1px solid $borderColor
+	text-align: center
+	.tabs-wrap__buttons
+		.tabBtn
+			padding: rem(22px) rem(25px)
+			background-color: #fff
+			&:hover, &.active
+				color: $accentColor
+				&::before
+					width: 100%
+			&::before
+				content: ''
+				width: 0
+				height: 2px
+				background-color: $accentColor
+				position: absolute
+				top: 0
+				left: 0
+				transition: all .3s
+
+	.tabs-wrap__content
+		margin: rem(70px) 0
+		.tabContent
+			flex-wrap: wrap
+	&-gallery
+		justify-content: center
+		&__item
+			width: 25%
+			position: relative
+			overflow: hidden
+			img
+				width: 100%
+				display: block
+			&:hover
+				.work-gallery__info
+					top: 0
+		&__info
+			display: flex
+			flex-direction: column
+			align-items: center
+			justify-content: center
+			background-color: $sectionBg
+			border-top: 2px solid $accentColor
+			width: 100%
+			height: 100%
+			position: absolute
+			top: 100%
+			transition: all ease-in-out .5s
+		&__icon
+			display: inline-block
+			margin: 0 rem(4px)
+			width: rem(40px)
+			height: rem(40px)
+			text-align: center
+			line-height: rem(40px)
+			border-radius: 50%
+			border: 1px solid $accentColor
+			transition: all .3s
+			.link, .search
+				fill: $accentColor
+				transition: all .3s
+			&:hover
+				background-color: $accentColor
+				.link, .search
+					fill: #fff
+			.link
+				width: rem(15px)
+				height: rem(15px)
+			.search
+				width: rem(12px)
+				height: rem(11px)
+		&__heading
+			font-size: rem(14px)
+			font-weight: 700
+			line-height: rem(25px)
+			text-transform: uppercase
+			color: $accentColor
+		&__cath
+			color: #8a8a8a
+			font-size: rem(12px)
+			font-weight: 300
+	.btn
+		position: relative
+		padding-left: rem(54px)
+		&::before, &::after
+			content: ''
+			position: absolute
+			width: rem(16px)
+			height: rem(4px)
+			background-color: #fff
+			left: rem(22px)
+			top: 50%
+			margin-top: -2px
+			transition: all ease-in-out .5s
+		&::after
+			transform: rotate(90deg)
+		&:hover
+			&::before
+				transform: rotate(360deg)
+			&::after
+				transform: rotate(450deg)
+		
+.news
+	padding: rem(85px) 0
+	&-list
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		&__img
+			position: relative
+			width: rem(263px)
+			height: rem(208px)
+			overflow: hidden
+			img
+				display: block
+				max-width: 100%
+				margin: 0 auto
+				transition: all ease-in-out .5s
+			&:hover
+				img
+					transform: scale(1.5) rotate(10deg)
+				.news-list__date
+					background-color: $accentColor
+		&__date
+			position: absolute
+			top: 0
+			right: 0
+			width: rem(68px)
+			height: rem(66px)
+			color: #fff
+			font-size: rem(16px)
+			background-color: #203e38
+			display: flex
+			flex-direction: column
+			justify-content: center
+			align-items: center
+			font-weight: 300
+			transition: all ease-in-out .5s
+		&__info
+			padding: rem(12px) rem(20px)
+			background-color: $sectionBg
+			border: 1px solid $borderColor
+			margin-bottom: rem(45px)
+			&:hover
+				.news-list__heading
+					color: $accentColor
+		&__heading
+			font-size: rem(18px)
+			line-height: rem(39px)
+			font-weight: 700
+			color: #717171
+			transition: all ease-in-out .5s
+		&__comments
+			font-size: rem(14px)
+			font-weight: 300
+			transition: all ease-in-out .5s
+			color: #777
+			&:hover
+				text-decoration: underline
+
+.about
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: center
+	.container
+		height: 100vh
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		border: 1px solid red
+	.section-heading
+		color: #fff
+	&-slider
+		&__item
+			.blockquote
+				&__icon
+					.blockqouteIcon
+						width: rem(44px)
+						height: rem(30px)
+						fill: $accentColor
