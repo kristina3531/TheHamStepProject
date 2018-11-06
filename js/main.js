@@ -28,10 +28,8 @@ $(document).ready(function() {
 		for(let i = 0; i < itemSize; i++) {
 
 			//Create DOMs
-
-			let workGalleryItem = $("<div/>", {class: "work-gallery__item"}).html($("<div/>", {class: "work-gallery__img"})).html($("<img>", {src: `img/graphic-design/graphic-design${i+1}.jpg`,
-																	alt: `Image${count+1}`
-																}))
+let workGalleryItem = $("<div/>", {class: "work-gallery__item"}).html($("<div/>", {class: "work-gallery__img"})).html($("<img>", {src: `img/graphic-design/graphic-design${i+1}.jpg`,
+																	alt: `Image${count+1}`}));
 															
 
 			arrayElements.push(workGalleryItem);
