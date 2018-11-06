@@ -6,6 +6,8 @@ $(document).ready(function() {
 		$(this).toggleClass("active");
 	});
 
+//    $('tabBtn:not(:first)').hide();
+//    $('tabContent:not(:first)').hide();
 	//Tabs
 	$(".tabBtn").on("click", function() {
 		$(".tabContent").hide();
@@ -16,6 +18,7 @@ $(document).ready(function() {
 	});
 
 	$(".tabBtn:eq(0)").click();
+    $(".tabBtn-2:eq(0)").click();
 
 
 	let itemSize = 12;
@@ -24,13 +27,13 @@ $(document).ready(function() {
 
 	function addElements() {
 		let arrayElements = [];
+        														
 
 		for(let i = 0; i < itemSize; i++) {
 
-			//Create DOMs
-let workGalleryItem = $("<div/>", {class: "work-gallery__item"}).html($("<div/>", {class: "work-gallery__img"})).html($("<img>", {src: `img/graphic-design/graphic-design${i+1}.jpg`,
-																	alt: `Image${count+1}`}));
-															
+	       //Create DOMs
+            
+            let workGalleryItem = $(`<div class="work-gallery__item"><div class="work-gallery__img"><img src = "img/graphic-design/graphic-design${i + 1}.jpg" alt="Image${count + 1}"></div><div class="work-gallery__info"><div class="work-gallery__icons"><a href="#" class="work-gallery__icon"><svg class="link"><use xlink:href="#link"></svg></a><a href="#" class="work-gallery__icon"><svg class="search"><use xlink:href="#search"></svg></a></div><h5 class="work-gallery__heading">creative design</h5><span class="work-gallery__cath">Graphic Design</span></div></div>`);
 
 			arrayElements.push(workGalleryItem);
 			count++;
