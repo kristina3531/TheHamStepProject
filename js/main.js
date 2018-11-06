@@ -16,9 +16,17 @@ $(document).ready(function() {
 		let tabId = $(this).attr("data-tab");
 		$("#" + tabId).show();
 	});
+    
+    $(".tabBtn2").on("click", function() {
+		$(".tabContent").hide();
+		$(".tabBtn.selected").removeClass("selected");
+		$(this).toggleClass("selected");
+		let tabId = $(this).attr("data-tab");
+		$("#" + tabId).show();
+	});
 
 	$(".tabBtn:eq(0)").click();
-    $(".tabBtn-2:eq(0)").click();
+    $(".tabBtn2:eq(0)").click();
 
 
 	let itemSize = 12;
