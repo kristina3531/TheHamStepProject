@@ -46,7 +46,7 @@ $(document).ready(function() {
 
 	       //Create DOMs
             
-            let workGalleryItem = $(`<div class="work-gallery__item"><div class="work-gallery__img"><img src = "img/graphic-design/graphic-design${i + 1}.jpg" alt="Image${count + 1}"></div><div class="work-gallery__info"><div class="work-gallery__icons"><a href="#" class="work-gallery__icon"><svg class="link"><use xlink:href="#link"></svg></a><a href="#" class="work-gallery__icon"><svg class="search"><use xlink:href="#search"></svg></a></div><h5 class="work-gallery__heading">creative design</h5><span class="work-gallery__cath">Graphic Design</span></div></div>`);
+            let workGalleryItem = $(`<div class="work-gallery__item"><div class="work-gallery__img"><img src = "img/graphic-design/graphic-design${count + 1}.jpg" alt="Image${count + 1}"></div><div class="work-gallery__info"><div class="work-gallery__icons"><a href="#" class="work-gallery__icon"><svg class="link"><use xlink:href="#link"></svg></a><a href="#" class="work-gallery__icon"><svg class="search"><use xlink:href="#search"></svg></a></div><h5 class="work-gallery__heading">creative design</h5><span class="work-gallery__cath">Graphic Design</span></div></div>`);
 
 			arrayElements.push(workGalleryItem);
 			count++;
@@ -63,20 +63,24 @@ $(document).ready(function() {
 	$("#loadMore").on("click", addElements);
 	
 	//Slick-slider
-	$(".about-slider").slick({
+	let aboutSlider = $(".about-slider");
+	aboutSlider.slick({
 		slidesToShow: 1,
-	  slidesToScroll: 1,
-	  arrows: true,
-	  fade: true,
-	  asNavFor: '.slider-nav'
+		slidesToScroll: 1,
+		arrows: false,
+		fade: true,
+		asNavFor: ".about-slider__nav-list"
 	});
-	$('.slider-nav').slick({
-  slidesToShow: 4,
-  slidesToScroll: 1,
-  asNavFor: '.about-slider',
-  dots: true,
-  centerMode: true,
-  focusOnSelect: true
-});
+	$(".about-slider__nav-list").slick({
+		centerMode: true,
+		centerPadding: "80px",
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		asNavFor: ".about-slider",
+		swipeToSlide: true,
+		focusOnSelect: true,
+		prevArrow: $(".about-slider__btn-prev"),
+		nextArrow: $(".about-slider__btn-next")
+	});
 
 });

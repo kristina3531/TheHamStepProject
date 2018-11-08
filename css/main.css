@@ -982,17 +982,10 @@ a {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    border: 1px solid red;
     position: relative;
     z-index: 3; }
   .about .section-heading {
     color: #fff; }
-  .about-slider__item {
-    text-align: center; }
-    .about-slider__item .blockquote__icon .blockqouteIcon {
-      width: 2.75rem;
-      height: 1.875rem;
-      fill: #18cfab; }
 
 body {
   font: 0.875rem/1.5625rem Montserrat, Arial, sans-serif;
