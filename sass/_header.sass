@@ -1,0 +1,103 @@
+.header
+	position: fixed
+	z-index: 5
+	left: 0
+	right: 0
+	height: rem(120px)
+	background-color: rgba($overlayColor, .6)
+	.container, .header-menu
+		display: flex
+	.container
+		align-items: center
+	&-logo
+		&__img
+			display: block
+	&-menu
+		margin-left: auto
+		// margin-right: rem(67px)
+		&__item
+			margin-left: rem(22px)
+			overflow: hidden
+		&__link
+			display: block
+			line-height: rem(120px)
+			color: #b8b8b8
+			font-size: 13px
+			font-weight: 700
+			text-transform: uppercase
+			text-decoration: none
+			transition: all .3s
+			position: relative
+			&::after
+				content: ""
+				position: absolute
+				left: 0
+				bottom: 0
+				width: 0
+				height: 2px
+				background-color: $accentColor
+				transition: all ease-in-out .3s
+			&:hover, &.active
+				color: $accentColor
+				&::after
+					width: 100%	
+	&-form
+		position: relative	
+		width: rem(50px)	
+		height: rem(50px)	
+		&__text
+			padding: 0 rem(42px) 0 rem(10px)
+			width: 0
+			height: rem(50px)	
+			background-color: #fff
+			font-size: rem(16px)
+			color: #b8b8b8
+			border: 2px solid $accentColor
+			border-radius: rem(5px)
+			box-sizing: border-box
+			outline: none
+			transition: all ease .7s
+			position: absolute
+			right: 0
+			opacity: 0
+			// &::-moz-placeholder, &:-moz-placeholder, , &[placeholder], &:-ms-input-placeholder
+			&::-webkit-input-placeholder
+				color: $accentColor
+				font-size: rem(18px)
+				font-style: italic				
+		&__search
+			border: none
+			background-color: transparent
+			position: absolute
+			top: 0
+			right: 0
+			padding: 0
+			outline: none
+			width: rem(50px)
+			height: rem(50px)
+			text-align: center
+			transition: all ease .5s
+			.search, .close
+				transition: all .3s
+				display: inline-block
+			.search
+				width: rem(22px)
+				height: rem(22px)
+				fill: #bbb				
+			.close
+				display: none
+				width: rem(15px)
+				height: rem(15px)
+			&:hover
+				.search
+					fill: $accentColor
+		&.open
+			.header-form__text
+				width: rem(400px)
+				opacity: 1
+			.header-form__search
+				.search
+					display: none
+				.close
+						display: inline-block
+						fill: $accentColor

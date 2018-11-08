@@ -1,0 +1,68 @@
+//For tabs
+.selected
+	display: block
+
+.tabs-wrap
+	&__buttons, &__content, .tabContent-1, .tabContent-2
+		display: flex
+	&__buttons
+		justify-content: center
+		.tabBtn-1, .tabBtn-2
+			font-size: rem(16px)
+			color: #717171
+			border: 1px solid $borderColor
+			background-color: transparent
+			position: relative
+			transition: all .3s
+			&:not(:first-child)
+				border-left: none
+		.tabBtn-1
+			width: rem(193px)
+			height: rem(73px)
+			background-color: $sectionBg
+			transition: all .3s
+			&:hover, &.selected
+				background-color: $accentColor
+				color: #fff
+				&::after
+					+arrow(25, 14, $accentColor, bottom)
+			&::after
+				content: ''
+				position: absolute
+				bottom: rem(-14px)
+				left: 50%
+				margin-left: rem(-12.5px)
+				+arrow(25, 14, transparent, bottom)
+				transition: all .3s
+		.tabBtn-2
+			padding: rem(22px) rem(25px)
+			background-color: #fff
+			&:hover, &.active
+				color: $accentColor
+				&::before
+					width: 100%
+			&::before
+				content: ''
+				width: 0
+				height: 2px
+				background-color: $accentColor
+				position: absolute
+				top: 0
+				left: 0
+				transition: all .3s
+	&__content
+		.tabContent-1
+			&__img
+				width: rem(195px)
+				height: rem(140px)
+				overflow: hidden
+				flex: none
+				margin-right: rem(20px)
+				img
+					width: 100%
+					transition: all .5s
+				&:hover
+					img
+						transform: rotate(10deg) scale(1.1)
+		.tabContent-2
+			flex-wrap: wrap

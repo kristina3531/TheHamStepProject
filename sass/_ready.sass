@@ -1,0 +1,21 @@
+.ready
+	+bg
+	height: rem(476px)
+	position: relative
+	&::after
+		+overlay(#000, .78)
+	.container
+		height: 100%
+		+flexColumnCenter
+		position: relative
+		z-index: 2
+	&__heading
+		font-size: rem(40px)
+		line-height: rem(50px)
+		font-weight: 700
+		color: $accentColor
+		text-transform: uppercase
+	&__descr
+		margin: rem(25px) 0 rem(70px)
+		color: #d8d8d8
+		font-size: rem(16px)  

@@ -1,0 +1,57 @@
+.news
+	padding: rem(85px) 0
+	&-list
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		&__img
+			position: relative
+			width: rem(263px)
+			height: rem(208px)
+			overflow: hidden
+			img
+				display: block
+				max-width: 100%
+				margin: 0 auto
+				transition: all ease-in-out .5s
+			&:hover
+				img
+					transform: scale(1.5) rotate(10deg)
+				.news-list__date
+					background-color: $accentColor
+		&__date
+			position: absolute
+			top: 0
+			right: 0
+			width: rem(68px)
+			height: rem(66px)
+			color: #fff
+			font-size: rem(16px)
+			background-color: #203e38
+			display: flex
+			flex-direction: column
+			justify-content: center
+			align-items: center
+			font-weight: 300
+			transition: all ease-in-out .5s
+		&__info
+			padding: rem(12px) rem(20px)
+			background-color: $sectionBg
+			border: 1px solid $borderColor
+			margin-bottom: rem(45px)
+			&:hover
+				.news-list__heading
+					color: $accentColor
+		&__heading
+			font-size: rem(18px)
+			line-height: rem(39px)
+			font-weight: 700
+			color: #717171
+			transition: all ease-in-out .5s
+		&__comments
+			font-size: rem(14px)
+			font-weight: 300
+			transition: all ease-in-out .5s
+			color: #777
+			&:hover
+				text-decoration: underline

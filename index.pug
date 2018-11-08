@@ -5,7 +5,7 @@ html(lang="en")
 		title The Ham
 		link(rel="stylesheet", href="css/main.css")
 	body
-		include includes/icons.svg
+		include img/icons/sprite.svg
 		header.header
 			.container
 				a.header-logo(href="index.html")
@@ -29,9 +29,13 @@ html(lang="en")
 						a.header-menu__link(href="#") team
 					.header-menu__item
 						a.header-menu__link(href="#") contact
-					button.header-menu__search
+				form.header-form
+					input.header-form__text(placeholder="Search")
+					button.header-form__search
 						svg.search
 							use(xlink:href='#search')
+						svg.close
+							use(xlink:href='#close')
 	
 		main.main(style="background: url(img/main-bg.jpg)")
 			.container
@@ -69,37 +73,37 @@ html(lang="en")
 				
 				.tabs-wrap
 					.tabs-wrap__buttons
-						button.tabBtn(data-tab="tab-1") Web Design
-						button.tabBtn(data-tab="tab-2") Graphic Design
-						button.tabBtn(data-tab="tab-3") Online Support
-						button.tabBtn(data-tab="tab-4") App Design 
-						button.tabBtn(data-tab="tab-5") Online Marketing
-						button.tabBtn(data-tab="tab-6") Seo Service
+						button.tabBtn-1(data-tab="tab-1") Web Design
+						button.tabBtn-1(data-tab="tab-2") Graphic Design
+						button.tabBtn-1(data-tab="tab-3") Online Support
+						button.tabBtn-1(data-tab="tab-4") App Design 
+						button.tabBtn-1(data-tab="tab-5") Online Marketing
+						button.tabBtn-1(data-tab="tab-6") Seo Service
 					.tabs-wrap__content
-						.tabContent#tab-1(style="display: none;")
-							.tabContent__img
+						.tabContent-1#tab-1(style="display: none;")
+							.tabContent-1__img
 								img(src="img/web-design/web-design-8.jpg", alt="Web Design")
-							p.tabContent__descr Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-						.tabContent#tab-2(style="display: none;")
-							.tabContent__img
+							p.tabContent-1__descr Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						.tabContent-1#tab-2(style="display: none;")
+							.tabContent-1__img
 								img(src="img/web-design/web-design1.jpg", alt="Web Design")
-							p.tabContent__descr Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-						.tabContent#tab-3(style="display: none;")
-							.tabContent__img
+							p.tabContent-1__descr Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						.tabContent-1#tab-3(style="display: none;")
+							.tabContent-1__img
 								img(src="img/web-design/web-design2.jpg", alt="Web Design")
-							p.tabContent__descr Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-						.tabContent#tab-4(style="display: none;")
-							.tabContent__img
+							p.tabContent-1__descr Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						.tabContent-1#tab-4(style="display: none;")
+							.tabContent-1__img
 								img(src="img/web-design/web-design3.jpg", alt="Web Design")
-							p.tabContent__descr Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-						.tabContent#tab-5(style="display: none;")
-							.tabContent__img
+							p.tabContent-1__descr Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						.tabContent-1#tab-5(style="display: none;")
+							.tabContent-1__img
 								img(src="img/web-design/web-design4.jpg", alt="Web Design")
-							p.tabContent__descr Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-						.tabContent#tab-6(style="display: none;")
-							.tabContent__img
+							p.tabContent-1__descr Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						.tabContent-1#tab-6(style="display: none;")
+							.tabContent-1__img
 								img(src="img/web-design/web-design5.jpg", alt="Web Design")
-							p.tabContent__descr Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+							p.tabContent-1__descr Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
 
 		section.ready(style="background: url(img/ready-bg.jpg)")
 			.container
@@ -112,17 +116,17 @@ html(lang="en")
 				h3.section-heading Our Amazing Work
 				.tabs-wrap
 					.tabs-wrap__buttons
-						button.tabBtn2(data-tab="tab-7") All
-						button.tabBtn2(data-tab="tab-8") Graphic Design
-						button.tabBtn2(data-tab="tab-9") Web Design
-						button.tabBtn2(data-tab="tab-10") Landing Pages
-						button.tabBtn2(data-tab="tab-11") Wordpress
+						button.tabBtn-2(data-tab="tab-7") All
+						button.tabBtn-2(data-tab="tab-8") Graphic Design
+						button.tabBtn-2(data-tab="tab-9") Web Design
+						button.tabBtn-2(data-tab="tab-10") Landing Pages
+						button.tabBtn-2(data-tab="tab-11") Wordpress
 						
 					.tabs-wrap__content
-						.tabContent.work-gallery#tab-7
+						.tabContent-2.work-gallery#tab-7
 							
 
-						.tabContent.work-gallery#tab-8(style="display: none;")
+						.tabContent-2.work-gallery#tab-8(style="display: none;")
 							.work-gallery__item
 								.work-gallery__img
 									img(src="img/graphic-design/graphic-design1.jpg", alt="Graphic Design")
@@ -293,7 +297,7 @@ html(lang="en")
 									h5.work-gallery__heading creative design
 									span.work-gallery__cath Graphic Design
 
-						.tabContent.work-gallery#tab-9(style="display: none;")
+						.tabContent-2.work-gallery#tab-9(style="display: none;")
 							.work-gallery__item
 								.work-gallery__img
 									img(src="img/web-design/web-design1.jpg", alt="Web Design")
@@ -399,7 +403,7 @@ html(lang="en")
 									h5.work-gallery__heading creative design
 									span.work-gallery__cath Web Design
 
-						.tabContent.work-gallery#tab-10(style="display: none;")
+						.tabContent-2.work-gallery#tab-10(style="display: none;")
 							.work-gallery__item
 								.work-gallery__img
 									img(src="img/landing-page/landing-page1.jpg", alt="Landing Page")
@@ -492,7 +496,7 @@ html(lang="en")
 									h5.work-gallery__heading creative design
 									span.work-gallery__cath Landing Page
 
-						.tabContent.work-gallery#tab-11(style="display: none;")
+						.tabContent-2.work-gallery#tab-11(style="display: none;")
 							.work-gallery__item
 								.work-gallery__img
 									img(src="img/wordpress/wordpress1.jpg", alt="Wordpress")
@@ -614,7 +618,7 @@ html(lang="en")
 								.work-gallery__img
 									img(src="img/wordpress/wordpress10.jpg", alt="Wordpress")
 								
-				a#loadMore.btn(href="#") Load more
+				button#loadMore.btn-load Load more
 
 		section.news
 			.container
@@ -720,30 +724,38 @@ html(lang="en")
 								svg.blockqouteIcon
 									use(xlink:href='#quote')
 							p.blockquote__text Integer dignissim, augue tempus ultricies luctus, quam dui laoreet sem, non dictum odio nisi quis massa. Morbi pulvinar odio eget aliquam facilisis. Tempus ultricies luctus, quam dui laoreet sem, non dictum odio nisi quis massa. Morbi pulvinar odio eget aliquam facilisis.
-
-
-					.about-slider__item
-						blockquote.blockquote
-							.blockquote__icon
-								svg.blockqouteIcon
-									use(xlink:href='#quote')
-							p.blockquote__text
+							.blockquote__img
+								img(src="img/slider/sliderImg1.jpg" alt="Slide 1")
 
 					.about-slider__item
 						blockquote.blockquote
 							.blockquote__icon
 								svg.blockqouteIcon
 									use(xlink:href='#quote')
-							p.blockquote__text
+							p.blockquote__text  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, ab?
+							.blockquote__img
+								img(src="img/slider/sliderImg2.jpg" alt="Slide 2")
 
 					.about-slider__item
 						blockquote.blockquote
 							.blockquote__icon
 								svg.blockqouteIcon
 									use(xlink:href='#quote')
-							p.blockquote__text
+							p.blockquote__text  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, sit quibusdam culpa molestiae assumenda dolores provident illo soluta cumque molestias alias non iusto voluptate rem.
+							.blockquote__img
+								img(src="img/slider/sliderImg3.jpg" alt="Slide 3")
+
+					.about-slider__item
+						blockquote.blockquote
+							.blockquote__icon
+								svg.blockqouteIcon
+									use(xlink:href='#quote')
+							p.blockquote__text  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo placeat aperiam itaque in ab quidem ducimus facilis saepe laboriosam distinctio.
+							.blockquote__img
+								img(src="img/slider/sliderImg4.jpg" alt="Slide 4")
 
 
 
 		script(src="js/jquery-3.3.1.slim.min.js")
+		script(src="js/slick.min.js")
 		script(src="js/main.js")

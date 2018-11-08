@@ -1,0 +1,37 @@
+.advantages
+	display: flex
+	&-item
+		width: 25%
+		height: rem(374px)
+		+flexColumnCenter
+		.touch
+			width: rem(58px)
+			height: rem(97px)
+		.diamond
+			width: rem(93px)
+			height: rem(97px)
+		.light
+			width: rem(60px)
+			height: rem(97px)
+		.devices
+			width: rem(99px)
+			height: rem(97px)
+		&__descr
+			margin-top: rem(45px)
+			font-size: rem(20px)
+			font-weight: 700
+			text-transform: uppercase
+		&:nth-child(odd)
+			background-color: #1c2a33
+			border-top: rem(7px) solid $accentColor
+			.advantages-item__descr
+				color: $accentColor
+			.touch, .light
+				fill: $accentColor
+		&:nth-child(even)
+			background-color: $accentColor
+			border-top: rem(7px) solid #fff
+			.advantages-item__descr
+				color: #fff
+			.diamond, .devices
+				fill: #fff

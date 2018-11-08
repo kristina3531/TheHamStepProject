@@ -1,0 +1,62 @@
+//Buttons
+.btn, .btn-load
+	display: inline-block
+	padding: 0 10px
+	text-align: center
+	line-height: rem(61px)
+	width: rem(165px)
+	height: rem(60px)
+	border-radius: rem(5px)
+	background-color: $accentColor
+	font-size: rem(13px)
+	font-weight: 700
+	color: #fff
+	text-transform: uppercase
+	text-decoration: none
+	position: relative
+
+.btn	
+	box-shadow: 0 rem(-5px) 0 #fff
+	transition: all .3s
+	&:hover
+		background-color: darken($accentColor, 5%)
+		box-shadow: 0 rem(-4px) 0 #fff
+		top: 1px
+	&:active
+		background-color: darken($accentColor, 10%)
+		top: rem(4px)
+		box-shadow: 0 0 0 #fff
+	&--blue
+		background-color: $blueColor
+		&:hover
+			background-color: darken($blueColor, 5%)
+		&:active
+			background-color: darken($blueColor, 10%)
+	&-wrap
+		margin-top: rem(125px)
+
+.btn-load
+	padding-left: rem(54px)
+	border: 2px solid transparent
+	&::before, &::after
+		content: ''
+		position: absolute
+		width: rem(16px)
+		height: rem(4px)
+		background-color: #fff
+		left: rem(22px)
+		top: 50%
+		margin-top: -2px
+		transition: all ease-in-out .5s
+	&::after
+		transform: rotate(90deg)
+	&:hover
+		background-color: #fff
+		border-color: $accentColor
+		color: $accentColor
+		&::before, &::after
+			background-color: $accentColor
+		&::before
+			transform: rotate(360deg)
+		&::after
+			transform: rotate(450deg)

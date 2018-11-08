@@ -5,8 +5,7 @@
     <title>The Ham</title>
     <link rel="stylesheet" href="css/main.css"/>
   </head>
-  <body>
-	<svg style="display: none;">
+  <body><svg style="display: none;">
 	
 	<symbol id="arrowLeft" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="7" height="13" viewBox="0 0 7 13"><defs><path id="553ra" d="M736.508 5315.508l1.305-1.402-4.288-4.61 4.288-4.606-1.305-1.403-5.593 6.01z"/></defs><g><g transform="translate(-731 -5303)"><use xlink:href="#553ra"/></g></g></symbol>
 
@@ -106,6 +105,47 @@
 </g>
 </symbol>
 
+<symbol id="close" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 47.971 47.971" style="enable-background:new 0 0 47.971 47.971;" xml:space="preserve">
+<g>
+	<path d="M28.228,23.986L47.092,5.122c1.172-1.171,1.172-3.071,0-4.242c-1.172-1.172-3.07-1.172-4.242,0L23.986,19.744L5.121,0.88
+		c-1.172-1.172-3.07-1.172-4.242,0c-1.172,1.171-1.172,3.071,0,4.242l18.865,18.864L0.879,42.85c-1.172,1.171-1.172,3.071,0,4.242
+		C1.465,47.677,2.233,47.97,3,47.97s1.535-0.293,2.121-0.879l18.865-18.864L42.85,47.091c0.586,0.586,1.354,0.879,2.121,0.879
+		s1.535-0.293,2.121-0.879c1.172-1.171,1.172-3.071,0-4.242L28.228,23.986z"/>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</symbol>
+
+
 </svg>
 
 
@@ -122,12 +162,18 @@
           <div class="header-menu__item"><a class="header-menu__link" href="#">blog</a></div>
           <div class="header-menu__item"><a class="header-menu__link" href="#">team</a></div>
           <div class="header-menu__item"><a class="header-menu__link" href="#">contact</a></div>
-          <button class="header-menu__search">
+        </nav>
+        <form class="header-form">
+          <input class="header-form__text" placeholder="Search"/>
+          <button class="header-form__search">
             <svg class="search">
               <use xlink:href="#search"></use>
             </svg>
+            <svg class="close">
+              <use xlink:href="#close"></use>
+            </svg>
           </button>
-        </nav>
+        </form>
       </div>
     </header>
     <main class="main" style="background: url(img/main-bg.jpg)">
@@ -167,37 +213,37 @@
         <h3 class="section-heading">Our Services</h3>
         <div class="tabs-wrap">
           <div class="tabs-wrap__buttons">
-            <button class="tabBtn" data-tab="tab-1">Web Design</button>
-            <button class="tabBtn" data-tab="tab-2">Graphic Design</button>
-            <button class="tabBtn" data-tab="tab-3">Online Support</button>
-            <button class="tabBtn" data-tab="tab-4">App Design </button>
-            <button class="tabBtn" data-tab="tab-5">Online Marketing</button>
-            <button class="tabBtn" data-tab="tab-6">Seo Service</button>
+            <button class="tabBtn-1" data-tab="tab-1">Web Design</button>
+            <button class="tabBtn-1" data-tab="tab-2">Graphic Design</button>
+            <button class="tabBtn-1" data-tab="tab-3">Online Support</button>
+            <button class="tabBtn-1" data-tab="tab-4">App Design </button>
+            <button class="tabBtn-1" data-tab="tab-5">Online Marketing</button>
+            <button class="tabBtn-1" data-tab="tab-6">Seo Service</button>
           </div>
           <div class="tabs-wrap__content">
-            <div class="tabContent" id="tab-1" style="display: none;">
-              <div class="tabContent__img"><img src="img/web-design/web-design-8.jpg" alt="Web Design"/></div>
-              <p class="tabContent__descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <div class="tabContent-1" id="tab-1" style="display: none;">
+              <div class="tabContent-1__img"><img src="img/web-design/web-design-8.jpg" alt="Web Design"/></div>
+              <p class="tabContent-1__descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
-            <div class="tabContent" id="tab-2" style="display: none;">
-              <div class="tabContent__img"><img src="img/web-design/web-design1.jpg" alt="Web Design"/></div>
-              <p class="tabContent__descr">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <div class="tabContent-1" id="tab-2" style="display: none;">
+              <div class="tabContent-1__img"><img src="img/web-design/web-design1.jpg" alt="Web Design"/></div>
+              <p class="tabContent-1__descr">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
-            <div class="tabContent" id="tab-3" style="display: none;">
-              <div class="tabContent__img"><img src="img/web-design/web-design2.jpg" alt="Web Design"/></div>
-              <p class="tabContent__descr">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <div class="tabContent-1" id="tab-3" style="display: none;">
+              <div class="tabContent-1__img"><img src="img/web-design/web-design2.jpg" alt="Web Design"/></div>
+              <p class="tabContent-1__descr">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
-            <div class="tabContent" id="tab-4" style="display: none;">
-              <div class="tabContent__img"><img src="img/web-design/web-design3.jpg" alt="Web Design"/></div>
-              <p class="tabContent__descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div class="tabContent-1" id="tab-4" style="display: none;">
+              <div class="tabContent-1__img"><img src="img/web-design/web-design3.jpg" alt="Web Design"/></div>
+              <p class="tabContent-1__descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
-            <div class="tabContent" id="tab-5" style="display: none;">
-              <div class="tabContent__img"><img src="img/web-design/web-design4.jpg" alt="Web Design"/></div>
-              <p class="tabContent__descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <div class="tabContent-1" id="tab-5" style="display: none;">
+              <div class="tabContent-1__img"><img src="img/web-design/web-design4.jpg" alt="Web Design"/></div>
+              <p class="tabContent-1__descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
-            <div class="tabContent" id="tab-6" style="display: none;">
-              <div class="tabContent__img"><img src="img/web-design/web-design5.jpg" alt="Web Design"/></div>
-              <p class="tabContent__descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+            <div class="tabContent-1" id="tab-6" style="display: none;">
+              <div class="tabContent-1__img"><img src="img/web-design/web-design5.jpg" alt="Web Design"/></div>
+              <p class="tabContent-1__descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
             </div>
           </div>
         </div>
@@ -214,15 +260,15 @@
         <h3 class="section-heading">Our Amazing Work</h3>
         <div class="tabs-wrap">
           <div class="tabs-wrap__buttons">
-            <button class="tabBtn2" data-tab="tab-7">All</button>
-            <button class="tabBtn2" data-tab="tab-8">Graphic Design</button>
-            <button class="tabBtn2" data-tab="tab-9">Web Design</button>
-            <button class="tabBtn2" data-tab="tab-10">Landing Pages</button>
-            <button class="tabBtn2" data-tab="tab-11">Wordpress</button>
+            <button class="tabBtn-2" data-tab="tab-7">All</button>
+            <button class="tabBtn-2" data-tab="tab-8">Graphic Design</button>
+            <button class="tabBtn-2" data-tab="tab-9">Web Design</button>
+            <button class="tabBtn-2" data-tab="tab-10">Landing Pages</button>
+            <button class="tabBtn-2" data-tab="tab-11">Wordpress</button>
           </div>
           <div class="tabs-wrap__content">
-            <div class="tabContent work-gallery" id="tab-7"></div>
-            <div class="tabContent work-gallery" id="tab-8" style="display: none;">
+            <div class="tabContent-2 work-gallery" id="tab-7"></div>
+            <div class="tabContent-2 work-gallery" id="tab-8" style="display: none;">
               <div class="work-gallery__item">
                 <div class="work-gallery__img"><img src="img/graphic-design/graphic-design1.jpg" alt="Graphic Design"/></div>
                 <div class="work-gallery__info">
@@ -380,7 +426,7 @@
                 </div>
               </div>
             </div>
-            <div class="tabContent work-gallery" id="tab-9" style="display: none;">
+            <div class="tabContent-2 work-gallery" id="tab-9" style="display: none;">
               <div class="work-gallery__item">
                 <div class="work-gallery__img"><img src="img/web-design/web-design1.jpg" alt="Web Design"/></div>
                 <div class="work-gallery__info">
@@ -486,7 +532,7 @@
                 </div>
               </div>
             </div>
-            <div class="tabContent work-gallery" id="tab-10" style="display: none;">
+            <div class="tabContent-2 work-gallery" id="tab-10" style="display: none;">
               <div class="work-gallery__item">
                 <div class="work-gallery__img"><img src="img/landing-page/landing-page1.jpg" alt="Landing Page"/></div>
                 <div class="work-gallery__info">
@@ -579,7 +625,7 @@
                 </div>
               </div>
             </div>
-            <div class="tabContent work-gallery" id="tab-11" style="display: none;">
+            <div class="tabContent-2 work-gallery" id="tab-11" style="display: none;">
               <div class="work-gallery__item">
                 <div class="work-gallery__img"><img src="img/wordpress/wordpress1.jpg" alt="Wordpress"/></div>
                 <div class="work-gallery__info">
@@ -702,7 +748,8 @@
               </div>
             </div>
           </div>
-        </div><a class="btn" id="loadMore" href="#">Load more</a>
+        </div>
+        <button class="btn-load" id="loadMore">Load more</button>
       </div>
     </section>
     <section class="news">
@@ -772,6 +819,7 @@
                 </svg>
               </div>
               <p class="blockquote__text">Integer dignissim, augue tempus ultricies luctus, quam dui laoreet sem, non dictum odio nisi quis massa. Morbi pulvinar odio eget aliquam facilisis. Tempus ultricies luctus, quam dui laoreet sem, non dictum odio nisi quis massa. Morbi pulvinar odio eget aliquam facilisis.</p>
+              <div class="blockquote__img"><img src="img/slider/sliderImg1.jpg" alt="Slide 1"/></div>
             </blockquote>
           </div>
           <div class="about-slider__item">
@@ -781,7 +829,8 @@
                   <use xlink:href="#quote"></use>
                 </svg>
               </div>
-              <p class="blockquote__text"></p>
+              <p class="blockquote__text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, ab?</p>
+              <div class="blockquote__img"><img src="img/slider/sliderImg2.jpg" alt="Slide 2"/></div>
             </blockquote>
           </div>
           <div class="about-slider__item">
@@ -791,7 +840,8 @@
                   <use xlink:href="#quote"></use>
                 </svg>
               </div>
-              <p class="blockquote__text"></p>
+              <p class="blockquote__text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, sit quibusdam culpa molestiae assumenda dolores provident illo soluta cumque molestias alias non iusto voluptate rem.</p>
+              <div class="blockquote__img"><img src="img/slider/sliderImg3.jpg" alt="Slide 3"/></div>
             </blockquote>
           </div>
           <div class="about-slider__item">
@@ -801,13 +851,15 @@
                   <use xlink:href="#quote"></use>
                 </svg>
               </div>
-              <p class="blockquote__text"></p>
+              <p class="blockquote__text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo placeat aperiam itaque in ab quidem ducimus facilis saepe laboriosam distinctio.</p>
+              <div class="blockquote__img"><img src="img/slider/sliderImg4.jpg" alt="Slide 4"/></div>
             </blockquote>
           </div>
         </div>
       </div>
     </section>
     <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/slick.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

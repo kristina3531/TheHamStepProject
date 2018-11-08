@@ -1,32 +1,38 @@
 $(document).ready(function() {
 
-	//Add class active in header-menu
-	$(".header-menu__link, .tabBtn").on("click", function() {
-		$(".header-menu__link.active, .tabBtn.active").removeClass("active");
+	//Add class active in header-menu and tabs
+	$(".header-menu__link, .tabBtn-1, .tabBtn-2").on("click", function() {
+		$(".header-menu__link.active, .tabBtn-1.active, .tabBtn-2.active").removeClass("active");
 		$(this).toggleClass("active");
+	});
+
+	//Show search-bar
+	$(".header-form__search").on("click", function(){
+		$(".header-form").toggleClass("open");
 	});
 
 //    $('tabBtn:not(:first)').hide();
 //    $('tabContent:not(:first)').hide();
 	//Tabs
-	$(".tabBtn").on("click", function() {
-		$(".tabContent").hide();
-		$(".tabBtn.selected").removeClass("selected");
+	$(".tabBtn-1").on("click", function() {
+		$(".tabContent-1").hide();
+		$(".tabBtn-1.selected").removeClass("selected");
 		$(this).toggleClass("selected");
 		let tabId = $(this).attr("data-tab");
 		$("#" + tabId).show();
 	});
     
-    $(".tabBtn2").on("click", function() {
-		$(".tabContent").hide();
-		$(".tabBtn.selected").removeClass("selected");
+    $(".tabBtn-2").on("click", function() {
+		$(".tabContent-2").hide();
+		$(".tabBtn-2.selected").removeClass("selected");
 		$(this).toggleClass("selected");
 		let tabId = $(this).attr("data-tab");
 		$("#" + tabId).show();
 	});
 
-	$(".tabBtn:eq(0)").click();
-    $(".tabBtn2:eq(0)").click();
+  // $(".header-menu__link:eq(0)").click();
+	$(".tabBtn-1:eq(0)").click();
+  $(".tabBtn-2:eq(0)").click();
 
 
 	let itemSize = 12;
@@ -36,7 +42,6 @@ $(document).ready(function() {
 	function addElements() {
 		let arrayElements = [];
         														
-
 		for(let i = 0; i < itemSize; i++) {
 
 	       //Create DOMs
@@ -48,11 +53,30 @@ $(document).ready(function() {
 			if(count === maxGalleryLength) {
 				$("#loadMore").hide();
 			}
+
 		} 
 
 		$('#tab-7').append(arrayElements);
 	}
 
 	addElements();
+	$("#loadMore").on("click", addElements);
 	
+	//Slick-slider
+	$(".about-slider").slick({
+		slidesToShow: 1,
+	  slidesToScroll: 1,
+	  arrows: true,
+	  fade: true,
+	  asNavFor: '.slider-nav'
+	});
+	$('.slider-nav').slick({
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  asNavFor: '.about-slider',
+  dots: true,
+  centerMode: true,
+  focusOnSelect: true
+});
+
 });

@@ -1,0 +1,22 @@
+.about
+	+bg
+	position: relative
+	&::after
+		+overlay(#2e4a5b, .5)
+	.container
+		height: 100vh
+		+flexColumnCenter
+		border: 1px solid red
+		position: relative
+		z-index: 3
+	.section-heading
+		color: #fff
+	&-slider
+		&__item
+			text-align: center
+			.blockquote
+				&__icon
+					.blockqouteIcon
+						width: rem(44px)
+						height: rem(30px)
+						fill: $accentColor

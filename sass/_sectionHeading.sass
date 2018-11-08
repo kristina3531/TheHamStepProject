@@ -1,0 +1,25 @@
+//Section-heading
+.section-heading
+	margin-bottom: rem(70px)
+	padding-bottom: rem(30px)
+	color: $headingColor
+	font-family: $fontFamily
+	text-align: center
+	font-size: 36px
+	font-weight: 400
+	line-height: 40px
+	position: relative
+	&::before, &::after
+		content: ''
+		position: absolute
+		display: block
+		width: 76px
+		height: 1px
+		background-color: $accentColor
+		left: 50%
+		transform: translateX(-50%)
+	&::before
+		bottom: -4px
+		margin-left: 12px
+	&::after
+		bottom: 0
