@@ -718,7 +718,7 @@ html(lang="en")
 				h3.section-heading What People Say About the Ham
 				.about-slider
 
-					.about-slider__item
+					.about-slider__item#slideTab-1(style="display: none;")
 						blockquote.about-slider__blockquote
 							.about-slider__icon
 								svg.blockqouteIcon
@@ -730,7 +730,7 @@ html(lang="en")
 							.about-slider__person-img
 								img(src="img/slider/sliderImg1.jpg" alt="Slide 1")
 
-					.about-slider__item
+					.about-slider__item#slideTab-2(style="display: none;")
 						blockquote.about-slider__blockquote
 							.about-slider__icon
 								svg.blockqouteIcon
@@ -742,7 +742,7 @@ html(lang="en")
 							.about-slider__person-img
 								img(src="img/slider/sliderImg2.jpg" alt="Slide 2")
 
-					.about-slider__item
+					.about-slider__item#slideTab-3(style="display: none;")
 						blockquote.about-slider__blockquote
 							.about-slider__icon
 								svg.blockqouteIcon
@@ -754,7 +754,7 @@ html(lang="en")
 							.about-slider__person-img
 								img(src="img/slider/sliderImg3.jpg" alt="Slide 3")
 
-					.about-slider__item
+					.about-slider__item#slideTab-4(style="display: none;")
 						blockquote.about-slider__blockquote
 							.about-slider__icon
 								svg.blockqouteIcon
@@ -773,16 +773,16 @@ html(lang="en")
 							use(xlink:href='#arrowLeft')
 						
 					.about-slider__nav-list
-						.about-slider__nav-item
+						.about-slider__nav-item(data-tab="slideTab-1")
 							.about-slider__nav-img
-									img(src="img/slider/sliderImg1.jpg" alt="Slide-nav 1")
-						.about-slider__nav-item
+								img(src="img/slider/sliderImg1.jpg" alt="Slide-nav 1")
+						.about-slider__nav-item(data-tab="slideTab-2")
 							.about-slider__nav-img
-									img(src="img/slider/sliderImg2.jpg" alt="Slide-nav 2")
-						.about-slider__nav-item
+								img(src="img/slider/sliderImg2.jpg" alt="Slide-nav 2")
+						.about-slider__nav-item(data-tab="slideTab-3")
 							.about-slider__nav-img
-									img(src="img/slider/sliderImg3.jpg" alt="Slide-nav 3")
-						.about-slider__nav-item
+								img(src="img/slider/sliderImg3.jpg" alt="Slide-nav 3")
+						.about-slider__nav-item(data-tab="slideTab-4")
 							.about-slider__nav-img
 								img(src="img/slider/sliderImg4.jpg" alt="Slide-nav 4")
 													
@@ -793,5 +793,5 @@ html(lang="en")
 
 
 		script(src="js/jquery-3.3.1.slim.min.js")
-		script(src="js/slick.min.js")
+		//script(src="js/slick.min.js")
 		script(src="js/main.js")
