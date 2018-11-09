@@ -107,36 +107,6 @@ a {
   clear: both;
   visibility: hidden; }
 
-@font-face {
-  font-family: 'Montserrat';
-  src: local("Montserrat Hairline"), local("Montserrat-Hairline"), url("../fonts/montserrathairline.woff2") format("woff2"), url("../fonts/montserrathairline.woff") format("woff"), url("../fonts/montserrathairline.ttf") format("truetype");
-  font-weight: 100;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Montserrat';
-  src: local("Montserrat Light"), local("Montserrat-Light"), url("../fonts/montserratlight.woff2") format("woff2"), url("../fonts/montserratlight.woff") format("woff"), url("../fonts/montserratlight.ttf") format("truetype");
-  font-weight: 300;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Montserrat';
-  src: local("Montserrat"), local("Montserrat-Regular"), url("../fonts/montserrat.woff2") format("woff2"), url("../fonts/montserrat.woff") format("woff"), url("../fonts/montserrat.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Montserrat';
-  src: local("Montserrat Bold"), local("Montserrat-Bold"), url("../fonts/montserratbold.woff2") format("woff2"), url("../fonts/montserratbold.woff") format("woff"), url("../fonts/montserratbold.ttf") format("truetype");
-  font-weight: 700;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Montserrat';
-  src: local("Montserrat Black"), local("Montserrat-Black"), url("../fonts/montserratblack.woff2") format("woff2"), url("../fonts/montserratblack.woff") format("woff"), url("../fonts/montserratblack.ttf") format("truetype");
-  font-weight: 900;
-  font-style: normal; }
-
 /* Slider */
 .slick-slider {
   position: relative;
@@ -215,13 +185,13 @@ a {
 
 /* Slider */
 .slick-loading .slick-list {
-  background: #fff url("../ajax-loader.gif") center center no-repeat; }
+  background: #fff url("./ajax-loader.gif") center center no-repeat; }
 
 /* Icons */
 @font-face {
   font-family: "slick";
-  src: url("../fonts/../fonts/slick.eot");
-  src: url("../fonts/../fonts/slick.eot?#iefix") format("embedded-opentype"), url("../fonts/../fonts/slick.woff") format("woff"), url("../fonts/../fonts/slick.ttf") format("truetype"), url("../fonts/../fonts/slick.svg#slick") format("svg");
+  src: url("./fonts/slick.eot");
+  src: url("./fonts/slick.eot?#iefix") format("embedded-opentype"), url("./fonts/slick.woff") format("woff"), url("./fonts/slick.ttf") format("truetype"), url("./fonts/slick.svg#slick") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -342,6 +312,36 @@ a {
     .slick-dots li.slick-active button:before {
       color: black;
       opacity: 0.75; }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: local("Montserrat Hairline"), local("Montserrat-Hairline"), url("../fonts/montserrathairline.woff2") format("woff2"), url("../fonts/montserrathairline.woff") format("woff"), url("../fonts/montserrathairline.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: local("Montserrat Light"), local("Montserrat-Light"), url("../fonts/montserratlight.woff2") format("woff2"), url("../fonts/montserratlight.woff") format("woff"), url("../fonts/montserratlight.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: local("Montserrat"), local("Montserrat-Regular"), url("../fonts/montserrat.woff2") format("woff2"), url("../fonts/montserrat.woff") format("woff"), url("../fonts/montserrat.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: local("Montserrat Bold"), local("Montserrat-Bold"), url("../fonts/montserratbold.woff2") format("woff2"), url("../fonts/montserratbold.woff") format("woff"), url("../fonts/montserratbold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: local("Montserrat Black"), local("Montserrat-Black"), url("../fonts/montserratblack.woff2") format("woff2"), url("../fonts/montserratblack.woff") format("woff"), url("../fonts/montserratblack.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal; }
 
 .btn, .btn-load {
   display: inline-block;
@@ -986,6 +986,75 @@ a {
     z-index: 3; }
   .about .section-heading {
     color: #fff; }
+  .about-slider {
+    max-width: 68.75rem; }
+    .about-slider__nav {
+      border: 1px solid red;
+      max-width: 37.5rem; }
+    .about-slider__item {
+      text-align: center; }
+    .about-slider__icon .blockqouteIcon {
+      width: 2.75rem;
+      height: 1.875rem;
+      fill: #18cfab; }
+    .about-slider__quote {
+      margin: 2.1875rem 0;
+      font-size: 1rem;
+      line-height: 1.875rem;
+      font-weight: 300;
+      color: #bbb; }
+    .about-slider__person-name {
+      font-size: 1rem;
+      line-height: 1.6875rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #18cfab; }
+    .about-slider__person-job {
+      font-size: 0.8125rem;
+      font-weight: 300;
+      color: #bbb; }
+    .about-slider__person-img, .about-slider__nav-img {
+      border-radius: 50%;
+      border: 0.625rem solid rgba(31, 218, 181, 0.2); }
+      .about-slider__person-img img, .about-slider__nav-img img {
+        display: block;
+        width: 100%;
+        border: 0.25rem solid #18cfab;
+        border-radius: 50%; }
+    .about-slider__person-img {
+      margin: 1.5625rem auto 0;
+      width: 10.25rem;
+      height: 10.25rem; }
+    .about-slider__btn {
+      width: 1.9375rem;
+      height: 1.9375rem;
+      border: 1px solid #bbb;
+      outline: none;
+      background-color: transparent;
+      line-height: 1.9375rem;
+      -webkit-transition: all .3s;
+      -o-transition: all .3s;
+      transition: all .3s; }
+      .about-slider__btn .arrowLeft, .about-slider__btn .arrowRight {
+        width: 0.5rem;
+        height: 0.8125rem;
+        fill: #bbb;
+        -webkit-transition: all .3s;
+        -o-transition: all .3s;
+        transition: all .3s; }
+      .about-slider__btn:hover {
+        border-color: #18cfab;
+        background-color: #18cfab; }
+        .about-slider__btn:hover .arrowLeft, .about-slider__btn:hover .arrowRight {
+          fill: #fff; }
+    .about-slider__nav-img {
+      cursor: pointer;
+      margin: 0 0.9375rem;
+      width: 4.3125rem;
+      height: 4.3125rem;
+      border-width: 0.25rem; }
+      .about-slider__nav-img img {
+        border-width: 0.125rem; }
 
 body {
   font: 0.875rem/1.5625rem Montserrat, Arial, sans-serif;
