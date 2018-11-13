@@ -153,7 +153,7 @@
     <header class="header">
       <div class="container"><a class="header-logo" href="index.html"><img class="header-logo__img" src="img/logo.png" alt="The Ham"/></a>
         <nav class="header-menu">
-          <div class="header-menu__item"><a class="header-menu__link active" href="#">home</a></div>
+          <div class="header-menu__item"><a class="header-menu__link" href="#">home</a></div>
           <div class="header-menu__item"><a class="header-menu__link" href="#">about</a></div>
           <div class="header-menu__item"><a class="header-menu__link" href="#">skills</a></div>
           <div class="header-menu__item"><a class="header-menu__link" href="#">service</a></div>
@@ -267,7 +267,7 @@
             <button class="tabBtn-2" data-tab="tab-11">Wordpress</button>
           </div>
           <div class="tabs-wrap__content">
-            <div class="tabContent-2 work-gallery" id="tab-7"></div>
+            <div class="tabContent-2 work-gallery" id="tab-7" style="display: none;"></div>
             <div class="tabContent-2 work-gallery" id="tab-8" style="display: none;">
               <div class="work-gallery__item">
                 <div class="work-gallery__img"><img src="img/graphic-design/graphic-design1.jpg" alt="Graphic Design"/></div>
@@ -811,7 +811,7 @@
       <div class="container">
         <h3 class="section-heading">What People Say About the Ham</h3>
         <div class="about-slider">
-          <div class="about-slider__item" id="slideTab-1" style="display: none;">
+          <div class="about-slider__item">
             <blockquote class="about-slider__blockquote">
               <div class="about-slider__icon">
                 <svg class="blockqouteIcon">
@@ -825,7 +825,7 @@
               <div class="about-slider__person-img"><img src="img/slider/sliderImg1.jpg" alt="Slide 1"/></div>
             </div>
           </div>
-          <div class="about-slider__item" id="slideTab-2" style="display: none;">
+          <div class="about-slider__item">
             <blockquote class="about-slider__blockquote">
               <div class="about-slider__icon">
                 <svg class="blockqouteIcon">
@@ -839,7 +839,7 @@
               <div class="about-slider__person-img"><img src="img/slider/sliderImg2.jpg" alt="Slide 2"/></div>
             </div>
           </div>
-          <div class="about-slider__item" id="slideTab-3" style="display: none;">
+          <div class="about-slider__item">
             <blockquote class="about-slider__blockquote">
               <div class="about-slider__icon">
                 <svg class="blockqouteIcon">
@@ -853,7 +853,7 @@
               <div class="about-slider__person-img"><img src="img/slider/sliderImg3.jpg" alt="Slide 3"/></div>
             </div>
           </div>
-          <div class="about-slider__item" id="slideTab-4" style="display: none;">
+          <div class="about-slider__item">
             <blockquote class="about-slider__blockquote">
               <div class="about-slider__icon">
                 <svg class="blockqouteIcon">
@@ -874,19 +874,11 @@
               <use xlink:href="#arrowLeft"></use>
             </svg>
           </button>
-          <div class="about-slider__nav-list">
-            <div class="about-slider__nav-item" data-tab="slideTab-1">
-              <div class="about-slider__nav-img"><img src="img/slider/sliderImg1.jpg" alt="Slide-nav 1"/></div>
-            </div>
-            <div class="about-slider__nav-item" data-tab="slideTab-2">
-              <div class="about-slider__nav-img"><img src="img/slider/sliderImg2.jpg" alt="Slide-nav 2"/></div>
-            </div>
-            <div class="about-slider__nav-item" data-tab="slideTab-3">
-              <div class="about-slider__nav-img"><img src="img/slider/sliderImg3.jpg" alt="Slide-nav 3"/></div>
-            </div>
-            <div class="about-slider__nav-item" data-tab="slideTab-4">
-              <div class="about-slider__nav-img"><img src="img/slider/sliderImg4.jpg" alt="Slide-nav 4"/></div>
-            </div>
+          <div class="about-slider__nav-imgWrap">
+            <div class="about-slider__nav-img active"><img src="img/slider/sliderImg1.jpg" alt="Slide-nav 1"/></div>
+            <div class="about-slider__nav-img"><img src="img/slider/sliderImg2.jpg" alt="Slide-nav 2"/></div>
+            <div class="about-slider__nav-img"><img src="img/slider/sliderImg3.jpg" alt="Slide-nav 3"/></div>
+            <div class="about-slider__nav-img"><img src="img/slider/sliderImg4.jpg" alt="Slide-nav 4"/></div>
           </div>
           <button class="about-slider__btn about-slider__btn-next">
             <svg class="arrowRight">
@@ -896,8 +888,33 @@
         </div>
       </div>
     </section>
+    <section class="gallery">
+      <div class="container">
+        <h3 class="section-heading">Gallery of best images</h3>
+        <div class="gallery-wrap">
+          <div class="gallary-item"><img src="img/gallery/gallery1.jpg" alt="Gallery Image 1"/></div>
+          <div class="gallary-item"><img src="img/gallery/gallery2.jpg" alt="Gallery Image 2"/></div>
+          <div class="gallary-item"><img src="img/gallery/gallery3.jpg" alt="Gallery Image 3"/></div>
+          <div class="gallary-item"><img src="img/gallery/gallery4.jpg" alt="Gallery Image 4"/></div>
+          <div class="gallary-item"><img src="img/gallery/gallery5.jpg" alt="Gallery Image 5"/></div>
+          <div class="gallary-item"><img src="img/gallery/gallery6.jpg" alt="Gallery Image 6"/></div>
+          <div class="gallary-item"><img src="img/gallery/gallery7.jpg" alt="Gallery Image 7"/></div>
+          <div class="gallary-item"><img src="img/gallery/gallery8.jpg" alt="Gallery Image 8"/></div>
+          <div class="gallary-item"><img src="img/gallery/gallery9.jpg" alt="Gallery Image 9"/></div>
+          <div class="gallary-item"><img src="img/gallery/gallery10.jpg" alt="Gallery Image 10"/></div>
+          <div class="gallary-item"><img src="img/gallery/gallery11.jpg" alt="Gallery Image 11"/></div>
+          <div class="gallary-item"><img src="img/gallery/gallery12.jpg" alt="Gallery Image 12"/></div>
+          <div class="gallary-item"><img src="img/gallery/gallery13.jpg" alt="Gallery Image 13"/></div>
+          <div class="gallary-item"><img src="img/gallery/gallery14.jpg" alt="Gallery Image 14"/></div>
+          <div class="gallary-item"><img src="img/gallery/gallery15.jpg" alt="Gallery Image 15"/></div>
+          <div class="gallary-item"><img src="img/gallery/gallery16.jpg" alt="Gallery Image 16"/></div>
+          <div class="gallary-item"><img src="img/gallery/gallery17.jpg" alt="Gallery Image 17"/></div>
+          <div class="gallary-item"><img src="img/gallery/gallery18.jpg" alt="Gallery Image 18"/></div>
+        </div>
+      </div>
+    </section>
     <script src="js/jquery-3.3.1.slim.min.js"></script>
-    <!--script(src="js/slick.min.js")-->
+    <script src="js/masonry.pkgd.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

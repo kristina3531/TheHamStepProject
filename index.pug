@@ -12,7 +12,7 @@ html(lang="en")
 					img.header-logo__img(src="img/logo.png", alt="The Ham")
 				nav.header-menu
 					.header-menu__item
-						a.header-menu__link.active(href="#") home
+						a.header-menu__link(href="#") home
 					.header-menu__item
 						a.header-menu__link(href="#") about
 					.header-menu__item
@@ -123,7 +123,7 @@ html(lang="en")
 						button.tabBtn-2(data-tab="tab-11") Wordpress
 						
 					.tabs-wrap__content
-						.tabContent-2.work-gallery#tab-7
+						.tabContent-2.work-gallery#tab-7(style="display: none;")
 							
 
 						.tabContent-2.work-gallery#tab-8(style="display: none;")
@@ -718,7 +718,7 @@ html(lang="en")
 				h3.section-heading What People Say About the Ham
 				.about-slider
 
-					.about-slider__item#slideTab-1(style="display: none;")
+					.about-slider__item
 						blockquote.about-slider__blockquote
 							.about-slider__icon
 								svg.blockqouteIcon
@@ -730,7 +730,7 @@ html(lang="en")
 							.about-slider__person-img
 								img(src="img/slider/sliderImg1.jpg" alt="Slide 1")
 
-					.about-slider__item#slideTab-2(style="display: none;")
+					.about-slider__item
 						blockquote.about-slider__blockquote
 							.about-slider__icon
 								svg.blockqouteIcon
@@ -742,7 +742,7 @@ html(lang="en")
 							.about-slider__person-img
 								img(src="img/slider/sliderImg2.jpg" alt="Slide 2")
 
-					.about-slider__item#slideTab-3(style="display: none;")
+					.about-slider__item
 						blockquote.about-slider__blockquote
 							.about-slider__icon
 								svg.blockqouteIcon
@@ -754,7 +754,7 @@ html(lang="en")
 							.about-slider__person-img
 								img(src="img/slider/sliderImg3.jpg" alt="Slide 3")
 
-					.about-slider__item#slideTab-4(style="display: none;")
+					.about-slider__item
 						blockquote.about-slider__blockquote
 							.about-slider__icon
 								svg.blockqouteIcon
@@ -772,26 +772,64 @@ html(lang="en")
 						svg.arrowLeft
 							use(xlink:href='#arrowLeft')
 						
-					.about-slider__nav-list
-						.about-slider__nav-item(data-tab="slideTab-1")
-							.about-slider__nav-img
-								img(src="img/slider/sliderImg1.jpg" alt="Slide-nav 1")
-						.about-slider__nav-item(data-tab="slideTab-2")
-							.about-slider__nav-img
-								img(src="img/slider/sliderImg2.jpg" alt="Slide-nav 2")
-						.about-slider__nav-item(data-tab="slideTab-3")
-							.about-slider__nav-img
-								img(src="img/slider/sliderImg3.jpg" alt="Slide-nav 3")
-						.about-slider__nav-item(data-tab="slideTab-4")
-							.about-slider__nav-img
-								img(src="img/slider/sliderImg4.jpg" alt="Slide-nav 4")
+					.about-slider__nav-imgWrap
+						.about-slider__nav-img.active
+							img(src="img/slider/sliderImg1.jpg" alt="Slide-nav 1")
+						.about-slider__nav-img
+							img(src="img/slider/sliderImg2.jpg" alt="Slide-nav 2")
+						.about-slider__nav-img
+							img(src="img/slider/sliderImg3.jpg" alt="Slide-nav 3")
+						.about-slider__nav-img
+							img(src="img/slider/sliderImg4.jpg" alt="Slide-nav 4")
 													
 	
 					button.about-slider__btn.about-slider__btn-next
 						svg.arrowRight
 							use(xlink:href='#arrowRight')
 
+		section.gallery
+			.container
+				h3.section-heading Gallery of best images
+				.gallery-wrap
+					.gallary-item
+						img(src="img/gallery/gallery1.jpg", alt="Gallery Image 1")
+					.gallary-item
+						img(src="img/gallery/gallery2.jpg", alt="Gallery Image 2")
+					.gallary-item
+						img(src="img/gallery/gallery3.jpg", alt="Gallery Image 3")
+					.gallary-item
+						img(src="img/gallery/gallery4.jpg", alt="Gallery Image 4")
+					.gallary-item
+						img(src="img/gallery/gallery5.jpg", alt="Gallery Image 5")
+					.gallary-item
+						img(src="img/gallery/gallery6.jpg", alt="Gallery Image 6")
+					.gallary-item
+						img(src="img/gallery/gallery7.jpg", alt="Gallery Image 7")
+					.gallary-item
+						img(src="img/gallery/gallery8.jpg", alt="Gallery Image 8")
+					.gallary-item
+						img(src="img/gallery/gallery9.jpg", alt="Gallery Image 9")
+					.gallary-item
+						img(src="img/gallery/gallery10.jpg", alt="Gallery Image 10")
+					.gallary-item
+						img(src="img/gallery/gallery11.jpg", alt="Gallery Image 11")
+					.gallary-item
+						img(src="img/gallery/gallery12.jpg", alt="Gallery Image 12")
+					.gallary-item
+						img(src="img/gallery/gallery13.jpg", alt="Gallery Image 13")
+					.gallary-item
+						img(src="img/gallery/gallery14.jpg", alt="Gallery Image 14")
+					.gallary-item
+						img(src="img/gallery/gallery15.jpg", alt="Gallery Image 15")
+					.gallary-item
+						img(src="img/gallery/gallery16.jpg", alt="Gallery Image 16")
+					.gallary-item
+						img(src="img/gallery/gallery17.jpg", alt="Gallery Image 17")
+					.gallary-item
+						img(src="img/gallery/gallery18.jpg", alt="Gallery Image 18")
+
+
 
 		script(src="js/jquery-3.3.1.slim.min.js")
-		//script(src="js/slick.min.js")
+		script(src="js/masonry.pkgd.min.js")
 		script(src="js/main.js")
