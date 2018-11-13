@@ -787,6 +787,7 @@ a {
     fill: #18cfab; }
   .about-slider__quote {
     margin: 2.1875rem 0;
+    min-height: 7.5rem;
     font-size: 1rem;
     line-height: 1.875rem;
     font-weight: 300;
@@ -866,8 +867,13 @@ a {
 .gallery {
   padding: 5.9375rem 0 5rem;
   background-color: #f8fcfe; }
-  .gallery-item img {
-    display: block; }
+  .gallery-item {
+    margin-bottom: 1.25rem; }
+    .gallery-item-2 {
+      margin-bottom: 0.1875rem; }
+    .gallery-item img {
+      display: block;
+      cursor: pointer; }
 
 body {
   font: 0.875rem/1.5625rem Montserrat, Arial, sans-serif;

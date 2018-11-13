@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		title The Ham
+		link(rel="stylesheet", href="css/main.css")
+	body
+		include img/icons/sprite.svg
+		header.header
+			.container
+				a.header-logo(href="index.html")
+					img.header-logo__img(src="img/logo.png", alt="The Ham")
+				nav.header-menu
+					.header-menu__item
+						a.header-menu__link(href="#") home
+					.header-menu__item
+						a.header-menu__link(href="#") about
+					.header-menu__item
+						a.header-menu__link(href="#") skills
+					.header-menu__item
+						a.header-menu__link(href="#") service
+					.header-menu__item
+						a.header-menu__link(href="#") work
+					.header-menu__item
+						a.header-menu__link(href="#") testimonial
+					.header-menu__item
+						a.header-menu__link(href="#") blog
+					.header-menu__item
+						a.header-menu__link(href="#") team
+					.header-menu__item
+						a.header-menu__link(href="#") contact
+				form.header-form
+					input.header-form__text(placeholder="Search")
+					button.header-form__search
+						svg.search
+							use(xlink:href='#search')
+						svg.close
+							use(xlink:href='#close')
+	
+		main.main(style="background: url(img/main-bg.jpg)")
+			.container
+				.main-container
+					p.main-descr The Ham is 
+						span Wordpress theme
+					h.main-heading we are creative
+					p.main-text Just Buy And Enjoy These Awesome Features
+					.btn-wrap
+						a.btn(href="#") explore now
+						a.btn.btn--blue(href="#") purchase now
+		
+		section.advantages
+			.advantages-item
+				svg.touch
+					use(xlink:href="#touch")
+
+				span.advantages-item__descr Different theme option
+			.advantages-item
+				svg.diamond
+					use(xlink:href='#diamond')
+				span.advantages-item__descr fully customizable
+			.advantages-item
+				svg.light
+					use(xlink:href='#light')
+				span.advantages-item__descr unlimited support
+			.advantages-item
+				svg.devices
+					use(xlink:href='#devices')
+				span.advantages-item__descr responsive all device
+
+		section.services
+			.container
+				h3.section-heading Our Services
+				
+				.tabs-wrap
+					.tabs-wrap__buttons
+						button.tabBtn-1(data-tab="tab-1") Web Design
+						button.tabBtn-1(data-tab="tab-2") Graphic Design
+						button.tabBtn-1(data-tab="tab-3") Online Support
+						button.tabBtn-1(data-tab="tab-4") App Design 
+						button.tabBtn-1(data-tab="tab-5") Online Marketing
+						button.tabBtn-1(data-tab="tab-6") Seo Service
+					.tabs-wrap__content
+						.tabContent-1#tab-1(style="display: none;")
+							.tabContent-1__img
+								img(src="img/web-design/web-design-8.jpg", alt="Web Design")
+							p.tabContent-1__descr Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						.tabContent-1#tab-2(style="display: none;")
+							.tabContent-1__img
+								img(src="img/web-design/web-design1.jpg", alt="Web Design")
+							p.tabContent-1__descr Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						.tabContent-1#tab-3(style="display: none;")
+							.tabContent-1__img
+								img(src="img/web-design/web-design2.jpg", alt="Web Design")
+							p.tabContent-1__descr Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						.tabContent-1#tab-4(style="display: none;")
+							.tabContent-1__img
+								img(src="img/web-design/web-design3.jpg", alt="Web Design")
+							p.tabContent-1__descr Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						.tabContent-1#tab-5(style="display: none;")
+							.tabContent-1__img
+								img(src="img/web-design/web-design4.jpg", alt="Web Design")
+							p.tabContent-1__descr Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						.tabContent-1#tab-6(style="display: none;")
+							.tabContent-1__img
+								img(src="img/web-design/web-design5.jpg", alt="Web Design")
+							p.tabContent-1__descr Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+
+		section.ready(style="background: url(img/ready-bg.jpg)")
+			.container
+				h2.ready__heading Everything is ready. just buy and install now
+				p.ready__descr Smooth reliable, responsive ready, perfect portfolio, unique blog layout and many many options for you
+				a.btn(href="#") purchase now
+
+		section.work
+			.container
+				h3.section-heading Our Amazing Work
+				.tabs-wrap
+					.tabs-wrap__buttons
+						button.tabBtn-2(data-tab="tab-7") All
+						button.tabBtn-2(data-tab="tab-8") Graphic Design
+						button.tabBtn-2(data-tab="tab-9") Web Design
+						button.tabBtn-2(data-tab="tab-10") Landing Pages
+						button.tabBtn-2(data-tab="tab-11") Wordpress
+						
+					.tabs-wrap__content
+						.tabContent-2.work-gallery#tab-7(style="display: none;")
+							
+
+						.tabContent-2.work-gallery#tab-8(style="display: none;")
+							.work-gallery__item
+								.work-gallery__img
+									img(src="img/graphic-design/graphic-design1.jpg", alt="Graphic Design")
+								.work-gallery__info
+									.work-gallery__icons
+										a.work-gallery__icon(href="#")
+											svg.link
+												//- use(xlink:href='img/icons/icons.svg#link')
+												use(xlink:href='#link')
+										a.work-gallery__icon(href="#")
+											svg.search
+												//- use(xlink:href='img/icons/icons.svg#search')
+												use(xlink:href='#search')
+									h5.work-gallery__heading creative design
+									span.work-gallery__cath Graphic Design
+
+							.work-gallery__item
+								.work-gallery__img
+									img(src="img/graphic-design/graphic-design2.jpg", alt="Graphic Design")
+								.work-gallery__info
+									.work-gallery__icons
+										a(href="#").work-gallery__icon
+											svg.link
+												use(xlink:href='#link')
+										a(href="#").work-gallery__icon
+											svg.search
+												use(xlink:href='#search')
+									h5.work-gallery__heading creative design
+									span.work-gallery__cath Graphic Design
+
+							.work-gallery__item
+								.work-gallery__img
+									img(src="img/graphic-design/graphic-design3.jpg", alt="Graphic Design")
+								.work-gallery__info
+									.work-gallery__icons
+										a(href="#").work-gallery__icon
+											svg.link
+												use(xlink:href='#link')
+										a(href="#").work-gallery__icon
+											svg.search
+												use(xlink:href='#search')
+									h5.work-gallery__heading creative design
+									span.work-gallery__cath Graphic Design
+
+							.work-gallery__item
+								.work-gallery__img
+									img(src="img/graphic-design/graphic-design4.jpg", alt="Graphic Design")
+								.work-gallery__info
+									.work-gallery__icons
+										a(href="#").work-gallery__icon
+											svg.link
+												use(xlink:href='#link')
+										a(href="#").work-gallery__icon
+											svg.search
+												use(xlink:href='#search')
+									h5.work-gallery__heading creative design
+									span.work-gallery__cath Graphic Design
+
+							.work-gallery__item
+								.work-gallery__img
+									img(src="img/graphic-design/graphic-design5.jpg", alt="Graphic Design")
+								.work-gallery__info
+									.work-gallery__icons
+										a(href="#").work-gallery__icon
+											svg.link
+												use(xlink:href='#link')
+										a(href="#").work-gallery__icon
+											svg.search
+												use(xlink:href='#search')
+									h5.work-gallery__heading creative design
+									span.work-gallery__cath Graphic Design
+
+							.work-gallery__item
+								.work-gallery__img
+									img(src="img/graphic-design/graphic-design6.jpg", alt="Graphic Design")
+								.work-gallery__info
+									.work-gallery__icons
+										a(href="#").work-gallery__icon
+											svg.link
+												use(xlink:href='#link')
+										a(href="#").work-gallery__icon
+											svg.search
+												use(xlink:href='#search')
+									h5.work-gallery__heading creative design
+									span.work-gallery__cath Graphic Design
+
+							.work-gallery__item
+								.work-gallery__img
+									img(src="img/graphic-design/graphic-design7.jpg", alt="Graphic Design")
+								.work-gallery__info
+									.work-gallery__icons
+										a(href="#").work-gallery__icon
+											svg.link
+												use(xlink:href='#link')
+										a(href="#").work-gallery__icon
+											svg.search
+												use(xlink:href='#search')
+									h5.work-gallery__heading creative design
+									span.work-gallery__cath Graphic Design
+
+							.work-gallery__item
+								.work-gallery__img
+									img(src="img/graphic-design/graphic-design8.jpg", alt="Graphic Design")
+								.work-gallery__info
+									.work-gallery__icons
+										a(href="#").work-gallery__icon
+											svg.link
+												use(xlink:href='#link')
+										a(href="#").work-gallery__icon
+											svg.search
+												use(xlink:href='#search')
+									h5.work-gallery__heading creative design
+									span.work-gallery__cath Graphic Design
+
+							.work-gallery__item
+								.work-gallery__img
+									img(src="img/graphic-design/graphic-design9.jpg", alt="Graphic Design")
+								.work-gallery__info
+									.work-gallery__icons
+										a(href="#").work-gallery__icon
+											svg.link
+												use(xlink:href='#link')
+										a(href="#").work-gallery__icon
+											svg.search
+												use(xlink:href='#search')
+									h5.work-gallery__heading creative design
+									span.work-gallery__cath Graphic Design
+
+							.work-gallery__item
+								.work-gallery__img
+									img(src="img/graphic-design/graphic-design10.jpg", alt="Graphic Design")
+								.work-gallery__info
+									.work-gallery__icons
+										a(href="#").work-gallery__icon
+											svg.link
+												use(xlink:href='#link')
+										a(href="#").work-gallery__icon
+											svg.search
+												use(xlink:href='#search')
+									h5.work-gallery__heading creative design
+									span.work-gallery__cath Graphic Design
+
+						.tabContent-2.work-gallery#tab-9(style="display: none;")
+							.work-gallery__item
+								.work-gallery__img
+									img(src="img/web-design/web-design1.jpg", alt="Web Design")
+								.work-gallery__info
+									.work-gallery__icons
+										a(href="#").work-gallery__icon
+											svg.link
+												use(xlink:href='#link')
+										a(href="#").work-gallery__icon
+											svg.search
+												use(xlink:href='#search')
+									h5.work-gallery__heading creative design
+									span.work-gallery__cath Web Design
+							.work-gallery__item
+								.work-gallery__img
+									img(src="img/web-design/web-design2.jpg", alt="Web Design")
+								.work-gallery__info
+									.work-gallery__icons
+										a(href="#").work-gallery__icon
+											svg.link
+												use(xlink:href='#link')
+										a(href="#").work-gallery__icon
+											svg.search
+												use(xlink:href='#search')
+									h5.work-gallery__heading creative design
+									span.work-gallery__cath Web Design
+							.work-gallery__item
+								.work-gallery__img
+									img(src="img/web-design/web-design3.jpg", alt="Web Design")
+								.work-gallery__info
+									.work-gallery__icons
+										a(href="#").work-gallery__icon
+											svg.link
+												use(xlink:href='#link')
+										a(href="#").work-gallery__icon
+											svg.search
+												use(xlink:href='#search')
+									h5.work-gallery__heading creative design
+									span.work-gallery__cath Web Design
+							.work-gallery__item
+								.work-gallery__img
+									img(src="img/web-design/web-design4.jpg", alt="Web Design")
+								.work-gallery__info
+									.work-gallery__icons
+										a(href="#").work-gallery__icon
+											svg.link
+												use(xlink:href='#link')
+										a(href="#").work-gallery__icon
+											svg.search
+												use(xlink:href='#search')
+									h5.work-gallery__heading creative design
+									span.work-gallery__cath Web Design
+							.work-gallery__item
+								.work-gallery__img
+									img(src="img/web-design/web-design5.jpg", alt="Web Design")
+								.work-gallery__info
+									.work-gallery__icons
+										a(href="#").work-gallery__icon
+											svg.link
+												use(xlink:href='#link')
+										a(href="#").work-gallery__icon
+											svg.search
+												use(xlink:href='#search')
+									h5.work-gallery__heading creative design
+									span.work-gallery__cath Web Design
+							.work-gallery__item
+								.work-gallery__img
+									img(src="img/web-design/web-design6.jpg", alt="Web Design")
+								.work-gallery__info
+									.work-gallery__icons
+										a(href="#").work-gallery__icon
+											svg.link
+												use(xlink:href='#link')
+										a(href="#").work-gallery__icon
+											svg.search
+												use(xlink:href='#search')
+									h5.work-gallery__heading creative design
+									span.work-gallery__cath Web Design
+									
+							.work-gallery__item
+								.work-gallery__img
+									img(src="img/web-design/web-design7.jpg", alt="Web Design")
+								.work-gallery__info
+									.work-gallery__icons
+										a(href="#").work-gallery__icon
+											svg.link
+												use(xlink:href='#link')
+										a(href="#").work-gallery__icon
+											svg.search
+												use(xlink:href='#search')
+									h5.work-gallery__heading creative design
+									span.work-gallery__cath Web Design
+									
+						.tabContent-2.work-gallery#tab-10(style="display: none;")
+						
+							.work-gallery__item
+								.work-gallery__img
+									img(src="img/landing-page/landing-page1.jpg", alt="Landing Page")
+								.work-gallery__info
+									.work-gallery__icons
+										a(href="#").work-gallery__icon
+											svg.link
+												use(xlink:href='#link')
+										a(href="#").work-gallery__icon
+											svg.search
+												use(xlink:href='#search')
+									h5.work-gallery__heading creative design
+									span.work-gallery__cath Landing Page
+									
+							.work-gallery__item
+								.work-gallery__img
+									img(src="img/landing-page/landing-page2.jpg", alt="Landing Page")
+								.work-gallery__info
+									.work-gallery__icons
+										a(href="#").work-gallery__icon
+											svg.link
+												use(xlink:href='#link')
+										a(href="#").work-gallery__icon
+											svg.search
+												use(xlink:href='#search')
+									h5.work-gallery__heading creative design
+									span.work-gallery__cath Landing Page
+									
+							.work-gallery__item
+								.work-gallery__img
+									img(src="img/landing-page/landing-page3.jpg", alt="Landing Page")
+								.work-gallery__info
+									.work-gallery__icons
+										a(href="#").work-gallery__icon
+											svg.link
+												use(xlink:href='#link')
+										a(href="#").work-gallery__icon
+											svg.search
+												use(xlink:href='#search')
+									h5.work-gallery__heading creative design
+									span.work-gallery__cath Landing Page
+									
+							.work-gallery__item
+								.work-gallery__img
+									img(src="img/landing-page/landing-page4.jpg", alt="Landing Page")
+								.work-gallery__info
+									.work-gallery__icons
+										a(href="#").work-gallery__icon
+											svg.link
+												use(xlink:href='#link')
+										a(href="#").work-gallery__icon
+											svg.search
+												use(xlink:href='#search')
+									h5.work-gallery__heading creative design
+									span.work-gallery__cath Landing Page
+									
+							.work-gallery__item
+								.work-gallery__img
+									img(src="img/landing-page/landing-page5.jpg", alt="Landing Page")
+								.work-gallery__info
+									.work-gallery__icons
+										a(href="#").work-gallery__icon
+											svg.link
+												use(xlink:href='#link')
+										a(href="#").work-gallery__icon
+											svg.search
+												use(xlink:href='#search')
+									h5.work-gallery__heading creative design
+									span.work-gallery__cath Landing Page
+									
+							.work-gallery__item
+								.work-gallery__img
+									img(src="img/landing-page/landing-page6.jpg", alt="Landing Page")
+								.work-gallery__info
+									.work-gallery__icons
+										a(href="#").work-gallery__icon
+											svg.link
+												use(xlink:href='#link')
+										a(href="#").work-gallery__icon
+											svg.search
+												use(xlink:href='#search')
+									h5.work-gallery__heading creative design
+									span.work-gallery__cath Landing Page
+									
+							.work-gallery__item
+								.work-gallery__img
+									img(src="img/landing-page/landing-page7.jpg", alt="Landing Page")
+								.work-gallery__info
+									.work-gallery__icons
+										a(href="#").work-gallery__icon
+											svg.link
+												use(xlink:href='#link')
+										a(href="#").work-gallery__icon
+											svg.search
+												use(xlink:href='#search')
+									h5.work-gallery__heading creative design
+									span.work-gallery__cath Landing Page
+
+						.tabContent-2.work-gallery#tab-11(style="display: none;")
+							.work-gallery__item
+								.work-gallery__img
+									img(src="img/wordpress/wordpress1.jpg", alt="Wordpress")
+								.work-gallery__info
+									.work-gallery__icons
+										a(href="#").work-gallery__icon
+											svg.link
+												use(xlink:href='#link')
+										a(href="#").work-gallery__icon
+											svg.search
+												use(xlink:href='#search')
+									h5.work-gallery__heading creative design
+									span.work-gallery__cath Landing Page
+									
+							.work-gallery__item
+								.work-gallery__img
+									img(src="img/wordpress/wordpress2.jpg", alt="Wordpress")
+								.work-gallery__info
+									.work-gallery__icons
+										a(href="#").work-gallery__icon
+											svg.link
+												use(xlink:href='#link')
+										a(href="#").work-gallery__icon
+											svg.search
+												use(xlink:href='#search')
+									h5.work-gallery__heading creative design
+									span.work-gallery__cath Landing Page
+									
+							.work-gallery__item
+								.work-gallery__img
+									img(src="img/wordpress/wordpress3.jpg", alt="Wordpress")
+								.work-gallery__info
+									.work-gallery__icons
+										a(href="#").work-gallery__icon
+											svg.link
+												use(xlink:href='#link')
+										a(href="#").work-gallery__icon
+											svg.search
+												use(xlink:href='#search')
+									h5.work-gallery__heading creative design
+									span.work-gallery__cath Landing Page
+									
+							.work-gallery__item
+								.work-gallery__img
+									img(src="img/wordpress/wordpress4.jpg", alt="Wordpress")
+								.work-gallery__info
+									.work-gallery__icons
+										a(href="#").work-gallery__icon
+											svg.link
+												use(xlink:href='#link')
+										a(href="#").work-gallery__icon
+											svg.search
+												use(xlink:href='#search')
+									h5.work-gallery__heading creative design
+									span.work-gallery__cath Landing Page
+									
+							.work-gallery__item
+								.work-gallery__img
+									img(src="img/wordpress/wordpress5.jpg", alt="Wordpress")
+								.work-gallery__info
+									.work-gallery__icons
+										a(href="#").work-gallery__icon
+											svg.link
+												use(xlink:href='#link')
+										a(href="#").work-gallery__icon
+											svg.search
+												use(xlink:href='#search')
+									h5.work-gallery__heading creative design
+									span.work-gallery__cath Landing Page
+									
+							.work-gallery__item
+								.work-gallery__img
+									img(src="img/wordpress/wordpress6.jpg", alt="Wordpress")
+								.work-gallery__info
+									.work-gallery__icons
+										a(href="#").work-gallery__icon
+											svg.link
+												use(xlink:href='#link')
+										a(href="#").work-gallery__icon
+											svg.search
+												use(xlink:href='#search')
+									h5.work-gallery__heading creative design
+									span.work-gallery__cath Landing Page
+									
+							.work-gallery__item
+								.work-gallery__img
+									img(src="img/wordpress/wordpress7.jpg", alt="Wordpress")
+								.work-gallery__info
+									.work-gallery__icons
+										a(href="#").work-gallery__icon
+											svg.link
+												use(xlink:href='#link')
+										a(href="#").work-gallery__icon
+											svg.search
+												use(xlink:href='#search')
+									h5.work-gallery__heading creative design
+									span.work-gallery__cath Landing Page
+									
+							.work-gallery__item
+								.work-gallery__img
+									img(src="img/wordpress/wordpress8.jpg", alt="Wordpress")
+								.work-gallery__info
+									.work-gallery__icons
+										a(href="#").work-gallery__icon
+											svg.link
+												use(xlink:href='#link')
+										a(href="#").work-gallery__icon
+											svg.search
+												use(xlink:href='#search')
+									h5.work-gallery__heading creative design
+									span.work-gallery__cath Landing Page
+									
+							.work-gallery__item
+								.work-gallery__img
+									img(src="img/wordpress/wordpress9.jpg", alt="Wordpress")
+								.work-gallery__info
+									.work-gallery__icons
+										a(href="#").work-gallery__icon
+											svg.link
+												use(xlink:href='#link')
+										a(href="#").work-gallery__icon
+											svg.search
+												use(xlink:href='#search')
+									h5.work-gallery__heading creative design
+									span.work-gallery__cath Landing Page
+							.work-gallery__item
+								.work-gallery__img
+									img(src="img/wordpress/wordpress10.jpg", alt="Wordpress")
+								
+				button#loadMore.btn-load Load more
+
+		section.news
+			.container
+				h3.section-heading Breaking News
+				.news-list
+
+					.news-list__item
+						.news-list__img
+							a.news-list__link(href="#")
+								img(src="img/news/news1.jpg", alt="Image")
+							span.news-list__date
+								span.news-list__number 12
+								span.news-list__month Feb
+						.news-list__info
+							h6.news-list__heading Amazing Image Post
+							a.news-list__comments(href="#") By admin | 2 comment
+
+					.news-list__item
+						.news-list__img
+							a.news-list__link(href="#")
+								img(src="img/news/news2.jpg", alt="Image")
+							span.news-list__date
+								span.news-list__number 12
+								span.news-list__month Feb
+						.news-list__info
+							h6.news-list__heading Amazing Image Post
+							a.news-list__comments(href="#") By admin | 2 comment
+					.news-list__item
+
+						.news-list__img
+							a.news-list__link(href="#")
+								img(src="img/news/news3.jpg", alt="Image")
+							span.news-list__date
+								span.news-list__number 12
+								span.news-list__month Feb
+						.news-list__info
+							h6.news-list__heading Amazing Image Post
+							a.news-list__comments(href="#") By admin | 2 comment
+
+					.news-list__item
+						.news-list__img
+							a.news-list__link(href="#")
+								img(src="img/news/news4.jpg", alt="Image")
+							span.news-list__date
+								span.news-list__number 12
+								span.news-list__month Feb
+						.news-list__info
+							h6.news-list__heading Amazing Image Post
+							a.news-list__comments(href="#") By admin | 2 comment
+
+					.news-list__item
+						.news-list__img
+							a.news-list__link(href="#")
+								img(src="img/news/news5.jpg", alt="Image")
+							span.news-list__date
+								span.news-list__number 12
+								span.news-list__month Feb
+						.news-list__info
+							h6.news-list__heading Amazing Image Post
+							a.news-list__comments(href="#") By admin | 2 comment
+ 
+					.news-list__item
+						.news-list__img
+							a.news-list__link(href="#")
+								img(src="img/news/news6.jpg", alt="Image")
+							span.news-list__date
+								span.news-list__number 12
+								span.news-list__month Feb
+						.news-list__info
+							h6.news-list__heading Amazing Image Post
+							a.news-list__comments(href="#") By admin | 2 comment
+
+					.news-list__item
+						.news-list__img
+							a.news-list__link(href="#")
+								img(src="img/news/news7.jpg", alt="Image")
+							span.news-list__date
+								span.news-list__number 12
+								span.news-list__month Feb
+						.news-list__info
+							h6.news-list__heading Amazing Image Post
+							a.news-list__comments(href="#") By admin | 2 comment
+
+					.news-list__item
+						.news-list__img
+							a.news-list__link(href="#")
+								img(src="img/news/news8.jpg", alt="Image")
+							span.news-list__date
+								span.news-list__number 12
+								span.news-list__month Feb
+						.news-list__info
+							h6.news-list__heading Amazing Image Post
+							a.news-list__comments(href="#") By admin | 2 comment
+
+		section.about(style="background: url(img/about-bg.jpg);")
+			.container
+				h3.section-heading What People Say About the Ham
+				.about-slider
+
+					.about-slider__item
+						blockquote.about-slider__blockquote
+							.about-slider__icon
+								svg.blockqouteIcon
+									use(xlink:href='#quote')
+							p.about-slider__quote Integer dignissim, augue tempus ultricies luctus, quam dui laoreet sem, non dictum odio nisi quis massa. Morbi pulvinar odio eget aliquam facilisis. Tempus ultricies luctus, quam dui laoreet sem, non dictum odio nisi quis massa. Morbi pulvinar odio eget aliquam facilisis.
+						.about-slider__person
+							h6.about-slider__person-name Jane Johnson
+							span.about-slider__person-job Backend Developer
+							.about-slider__person-img
+								img(src="img/slider/sliderImg1.jpg" alt="Slide 1")
+
+					.about-slider__item
+						blockquote.about-slider__blockquote
+							.about-slider__icon
+								svg.blockqouteIcon
+									use(xlink:href='#quote')
+							p.about-slider__quote Tempus ultricies luctus, quam dui laoreet sem, non dictum odio nisi quis massa. Morbi pulvinar odio eget aliquam facilisis.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, fugiat, porro. Aut possimus amet, in.
+						.about-slider__person
+							h6.about-slider__person-name Peter Bracket
+							span.about-slider__person-job Web Designer
+							.about-slider__person-img
+								img(src="img/slider/sliderImg2.jpg" alt="Slide 2")
+
+					.about-slider__item
+						blockquote.about-slider__blockquote
+							.about-slider__icon
+								svg.blockqouteIcon
+									use(xlink:href='#quote')
+							p.about-slider__quote Morbi pulvinar odio eget aliquam facilisis. Morbi pulvinar odio eget aliquam facilisis. Morbi pulvinar odio eget aliquam facilisis.
+						.about-slider__person
+							h6.about-slider__person-name Hasan Ali
+							span.about-slider__person-job UX Designer
+							.about-slider__person-img
+								img(src="img/slider/sliderImg3.jpg" alt="Slide 3")
+
+					.about-slider__item
+						blockquote.about-slider__blockquote
+							.about-slider__icon
+								svg.blockqouteIcon
+									use(xlink:href='#quote')
+							p.about-slider__quote  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio possimus accusamus itaque laboriosam inventore sit. Quaerat vitae, corporis. Tenetur recusandae iure nobis natus doloribus. Maiores.
+						.about-slider__person
+							h6.about-slider__person-name Jannet Nickson
+							span.about-slider__person-job ceo
+							.about-slider__person-img
+								img(src="img/slider/sliderImg4.jpg" alt="Slide 4")
+								
+				.about-slider__nav
+					
+					button.about-slider__btn.about-slider__btn-prev
+						svg.arrowLeft
+							use(xlink:href='#arrowLeft')
+						
+					.about-slider__nav-imgWrap
+						.about-slider__nav-img.active
+							img(src="img/slider/sliderImg1.jpg" alt="Slide-nav 1")
+						.about-slider__nav-img
+							img(src="img/slider/sliderImg2.jpg" alt="Slide-nav 2")
+						.about-slider__nav-img
+							img(src="img/slider/sliderImg3.jpg" alt="Slide-nav 3")
+						.about-slider__nav-img
+							img(src="img/slider/sliderImg4.jpg" alt="Slide-nav 4")
+													
+	
+					button.about-slider__btn.about-slider__btn-next
+						svg.arrowRight
+							use(xlink:href='#arrowRight')
+
+		section.gallery
+			.container
+				h3.section-heading Gallery of best images
+				.gallery-wrap
+					.gallery-item
+						img(src="img/gallery/gallery1.jpg", alt="Gallery Image 1")
+					.gallery-item
+						img(src="img/gallery/gallery2.jpg", alt="Gallery Image 2")
+					.gallery-item
+						img(src="img/gallery/gallery3.jpg", alt="Gallery Image 3")
+					.gallery-item
+						img(src="img/gallery/gallery4.jpg", alt="Gallery Image 4")
+					.gallery-item
+						img(src="img/gallery/gallery5.jpg", alt="Gallery Image 5")
+					.gallery-item
+						img(src="img/gallery/gallery6.jpg", alt="Gallery Image 6")
+					.gallery-item
+						img(src="img/gallery/gallery7.jpg", alt="Gallery Image 7")
+					.gallery-item
+						img(src="img/gallery/gallery8.jpg", alt="Gallery Image 8")
+					.gallery-item
+						img(src="img/gallery/gallery9.jpg", alt="Gallery Image 9")
+					.gallery-item
+						img(src="img/gallery/gallery10.jpg", alt="Gallery Image 10")
+					.gallery-item
+						img(src="img/gallery/gallery11.jpg", alt="Gallery Image 11")
+					.gallery-item
+						img(src="img/gallery/gallery12.jpg", alt="Gallery Image 12")
+					.gallery-item
+						img(src="img/gallery/gallery13.jpg", alt="Gallery Image 13")
+					.gallery-item
+						img(src="img/gallery/gallery14.jpg", alt="Gallery Image 14")
+					.gallery-item
+						img(src="img/gallery/gallery15.jpg", alt="Gallery Image 15")
+					.gallery-item
+						img(src="img/gallery/gallery16.jpg", alt="Gallery Image 16")
+					.gallery-item
+						img(src="img/gallery/gallery17.jpg", alt="Gallery Image 17")
+					.gallery-item
+						img(src="img/gallery/gallery18.jpg", alt="Gallery Image 18")
+
+
+		script(src="js/jquery-3.3.1.min.js")
+		script(src="js/masonry.pkgd.min.js")
+		script(src="js/main.js")

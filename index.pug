@@ -116,14 +116,14 @@ html(lang="en")
 				h3.section-heading Our Amazing Work
 				.tabs-wrap
 					.tabs-wrap__buttons
-						button.tabBtn-2(data-tab="tab-7") All
-						button.tabBtn-2(data-tab="tab-8") Graphic Design
-						button.tabBtn-2(data-tab="tab-9") Web Design
-						button.tabBtn-2(data-tab="tab-10") Landing Pages
-						button.tabBtn-2(data-tab="tab-11") Wordpress
+						button.tabBtn-2(data-filter="all") All
+						button.tabBtn-2(data-filter="graphic-design") Graphic Design
+						button.tabBtn-2(data-filter="web-design") Web Design
+						button.tabBtn-2(data-filter="landing-page") Landing Pages
+						button.tabBtn-2(data-filter="wordpress") Wordpress
 						
 					.tabs-wrap__content
-						.tabContent-2.work-gallery#tab-7(style="display: none;")
+						.tabContent-2.work-gallery#tab-7(data-category="all")
 							
 
 						.tabContent-2.work-gallery#tab-8(style="display: none;")
@@ -269,34 +269,6 @@ html(lang="en")
 									h5.work-gallery__heading creative design
 									span.work-gallery__cath Graphic Design
 
-							.work-gallery__item
-								.work-gallery__img
-									img(src="img/graphic-design/graphic-design11.jpg", alt="Graphic Design")
-								.work-gallery__info
-									.work-gallery__icons
-										a(href="#").work-gallery__icon
-											svg.link
-												use(xlink:href='#link')
-										a(href="#").work-gallery__icon
-											svg.search
-												use(xlink:href='#search')
-									h5.work-gallery__heading creative design
-									span.work-gallery__cath Graphic Design
-
-							.work-gallery__item
-								.work-gallery__img
-									img(src="img/graphic-design/graphic-design12.jpg", alt="Graphic Design")
-								.work-gallery__info
-									.work-gallery__icons
-										a(href="#").work-gallery__icon
-											svg.link
-												use(xlink:href='#link')
-										a(href="#").work-gallery__icon
-											svg.search
-												use(xlink:href='#search')
-									h5.work-gallery__heading creative design
-									span.work-gallery__cath Graphic Design
-
 						.tabContent-2.work-gallery#tab-9(style="display: none;")
 							.work-gallery__item
 								.work-gallery__img
@@ -376,6 +348,7 @@ html(lang="en")
 												use(xlink:href='#search')
 									h5.work-gallery__heading creative design
 									span.work-gallery__cath Web Design
+									
 							.work-gallery__item
 								.work-gallery__img
 									img(src="img/web-design/web-design7.jpg", alt="Web Design")
@@ -389,21 +362,9 @@ html(lang="en")
 												use(xlink:href='#search')
 									h5.work-gallery__heading creative design
 									span.work-gallery__cath Web Design
-							.work-gallery__item
-								.work-gallery__img
-									img(src="img/web-design/web-design-8.jpg", alt="Web Design")
-								.work-gallery__info
-									.work-gallery__icons
-										a(href="#").work-gallery__icon
-											svg.link
-												use(xlink:href='#link')
-										a(href="#").work-gallery__icon
-											svg.search
-												use(xlink:href='#search')
-									h5.work-gallery__heading creative design
-									span.work-gallery__cath Web Design
-
+									
 						.tabContent-2.work-gallery#tab-10(style="display: none;")
+						
 							.work-gallery__item
 								.work-gallery__img
 									img(src="img/landing-page/landing-page1.jpg", alt="Landing Page")
@@ -417,6 +378,7 @@ html(lang="en")
 												use(xlink:href='#search')
 									h5.work-gallery__heading creative design
 									span.work-gallery__cath Landing Page
+									
 							.work-gallery__item
 								.work-gallery__img
 									img(src="img/landing-page/landing-page2.jpg", alt="Landing Page")
@@ -430,6 +392,7 @@ html(lang="en")
 												use(xlink:href='#search')
 									h5.work-gallery__heading creative design
 									span.work-gallery__cath Landing Page
+									
 							.work-gallery__item
 								.work-gallery__img
 									img(src="img/landing-page/landing-page3.jpg", alt="Landing Page")
@@ -443,6 +406,7 @@ html(lang="en")
 												use(xlink:href='#search')
 									h5.work-gallery__heading creative design
 									span.work-gallery__cath Landing Page
+									
 							.work-gallery__item
 								.work-gallery__img
 									img(src="img/landing-page/landing-page4.jpg", alt="Landing Page")
@@ -456,6 +420,7 @@ html(lang="en")
 												use(xlink:href='#search')
 									h5.work-gallery__heading creative design
 									span.work-gallery__cath Landing Page
+									
 							.work-gallery__item
 								.work-gallery__img
 									img(src="img/landing-page/landing-page5.jpg", alt="Landing Page")
@@ -469,6 +434,7 @@ html(lang="en")
 												use(xlink:href='#search')
 									h5.work-gallery__heading creative design
 									span.work-gallery__cath Landing Page
+									
 							.work-gallery__item
 								.work-gallery__img
 									img(src="img/landing-page/landing-page6.jpg", alt="Landing Page")
@@ -482,6 +448,7 @@ html(lang="en")
 												use(xlink:href='#search')
 									h5.work-gallery__heading creative design
 									span.work-gallery__cath Landing Page
+									
 							.work-gallery__item
 								.work-gallery__img
 									img(src="img/landing-page/landing-page7.jpg", alt="Landing Page")
@@ -510,6 +477,7 @@ html(lang="en")
 												use(xlink:href='#search')
 									h5.work-gallery__heading creative design
 									span.work-gallery__cath Landing Page
+									
 							.work-gallery__item
 								.work-gallery__img
 									img(src="img/wordpress/wordpress2.jpg", alt="Wordpress")
@@ -523,6 +491,7 @@ html(lang="en")
 												use(xlink:href='#search')
 									h5.work-gallery__heading creative design
 									span.work-gallery__cath Landing Page
+									
 							.work-gallery__item
 								.work-gallery__img
 									img(src="img/wordpress/wordpress3.jpg", alt="Wordpress")
@@ -536,6 +505,7 @@ html(lang="en")
 												use(xlink:href='#search')
 									h5.work-gallery__heading creative design
 									span.work-gallery__cath Landing Page
+									
 							.work-gallery__item
 								.work-gallery__img
 									img(src="img/wordpress/wordpress4.jpg", alt="Wordpress")
@@ -549,6 +519,7 @@ html(lang="en")
 												use(xlink:href='#search')
 									h5.work-gallery__heading creative design
 									span.work-gallery__cath Landing Page
+									
 							.work-gallery__item
 								.work-gallery__img
 									img(src="img/wordpress/wordpress5.jpg", alt="Wordpress")
@@ -562,6 +533,7 @@ html(lang="en")
 												use(xlink:href='#search')
 									h5.work-gallery__heading creative design
 									span.work-gallery__cath Landing Page
+									
 							.work-gallery__item
 								.work-gallery__img
 									img(src="img/wordpress/wordpress6.jpg", alt="Wordpress")
@@ -575,6 +547,7 @@ html(lang="en")
 												use(xlink:href='#search')
 									h5.work-gallery__heading creative design
 									span.work-gallery__cath Landing Page
+									
 							.work-gallery__item
 								.work-gallery__img
 									img(src="img/wordpress/wordpress7.jpg", alt="Wordpress")
@@ -588,6 +561,7 @@ html(lang="en")
 												use(xlink:href='#search')
 									h5.work-gallery__heading creative design
 									span.work-gallery__cath Landing Page
+									
 							.work-gallery__item
 								.work-gallery__img
 									img(src="img/wordpress/wordpress8.jpg", alt="Wordpress")
@@ -601,6 +575,7 @@ html(lang="en")
 												use(xlink:href='#search')
 									h5.work-gallery__heading creative design
 									span.work-gallery__cath Landing Page
+									
 							.work-gallery__item
 								.work-gallery__img
 									img(src="img/wordpress/wordpress9.jpg", alt="Wordpress")
@@ -791,45 +766,44 @@ html(lang="en")
 			.container
 				h3.section-heading Gallery of best images
 				.gallery-wrap
-					.gallary-item
+					.gallery-item
 						img(src="img/gallery/gallery1.jpg", alt="Gallery Image 1")
-					.gallary-item
+					.gallery-item
 						img(src="img/gallery/gallery2.jpg", alt="Gallery Image 2")
-					.gallary-item
+					.gallery-item
 						img(src="img/gallery/gallery3.jpg", alt="Gallery Image 3")
-					.gallary-item
+					.gallery-item
 						img(src="img/gallery/gallery4.jpg", alt="Gallery Image 4")
-					.gallary-item
+					.gallery-item
 						img(src="img/gallery/gallery5.jpg", alt="Gallery Image 5")
-					.gallary-item
+					.gallery-item
 						img(src="img/gallery/gallery6.jpg", alt="Gallery Image 6")
-					.gallary-item
+					.gallery-item
 						img(src="img/gallery/gallery7.jpg", alt="Gallery Image 7")
-					.gallary-item
+					.gallery-item
 						img(src="img/gallery/gallery8.jpg", alt="Gallery Image 8")
-					.gallary-item
+					.gallery-item
 						img(src="img/gallery/gallery9.jpg", alt="Gallery Image 9")
-					.gallary-item
+					.gallery-item
 						img(src="img/gallery/gallery10.jpg", alt="Gallery Image 10")
-					.gallary-item
+					.gallery-item
 						img(src="img/gallery/gallery11.jpg", alt="Gallery Image 11")
-					.gallary-item
+					.gallery-item
 						img(src="img/gallery/gallery12.jpg", alt="Gallery Image 12")
-					.gallary-item
+					.gallery-item
 						img(src="img/gallery/gallery13.jpg", alt="Gallery Image 13")
-					.gallary-item
+					.gallery-item
 						img(src="img/gallery/gallery14.jpg", alt="Gallery Image 14")
-					.gallary-item
+					.gallery-item
 						img(src="img/gallery/gallery15.jpg", alt="Gallery Image 15")
-					.gallary-item
+					.gallery-item
 						img(src="img/gallery/gallery16.jpg", alt="Gallery Image 16")
-					.gallary-item
+					.gallery-item
 						img(src="img/gallery/gallery17.jpg", alt="Gallery Image 17")
-					.gallary-item
+					.gallery-item
 						img(src="img/gallery/gallery18.jpg", alt="Gallery Image 18")
 
 
-
-		script(src="js/jquery-3.3.1.slim.min.js")
+		script(src="js/jquery-3.3.1.min.js")
 		script(src="js/masonry.pkgd.min.js")
 		script(src="js/main.js")
