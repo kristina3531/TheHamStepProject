@@ -1,4 +1,56 @@
 .services
 	padding: rem(80px) 0 rem(100px)	
-	.tabs-wrap__content
+
+.selected
+	display: block
+
+.tabs-wrap
+	&__content
 		margin-top: rem(25px)
+	&__buttons, &__content, .tabContent
+		display: flex
+	&__buttons
+		justify-content: center
+		.tabBtn
+			font-size: rem(16px)
+			color: #717171
+			border: 1px solid $borderColor
+			background-color: transparent
+			position: relative
+			transition: all .3s
+
+			width: rem(193px)
+			height: rem(73px)
+			background-color: $sectionBg
+			transition: all .3s
+			&:not(:first-child)
+				border-left: none
+			&:hover, &.selected
+				background-color: $accentColor
+				color: #fff
+				&::after
+					+arrow(25, 14, $accentColor, bottom)
+			&::after
+				content: ''
+				position: absolute
+				bottom: rem(-14px)
+				left: 50%
+				margin-left: rem(-12.5px)
+				+arrow(25, 14, transparent, bottom)
+				transition: all .3s			
+	&__content
+		.tabContent
+			&__img
+				width: rem(195px)
+				height: rem(140px)
+				overflow: hidden
+				flex: none
+				margin-right: rem(20px)
+				img
+					width: 100%
+					transition: all .5s
+				&:hover
+					img
+						transform: rotate(10deg) scale(1.1)
+		.tabContent-2
+			flex-wrap: wrap

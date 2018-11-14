@@ -1,14 +1,17 @@
 .work
-	padding: rem(100px) 0
+	padding-top: rem(100px)
 	background-color: $sectionBg
 	border-bottom: 1px solid $borderColor
-	text-align: center		
-	.tabs-wrap__content
-		margin: rem(70px) 0
+	text-align: center
+	.container
+		padding-bottom: rem(100px)
+		border: 1px solid red
+		position: relative	
 	&-gallery
-		justify-content: center
+		height: 100%
 		&__item
 			width: 25%
+			height: rem(208px)
 			position: relative
 			overflow: hidden
 			img
@@ -59,3 +62,36 @@
 			color: #8a8a8a
 			font-size: rem(12px)
 			font-weight: 300
+	.btn-load
+		margin-top: rem(70px)
+
+.filtr
+	&-buttons
+		display: flex
+		justify-content: center
+		margin-bottom: rem(70px)
+	&__btn
+		font-size: rem(16px)
+		color: #717171
+		border: 1px solid $borderColor
+		background-color: transparent
+		position: relative
+		transition: all .3s
+		padding: rem(22px) rem(25px)
+		background-color: #fff
+		&:hover, &.active
+			color: $accentColor
+			&::before
+				width: 100%
+		&::before
+			content: ''
+			width: 0
+			height: 2px
+			background-color: $accentColor
+			position: absolute
+			top: 0
+			left: 0
+			transition: all .3s
+		&:not(:first-child)
+			border-left: none
+	
