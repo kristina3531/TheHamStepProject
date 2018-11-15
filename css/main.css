@@ -921,3 +921,17 @@ body {
   max-width: 1200px;
   padding: 0 15px;
   margin: 0 auto; }
+
+.gallery {
+  padding: 5.9375rem 0 5rem;
+  background-color: #f8fcfe; }
+  .gallery-wrap {
+    border: 1px solid blue; }
+  .gallery-item {
+    border: 1px solid red;
+    margin-bottom: 1.25rem; }
+    .gallery-item-2 {
+      margin-bottom: 0.1875rem; }
+    .gallery-item img {
+      display: block;
+      cursor: pointer; }

@@ -106,5 +106,11 @@ $(document).ready(function() {
         $(".about-slider__item").eq(currentIndex + 1).fadeIn('slow');
     });
 
+	//Masonry gallery
+	$('.gallery-wrap').masonry({
+  // options
+  itemSelector: '.gallery-item',
+  columnWidth: '.gallery-item'
+});
 
 });
