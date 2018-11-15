@@ -258,14 +258,16 @@
     <section class="work">
       <div class="container">
         <h3 class="section-heading">Our Amazing Work</h3>
-        <div class="filtr-buttons">
-          <button class="filtr__btn active" data-filter="all">All</button>
-          <button class="filtr__btn" data-filter="graphic-design">Graphic Design</button>
-          <button class="filtr__btn" data-filter="web-design">Web Design</button>
-          <button class="filtr__btn" data-filter="landing-page">Landing Pages</button>
-          <button class="filtr__btn" data-filter="wordpress">Wordpress</button>
+        <div class="filtr-container">
+          <div class="filtr-category">
+            <button class="filtr__btn" id="all">All</button>
+            <button class="filtr__btn" id="graphic-design">Graphic Design</button>
+            <button class="filtr__btn" id="web-design">Web Design</button>
+            <button class="filtr__btn" id="landing-page">Landing Pages</button>
+            <button class="filtr__btn" id="wordpress">Wordpress</button>
+          </div>
+          <div class="filtr-content work-gallery"></div>
         </div>
-        <div class="filtr-container work-gallery"></div>
         <button class="btn-load" id="loadMore">Load more</button>
       </div>
     </section>
@@ -431,7 +433,6 @@
       </div>
     </section>
     <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/jquery.filterizr.min.js"></script>
     <script src="js/masonry.pkgd.min.js"></script>
     <script src="js/main.js"></script>
   </body>

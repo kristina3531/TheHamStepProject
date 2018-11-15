@@ -14,6 +14,9 @@ $(document).ready(function() {
         $(this).toggleClass("active");
     });
 
+    $(".header-menu__link:eq(0)").click();
+
+
     //Tabs
     $(".tabBtn").on("click", function() {
         $(".tabContent").hide();
@@ -30,18 +33,18 @@ $(document).ready(function() {
     let count = 0;
 
     function addElements() {
-				let arrayElements = [];
+        let arrayElements = [];
         for (let i = 0; i < itemSize; i++) {
 
             //Create DOMs
 
-            let galleryGraphicDesign = $(`<div class="work-gallery__item filtr-item" data-category="all,graphic-design"><div class="work-gallery__img"><img src = "img/graphic-design/graphic-design${count + 1}.jpg" alt="Image${count + 1}"></div><div class="work-gallery__info"><div class="work-gallery__icons"><a href="#" class="work-gallery__icon"><svg class="link"><use xlink:href="#link"></svg></a><a href="#" class="work-gallery__icon"><svg class="search"><use xlink:href="#search"></svg></a></div><h5 class="work-gallery__heading">creative design</h5><span class="work-gallery__cath">Graphic Design</span></div></div>`);
+            let galleryGraphicDesign = $(`<div class="work-gallery__item graphic-design"><div class="work-gallery__img"><img src ="img/graphic-design/graphic-design${count + 1}.jpg" alt="Image${count + 1}"></div><div class="work-gallery__info"><div class="work-gallery__icons"><a href="#" class="work-gallery__icon"><svg class="link"><use xlink:href="#link"></svg></a><a href="#" class="work-gallery__icon"><svg class="search"><use xlink:href="#search"></svg></a></div><h5 class="work-gallery__heading">creative design</h5><span class="work-gallery__cath">Graphic Design</span></div></div>`);
 
-            let galleryWebDesign = $(`<div class="work-gallery__item filtr-item" data-category="all,web-design"><div class="work-gallery__img"><img src = "img/web-design/web-design${count + 1}.jpg" alt="Image${count + 1}"></div><div class="work-gallery__info"><div class="work-gallery__icons"><a href="#" class="work-gallery__icon"><svg class="link"><use xlink:href="#link"></svg></a><a href="#" class="work-gallery__icon"><svg class="search"><use xlink:href="#search"></svg></a></div><h5 class="work-gallery__heading">creative design</h5><span class="work-gallery__cath">Web Design</span></div></div>`);
+            let galleryWebDesign = $(`<div class="work-gallery__item web-design"><div class="work-gallery__img"><img src = "img/web-design/web-design${count + 1}.jpg" alt="Image${count + 1}"></div><div class="work-gallery__info"><div class="work-gallery__icons"><a href="#" class="work-gallery__icon"><svg class="link"><use xlink:href="#link"></svg></a><a href="#" class="work-gallery__icon"><svg class="search"><use xlink:href="#search"></svg></a></div><h5 class="work-gallery__heading">creative design</h5><span class="work-gallery__cath">Web Design</span></div></div>`);
 
-            let galleryLandingPagedesign = $(`<div class="work-gallery__item filtr-item" data-category="all,landing-page"><div class="work-gallery__img"><img src = "img/landing-page/landing-page${count + 1}.jpg" alt="Image${count + 1}"></div><div class="work-gallery__info"><div class="work-gallery__icons"><a href="#" class="work-gallery__icon"><svg class="link"><use xlink:href="#link"></svg></a><a href="#" class="work-gallery__icon"><svg class="search"><use xlink:href="#search"></svg></a></div><h5 class="work-gallery__heading">creative design</h5><span class="work-gallery__cath">Landing Page</span></div></div>`);
+            let galleryLandingPagedesign = $(`<div class="work-gallery__item landing-page"><div class="work-gallery__img"><img src = "img/landing-page/landing-page${count + 1}.jpg" alt="Image${count + 1}"></div><div class="work-gallery__info"><div class="work-gallery__icons"><a href="#" class="work-gallery__icon"><svg class="link"><use xlink:href="#link"></svg></a><a href="#" class="work-gallery__icon"><svg class="search"><use xlink:href="#search"></svg></a></div><h5 class="work-gallery__heading">creative design</h5><span class="work-gallery__cath">Landing Page</span></div></div>`);
 
-            let galleryWordpressdesign = $(`<div class="work-gallery__item filtr-item" data-category="all,wordpress"><div class="work-gallery__img"><img src = "img/wordpress/wordpress${count + 1}.jpg" alt="Image${count + 1}"></div><div class="work-gallery__info"><div class="work-gallery__icons"><a href="#" class="work-gallery__icon"><svg class="link"><use xlink:href="#link"></svg></a><a href="#" class="work-gallery__icon"><svg class="search"><use xlink:href="#search"></svg></a></div><h5 class="work-gallery__heading">creative design</h5><span class="work-gallery__cath">Wordpress</span></div></div>`);
+            let galleryWordpressdesign = $(`<div class="work-gallery__item wordpress"><div class="work-gallery__img"><img src = "img/wordpress/wordpress${count + 1}.jpg" alt="Image${count + 1}"></div><div class="work-gallery__info"><div class="work-gallery__icons"><a href="#" class="work-gallery__icon"><svg class="link"><use xlink:href="#link"></svg></a><a href="#" class="work-gallery__icon"><svg class="search"><use xlink:href="#search"></svg></a></div><h5 class="work-gallery__heading">creative design</h5><span class="work-gallery__cath">Wordpress</span></div></div>`);
 
             arrayElements.push(galleryGraphicDesign, galleryWebDesign, galleryLandingPagedesign, galleryWordpressdesign);
             count++;
@@ -58,10 +61,20 @@ $(document).ready(function() {
     $("#loadMore").on("click", addElements);
 
     //Filters
-    var filterizd = $('.filtr-container').filterizr({});
-    $(".filtr__btn").on("click", function() {
-        $(".filtr__btn").removeClass("active");
-        $(this).addClass("active");
+    $(".filtr__btn").click(function() {
+        let category = $(this).attr("id");
+        if (category == "all") {
+            $(".work-gallery__item").addClass("hide");
+            setTimeout(function() {
+              $(".work-gallery__item").removeClass("hide");
+            }, 500);
+        }
+        else {
+          $(".work-gallery__item").addClass("hide");
+          setTimeout(function() {
+              $("." + category).removeClass("hide");
+            }, 500);
+        }
     });
 
     //Slider

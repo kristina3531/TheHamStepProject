@@ -115,14 +115,15 @@ html(lang="en")
 			.container
 				h3.section-heading Our Amazing Work
 
-				.filtr-buttons
-					button.filtr__btn.active(data-filter="all") All
-					button.filtr__btn(data-filter="graphic-design") Graphic Design
-					button.filtr__btn(data-filter="web-design") Web Design
-					button.filtr__btn(data-filter="landing-page") Landing Pages
-					button.filtr__btn(data-filter="wordpress") Wordpress
-						
-				.filtr-container.work-gallery
+				.filtr-container
+					.filtr-category
+						button.filtr__btn#all All
+						button.filtr__btn#graphic-design Graphic Design
+						button.filtr__btn#web-design Web Design
+						button.filtr__btn#landing-page Landing Pages
+						button.filtr__btn#wordpress Wordpress
+							
+					.filtr-content.work-gallery
 								
 				button#loadMore.btn-load Load more
 
@@ -336,6 +337,5 @@ html(lang="en")
 
 
 		script(src="js/jquery-3.3.1.min.js")
-		script(src="js/jquery.filterizr.min.js")
 		script(src="js/masonry.pkgd.min.js")
 		script(src="js/main.js")
