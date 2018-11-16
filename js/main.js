@@ -76,41 +76,34 @@ $(document).ready(function() {
             }, 500);
         }
     });
-
-    //Slider
-    $(".about-slider__item").not(":first").hide();
-    $(".about-slider__nav-img").click(function() {
-        let currentIndex = $(".about-slider__nav-img.active").index();
-        $(".about-slider__item").eq(currentIndex).hide();
-        $(".about-slider__nav-img.active").removeClass("active");
-        $(this).addClass("active");
-        $(".about-slider__item").eq($(this).index()).fadeIn('slow');
-    });
-
-    //Slider buttons
-    $('.about-slider__btn-prev').click(function() {
-        let currentIndex = $('.about-slider__nav-img.active').index();
-        $(".about-slider__item").eq(currentIndex).hide();
-        $('.about-slider__nav-img.active').removeClass('active');
-        $('.about-slider__nav-img').eq(currentIndex - 1).addClass('active');
-        $(".about-slider__item").eq(currentIndex - 1).fadeIn('slow');
-    });
-
-    $('.about-slider__btn-next').click(function() {
-        let currentIndex = $('.about-slider__nav-img.active').index();
-
-        $(".about-slider__item").eq(currentIndex).hide();
-        currentIndex = currentIndex === $('.about-slider__nav-img').length - 1 ? -1 : $('.about-slider__nav-img.active').index();
-        $('.about-slider__nav-img.active').removeClass('active');
-        $('.about-slider__nav-img').eq(currentIndex + 1).addClass('active');
-        $(".about-slider__item").eq(currentIndex + 1).fadeIn('slow');
-    });
+    
+    //Slick slider
+    $('.about-slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: '.about-slider__nav-imgWrap'
+      });
+      $('.about-slider__nav-imgWrap').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        asNavFor: '.about-slider',
+        centerMode: true,
+        focusOnSelect: true
+      });
+   
 
 	//Masonry gallery
 	$('.gallery-wrap').masonry({
-  // options
-  itemSelector: '.gallery-item',
-  columnWidth: '.gallery-item'
-});
+        // options
+        itemSelector: '.gallery-item',
+        columnWidth: 370,
+        fitWidth: true
+    });
+    $('.gallery-wrap-2').masonry({
+        itemSelector: '.gallery-item-2',
+        columnWidth: 370
+    });
 
 });

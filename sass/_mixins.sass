@@ -17,13 +17,15 @@
     border-color: transparent $bg transparent transparent
 
 =overlay($bgColor, $opacity)
-	content: ''
-	position: absolute
-	left: 0
-	top: 0
-	width: 100%
-	height: 100%
-	background-color: rgba($bgColor, $opacity)
+  position: relative
+  &::after
+    content: ''
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    background-color: rgba($bgColor, $opacity)
 
 =bg($bgRepeat: no-repeat, $bgPosition: center, $bgSize: cover)
   background-repeat: $bgRepeat
