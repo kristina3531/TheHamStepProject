@@ -124,8 +124,17 @@ html(lang="en")
 						button.filtr__btn#wordpress Wordpress
 							
 					.filtr-content.work-gallery
-								
-				button#loadMore.btn-load Load more
+
+				.preload-container
+					svg.preload-icon
+						use(xlink:href='#preload')
+					.preload-dots
+						.preload-dot.mainDot
+						.preload-dot
+						.preload-dot
+						.preload-dot
+						.preload-dot
+					button#loadMore.preload-btn Load more
 
 		section.news
 			.container
@@ -222,267 +231,312 @@ html(lang="en")
 
 		section.about(style="background: url(img/about-bg.jpg);")
 			.container
-				h3.section-heading What People Say About the Ham
+				h3.section-heading What People Say About theHam
+
 				.about-slider
-
 					.about-slider__item
 						blockquote.about-slider__blockquote
-							.about-slider__icon
-								svg.blockqouteIcon
-									use(xlink:href='#quote')
-							p.about-slider__quote Integer dignissim, augue tempus ultricies luctus, quam dui laoreet sem, non dictum odio nisi quis massa. Morbi pulvinar odio eget aliquam facilisis. Tempus ultricies luctus, quam dui laoreet sem, non dictum odio nisi quis massa. Morbi pulvinar odio eget aliquam facilisis.
-						.about-slider__person
-							h6.about-slider__person-name Jane Johnson
-							span.about-slider__person-job Backend Developer
-							.about-slider__person-img
-								img(src="img/slider/sliderImg1.jpg" alt="Slide 1")
-
+							span.about-slider__icon
+								svg.quote
+									use(xlink:href="#quote")
+							p.about-slider__text Integer dignissim, augue tempus ultricies luctus, quam dui laoreet sem, non dictum odio nisi quis massa. Morbi pulvinar odio eget aliquam facilisis. Tempus ultricies luctus, quam dui laoreet sem, non dictum odio nisi quis massa. Morbi pulvinar odio eget aliquam facilisis.
+							.about-slider__person
+								.about-slider__person-name Mary Smith
+								.about-slider__person-job Backend Developer
+								.about-slider__person-img
+									img(src="img/slider/sliderImg1.jpg", alt="Person 1")
 					.about-slider__item
 						blockquote.about-slider__blockquote
-							.about-slider__icon
-								svg.blockqouteIcon
-									use(xlink:href='#quote')
-							p.about-slider__quote Tempus ultricies luctus, quam dui laoreet sem, non dictum odio nisi quis massa. Morbi pulvinar odio eget aliquam facilisis.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, fugiat, porro. Aut possimus amet, in.
-						.about-slider__person
-							h6.about-slider__person-name Peter Bracket
-							span.about-slider__person-job Web Designer
-							.about-slider__person-img
-								img(src="img/slider/sliderImg2.jpg" alt="Slide 2")
-
+							span.about-slider__icon
+								svg.quote
+									use(xlink:href="#quote") 
+							p.about-slider__text Integer dignissim, augue tempus ultricies luctus, quam dui laoreet sem, non dictum odio nisi quis massa. Morbi pulvinar odio eget aliquam facilisis. Tempus ultricies luctus, quam dui laoreet sem, non dictum odio nisi quis massa. Morbi pulvinar odio eget aliquam facilisis.
+							.about-slider__person
+								.about-slider__person-name Habib Ali
+								.about-slider__person-job Web Designer
+								.about-slider__person-img
+									img(src="img/slider/sliderImg2.jpg", alt="Person 2")
 					.about-slider__item
 						blockquote.about-slider__blockquote
-							.about-slider__icon
-								svg.blockqouteIcon
-									use(xlink:href='#quote')
-							p.about-slider__quote Morbi pulvinar odio eget aliquam facilisis. Morbi pulvinar odio eget aliquam facilisis. Morbi pulvinar odio eget aliquam facilisis.
-						.about-slider__person
-							h6.about-slider__person-name Hasan Ali
-							span.about-slider__person-job UX Designer
-							.about-slider__person-img
-								img(src="img/slider/sliderImg3.jpg" alt="Slide 3")
-
+							span.about-slider__icon
+								svg.quote
+									use(xlink:href="#quote")
+							p.about-slider__text Integer dignissim, augue tempus ultricies luctus, quam dui laoreet sem, non dictum odio nisi quis massa. Morbi pulvinar odio eget aliquam facilisis. Tempus ultricies luctus, quam dui laoreet sem, non dictum odio nisi quis massa. Morbi pulvinar odio eget aliquam facilisis.
+							.about-slider__person
+								.about-slider__person-name Hasan Ali
+								.about-slider__person-job UX Designer
+								.about-slider__person-img
+									img(src="img/slider/sliderImg3.jpg", alt="Person 3")
 					.about-slider__item
 						blockquote.about-slider__blockquote
-							.about-slider__icon
-								svg.blockqouteIcon
-									use(xlink:href='#quote')
-							p.about-slider__quote  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio possimus accusamus itaque laboriosam inventore sit. Quaerat vitae, corporis. Tenetur recusandae iure nobis natus doloribus. Maiores.
-						.about-slider__person
-							h6.about-slider__person-name Jannet Nickson
-							span.about-slider__person-job ceo
-							.about-slider__person-img
-								img(src="img/slider/sliderImg4.jpg" alt="Slide 4")
-								
+							span.about-slider__icon
+								svg.quote
+									use(xlink:href="#quote")
+							p.about-slider__text Integer dignissim, augue tempus ultricies luctus, quam dui laoreet sem, non dictum odio nisi quis massa. Morbi pulvinar odio eget aliquam facilisis. Tempus ultricies luctus, quam dui laoreet sem, non dictum odio nisi quis massa. Morbi pulvinar odio eget aliquam facilisis.
+							.about-slider__person
+								.about-slider__person-name Kitty
+								.about-slider__person-job Cat Cat
+								.about-slider__person-img
+									img(src="img/slider/Kitty.jpg", alt="Kitty")
+					.about-slider__item
+						blockquote.about-slider__blockquote
+							span.about-slider__icon
+								svg.quote
+									use(xlink:href="#quote")
+							p.about-slider__text Integer dignissim, augue tempus ultricies luctus, quam dui laoreet sem, non dictum odio nisi quis massa. Morbi pulvinar odio eget aliquam facilisis. Tempus ultricies luctus, quam dui laoreet sem, non dictum odio nisi quis massa. Morbi pulvinar odio eget aliquam facilisis.
+							.about-slider__person
+								.about-slider__person-name Jannet Johnson
+								.about-slider__person-job Frontend Developer
+								.about-slider__person-img
+									img(src="img/slider/sliderImg4.jpg", alt="Person 4")
+
 				.about-slider__nav
-					
-					button.about-slider__btn.about-slider__btn-prev
-						svg.arrowLeft
-							use(xlink:href='#arrowLeft')
-						
-					.about-slider__nav-imgWrap
-						.about-slider__nav-img.active
-							img(src="img/slider/sliderImg1.jpg" alt="Slide-nav 1")
-						.about-slider__nav-img
-							img(src="img/slider/sliderImg2.jpg" alt="Slide-nav 2")
-						.about-slider__nav-img
-							img(src="img/slider/sliderImg3.jpg" alt="Slide-nav 3")
-						.about-slider__nav-img
-							img(src="img/slider/sliderImg4.jpg" alt="Slide-nav 4")
-													
-	
-					button.about-slider__btn.about-slider__btn-next
-						svg.arrowRight
-							use(xlink:href='#arrowRight')
+
+					.about-slider__nav-img
+						img(src="img/slider/sliderImg1.jpg", alt="Person Preview 1")
+					.about-slider__nav-img
+						img(src="img/slider/sliderImg2.jpg", alt="Person Preview 2")
+					.about-slider__nav-img
+						img(src="img/slider/sliderImg3.jpg", alt="Person Preview 3")
+					.about-slider__nav-img
+						img(src="img/slider/Kitty.jpg", alt="Kitty Prewiew")
+					.about-slider__nav-img
+						img(src="img/slider/sliderImg4.jpg", alt="Person Preview 4")
 
 		section#gallery.gallery
 			.container
 				h3.section-heading Gallery of best images
-				.gallery-wrap
-					.gallery-item
-						img(src="img/gallery/gallery1.jpg", alt="Gallery Image 1")
-						.gallery-item_hover
-							.gallery-item_icons
-							span.gallery-item_icon
-								svg.search
-									use(xlink:href='#search')
-							span.gallery-item_icon
-								svg.resize
-									use(xlink:href='#resize')
-					.gallery-item
-						img(src="img/gallery/gallery2.jpg", alt="Gallery Image 2")
-						.gallery-item_hover
-							.gallery-item_icons
-								span.gallery-item_icon
-									svg.search
-										use(xlink:href='#search')
-								span.gallery-item_icon
-									svg.resize
-										use(xlink:href='#resize')
-					.gallery-item
-						img(src="img/gallery/gallery3.jpg", alt="Gallery Image 3")
-						.gallery-item_hover
-							.gallery-item_icons
-								span.gallery-item_icon
-									svg.search
-										use(xlink:href='#search')
-								span.gallery-item_icon
-									svg.resize
-										use(xlink:href='#resize')
-					.gallery-item
-						img(src="img/gallery/gallery4.jpg", alt="Gallery Image 4")
-						.gallery-item_hover
-							.gallery-item_icons
-								span.gallery-item_icon
-									svg.search
-										use(xlink:href='#search')
-								span.gallery-item_icon
-									svg.resize
-										use(xlink:href='#resize')
-					.gallery-item
-						img(src="img/gallery/gallery5.jpg", alt="Gallery Image 5")
-						.gallery-item_hover
-							.gallery-item_icons
-								span.gallery-item_icon
-									svg.search
-										use(xlink:href='#search')
-								span.gallery-item_icon
-									svg.resize
-										use(xlink:href='#resize')
-					.gallery-item
-						img(src="img/gallery/gallery6.jpg", alt="Gallery Image 6")
-						.gallery-item_hover
-							.gallery-item_icons
-								span.gallery-item_icon
-									svg.search
-										use(xlink:href='#search')
-								span.gallery-item_icon
-									svg.resize
-										use(xlink:href='#resize')
-					.gallery-item.gallery-wrap-2
-						.gallery-item-2
-							img(src="img/gallery/gallery7.jpg", alt="Gallery Image 7")
-							.gallery-item_hover
-								.gallery-item_icons
-									span.gallery-item_icon
-										svg.search
-											use(xlink:href='#search')
-									span.gallery-item_icon
-										svg.resize
-											use(xlink:href='#resize')
-						.gallery-item-2
-							img(src="img/gallery/gallery8.jpg", alt="Gallery Image 8")
-							.gallery-item_hover
-								.gallery-item_icons
-									span.gallery-item_icon
-										svg.search
-											use(xlink:href='#search')
-									span.gallery-item_icon
-										svg.resize
-											use(xlink:href='#resize')
-					.gallery-item.gallery-wrap-2
-						.gallery-item-2
-							img(src="img/gallery/gallery9.jpg", alt="Gallery Image 9")
-							.gallery-item_hover
-								.gallery-item_icons
-									span.gallery-item_icon
-										svg.search
-											use(xlink:href='#search')
-									span.gallery-item_icon
-										svg.resize
-											use(xlink:href='#resize')
-						.gallery-item-2
-							img(src="img/gallery/gallery10.jpg", alt="Gallery Image 10")
-							.gallery-item_hover
-								.gallery-item_icons
-									span.gallery-item_icon
-										svg.search
-											use(xlink:href='#search')
-									span.gallery-item_icon
-										svg.resize
-											use(xlink:href='#resize')
-						.gallery-item-2
-							img(src="img/gallery/gallery11.jpg", alt="Gallery Image 11")
-							.gallery-item_hover
-								.gallery-item_icons
-									span.gallery-item_icon
-										svg.search
-											use(xlink:href='#search')
-									span.gallery-item_icon
-										svg.resize
-											use(xlink:href='#resize')
-						.gallery-item-2
-							img(src="img/gallery/gallery12.jpg", alt="Gallery Image 12")
-							.gallery-item_hover
-								.gallery-item_icons
-									span.gallery-item_icon
-										svg.search
-											use(xlink:href='#search')
-									span.gallery-item_icon
-										svg.resize
-											use(xlink:href='#resize')
-						.gallery-item-2
-							img(src="img/gallery/gallery13.jpg", alt="Gallery Image 13")
-							.gallery-item_hover
-								.gallery-item_icons
-									span.gallery-item_icon
-										svg.search
-											use(xlink:href='#search')
-									span.gallery-item_icon
-										svg.resize
-											use(xlink:href='#resize')
-						.gallery-item-2
-							img(src="img/gallery/gallery14.jpg", alt="Gallery Image 14")
-							.gallery-item_hover
-								.gallery-item_icons
-									span.gallery-item_icon
-										svg.search
-											use(xlink:href='#search')
-									span.gallery-item_icon
-										svg.resize
-											use(xlink:href='#resize')
-						.gallery-item-2
-							img(src="img/gallery/gallery15.jpg", alt="Gallery Image 15")
-							.gallery-item_hover
-								.gallery-item_icons
-									span.gallery-item_icon
-										svg.search
-											use(xlink:href='#search')
-									span.gallery-item_icon
-										svg.resize
-											use(xlink:href='#resize')
-						.gallery-item-2
-							img(src="img/gallery/gallery16.jpg", alt="Gallery Image 16")
-							.gallery-item_hover
-								.gallery-item_icons
-									span.gallery-item_icon
-										svg.search
-											use(xlink:href='#search')
-									span.gallery-item_icon
-										svg.resize
-											use(xlink:href='#resize')
-						.gallery-item-2
-							img(src="img/gallery/gallery17.jpg", alt="Gallery Image 17")
-							.gallery-item_hover
-								.gallery-item_icons
-									span.gallery-item_icon
-										svg.search
-											use(xlink:href='#search')
-									span.gallery-item_icon
-										svg.resize
-											use(xlink:href='#resize')
-					.gallery-item
-						img(src="img/gallery/gallery18.jpg", alt="Gallery Image 18")
-						.gallery-item_hover
-							.gallery-item_icons
-								span.gallery-item_icon
-									svg.search
-										use(xlink:href='#search')
-								span.gallery-item_icon
-									svg.resize
-										use(xlink:href='#resize')
 
+				.gallery-list
+				
+					.gallery-item
+						.gallery-item__img
+							img(src="img/gallery/gallery1.jpg", alt="Best Photo 1")
+							.gallery-item__hover
+								.gallery-item__icons
+									span.gallery-item__icon
+										svg.search
+											use(xlink:href="#search")
+									span.gallery-item__icon
+										svg.resize
+											use(xlink:href="#resize")
+
+					.gallery-item
+						.gallery-item__img
+							img(src="img/gallery/gallery2.jpg", alt="Best Photo 2")
+							.gallery-item__hover
+								.gallery-item__icons
+									span.gallery-item__icon
+										svg.search
+											use(xlink:href="#search")
+									span.gallery-item__icon
+										svg.resize
+											use(xlink:href="#resize")
+					
+					.gallery-item
+	
+						.gallery-item__img
+							img(src="img/gallery/gallery7.jpg", alt="Best Photo 7")
+							.gallery-item__hover
+								.gallery-item__icons
+									span.gallery-item__icon
+										svg.search
+											use(xlink:href="#search")
+									span.gallery-item__icon
+										svg.resize
+											use(xlink:href="#resize")
+					.gallery-item
+						.gallery-item__img
+							img(src="img/gallery/gallery8.jpg", alt="Best Photo 8")
+							.gallery-item__hover
+								.gallery-item__icons
+									span.gallery-item__icon
+										svg.search
+											use(xlink:href="#search")
+									span.gallery-item__icon
+										svg.resize
+											use(xlink:href="#resize")
+					.gallery-item
+						.gallery-item__img
+							img(src="img/gallery/gallery9.jpg", alt="Best Photo 9")
+							.gallery-item__hover
+								.gallery-item__icons
+									span.gallery-item__icon
+										svg.search
+											use(xlink:href="#search")
+									span.gallery-item__icon
+										svg.resize
+											use(xlink:href="#resize")
+					.gallery-item
+						.gallery-item__img
+							img(src="img/gallery/gallery10.jpg", alt="Best Photo 10")
+							.gallery-item__hover
+								.gallery-item__icons
+									span.gallery-item__icon
+										svg.search
+											use(xlink:href="#search")
+									span.gallery-item__icon
+										svg.resize
+											use(xlink:href="#resize")
+					.gallery-item
+						.gallery-item__img
+							img(src="img/gallery/gallery11.jpg", alt="Best Photo 11")
+							.gallery-item__hover
+								.gallery-item__icons
+									span.gallery-item__icon
+										svg.search
+											use(xlink:href="#search")
+									span.gallery-item__icon
+										svg.resize
+											use(xlink:href="#resize")
+					.gallery-item
+						.gallery-item__img
+							img(src="img/gallery/gallery12.jpg", alt="Best Photo 12")
+							.gallery-item__hover
+								.gallery-item__icons
+									span.gallery-item__icon
+										svg.search
+											use(xlink:href="#search")
+									span.gallery-item__icon
+										svg.resize
+											use(xlink:href="#resize")
+					.gallery-item
+						.gallery-item__img
+							img(src="img/gallery/gallery13.jpg", alt="Best Photo 13")
+							.gallery-item__hover
+								.gallery-item__icons
+									span.gallery-item__icon
+										svg.search
+											use(xlink:href="#search")
+									span.gallery-item__icon
+										svg.resize
+											use(xlink:href="#resize")
+					.gallery-item
+						.gallery-item__img
+							img(src="img/gallery/gallery14.jpg", alt="Best Photo 14")
+							.gallery-item__hover
+								.gallery-item__icons
+									span.gallery-item__icon
+										svg.search
+											use(xlink:href="#search")
+									span.gallery-item__icon
+										svg.resize
+											use(xlink:href="#resize")
+					.gallery-item
+						.gallery-item__img
+							img(src="img/gallery/gallery15.jpg", alt="Best Photo 15")
+							.gallery-item__hover
+								.gallery-item__icons
+									span.gallery-item__icon
+										svg.search
+											use(xlink:href="#search")
+									span.gallery-item__icon
+										svg.resize
+											use(xlink:href="#resize")
+					.gallery-item
+						.gallery-item__img
+							img(src="img/gallery/gallery16.jpg", alt="Best Photo 16")
+							.gallery-item__hover
+								.gallery-item__icons
+									span.gallery-item__icon
+										svg.search
+											use(xlink:href="#search")
+									span.gallery-item__icon
+										svg.resize
+											use(xlink:href="#resize")
+					.gallery-item
+						.gallery-item__img
+							img(src="img/gallery/gallery17.jpg", alt="Best Photo 17")
+							.gallery-item__hover
+								.gallery-item__icons
+									span.gallery-item__icon
+										svg.search
+											use(xlink:href="#search")
+									span.gallery-item__icon
+										svg.resize
+											use(xlink:href="#resize")
+					
+					.gallery-item
+						.gallery-item__img
+							img(src="img/gallery/gallery3.jpg", alt="Best Photo 3")
+							.gallery-item__hover
+								.gallery-item__icons
+									span.gallery-item__icon
+										svg.search
+											use(xlink:href="#search")
+									span.gallery-item__icon
+										svg.resize
+											use(xlink:href="#resize")
+
+					.gallery-item
+						.gallery-item__img
+							img(src="img/gallery/gallery4.jpg", alt="Best Photo 4")
+							.gallery-item__hover
+								.gallery-item__icons
+									span.gallery-item__icon
+										svg.search
+											use(xlink:href="#search")
+									span.gallery-item__icon
+										svg.resize
+											use(xlink:href="#resize")
+
+					.gallery-item
+						.gallery-item__img
+							img(src="img/gallery/gallery5.jpg", alt="Best Photo 5")
+							.gallery-item__hover
+								.gallery-item__icons
+									span.gallery-item__icon
+										svg.search
+											use(xlink:href="#search")
+									span.gallery-item__icon
+										svg.resize
+											use(xlink:href="#resize")
+
+					.gallery-item
+						.gallery-item__img
+							img(src="img/gallery/gallery6.jpg", alt="Best Photo 6")
+							.gallery-item__hover
+								.gallery-item__icons
+									span.gallery-item__icon
+										svg.search
+											use(xlink:href="#search")
+									span.gallery-item__icon
+										svg.resize
+											use(xlink:href="#resize")
+
+					.gallery-item
+						.gallery-item__img
+							img(src="img/gallery/gallery18.jpg", alt="Best Photo 18")
+							.gallery-item__hover
+								.gallery-item__icons
+									span.gallery-item__icon
+										svg.search
+											use(xlink:href="#search")
+									span.gallery-item__icon
+										svg.resize
+											use(xlink:href="#resize")
+
+				.gallery-button
+					.anime-container
+						.item.item1
+						.item.item2
+						.item.item3
+						.item.item4
+					.preload-container
+						svg.preload-icon
+							use(xlink:href='#preload')
+						.preload-dots
+							.preload-dot.mainDot
+							.preload-dot
+							.preload-dot
+							.preload-dot
+							.preload-dot
+						button#loadGallery.preload-btn Load more
+					
+							
 
 		script(src="js/jquery-3.3.1.min.js")
 		script(src="js/slick.min.js")
+		script(src="js/imagesloaded.pkgd.min.js")
 		script(src="js/masonry.pkgd.min.js")
 		script(src="js/main.js")

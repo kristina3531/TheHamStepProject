@@ -1,16 +1,21 @@
 .gallery
 	padding: rem(95px) 0 rem(80px)
 	background-color: $sectionBg
-	&-wrap
+	.container
+		border: 3px solid violet
+	&-list
 		border: 1px solid blue
 	&-item
 		border: 1px solid red
-		margin-bottom: rem(20px)
-		position: relative
-		img
-			display: block
-			cursor: pointer
-		&_hover
+		// margin-bottom: rem(10px)
+		&.hidden-photo
+			display: none
+		&__img
+			position: relative
+			img
+				display: block
+				cursor: pointer
+		&__hover
 			position: absolute
 			top: 0
 			right: 0
@@ -24,9 +29,9 @@
 			transition: all .5s
 			&:hover
 				opacity: 1
-		&_icons
+		&__icons
 			display: flex
-		&_icon
+		&__icon
 			cursor: pointer
 			background-color: #14b9d5
 			width: rem(40px)
@@ -45,3 +50,7 @@
 			&:hover
 				.search, .resize
 					transform: scale(1.1)
+	&-button
+		text-align: center
+		.btn-load
+			margin-top: rem(47px)

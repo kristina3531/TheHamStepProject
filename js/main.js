@@ -16,6 +16,14 @@ $(document).ready(function() {
 
     $(".header-menu__link:eq(0)").click();
 
+    //Add class active in filtr__btn
+    $(".filtr__btn").on("click", function() {
+        $(".filtr__btn.active").removeClass("active");
+        $(this).toggleClass("active");
+    });
+
+    $(".filtr__btn:eq(0)").click();
+
 
     //Tabs
     $(".tabBtn").on("click", function() {
@@ -28,6 +36,7 @@ $(document).ready(function() {
 
     $(".tabBtn:eq(0)").click();
 
+    //Add elements on page
     let itemSize = 3;
     let maxGalleryLength = 9;
     let count = 0;
@@ -44,9 +53,9 @@ $(document).ready(function() {
 
             let galleryLandingPagedesign = $(`<div class="work-gallery__item landing-page"><div class="work-gallery__img"><img src = "img/landing-page/landing-page${count + 1}.jpg" alt="Image${count + 1}"></div><div class="work-gallery__info"><div class="work-gallery__icons"><a href="#" class="work-gallery__icon"><svg class="link"><use xlink:href="#link"></svg></a><a href="#" class="work-gallery__icon"><svg class="search"><use xlink:href="#search"></svg></a></div><h5 class="work-gallery__heading">creative design</h5><span class="work-gallery__cath">Landing Page</span></div></div>`);
 
-            let galleryWordpressdesign = $(`<div class="work-gallery__item wordpress"><div class="work-gallery__img"><img src = "img/wordpress/wordpress${count + 1}.jpg" alt="Image${count + 1}"></div><div class="work-gallery__info"><div class="work-gallery__icons"><a href="#" class="work-gallery__icon"><svg class="link"><use xlink:href="#link"></svg></a><a href="#" class="work-gallery__icon"><svg class="search"><use xlink:href="#search"></svg></a></div><h5 class="work-gallery__heading">creative design</h5><span class="work-gallery__cath">Wordpress</span></div></div>`);
+            let galleryWordpressDesign = $(`<div class="work-gallery__item wordpress"><div class="work-gallery__img"><img src = "img/wordpress/wordpress${count + 1}.jpg" alt="Image${count + 1}"></div><div class="work-gallery__info"><div class="work-gallery__icons"><a href="#" class="work-gallery__icon"><svg class="link"><use xlink:href="#link"></svg></a><a href="#" class="work-gallery__icon"><svg class="search"><use xlink:href="#search"></svg></a></div><h5 class="work-gallery__heading">creative design</h5><span class="work-gallery__cath">Wordpress</span></div></div>`);
 
-            arrayElements.push(galleryGraphicDesign, galleryWebDesign, galleryLandingPagedesign, galleryWordpressdesign);
+            arrayElements.push(galleryGraphicDesign, galleryWebDesign, galleryLandingPagedesign, galleryWordpressDesign);
             count++;
             if (count === maxGalleryLength) {
                 $("#loadMore").hide();
@@ -58,7 +67,25 @@ $(document).ready(function() {
     }
 
     addElements();
-    $("#loadMore").on("click", addElements);
+    // $("#loadMore").on("click", addElements);
+
+    //Add preload animation
+    $(".preload-btn").click(function() {
+        $(".preload-dots").addClass("active");
+        setTimeout(function() {
+            $(".preload-dots").removeClass("active");
+        }, 5000);
+    });
+
+    //Add preload images 
+
+    //First (work) section
+    $("#loadMore").on("click", function() {
+        setTimeout(function() {
+            addElements();
+        }, 5000);
+    });
+    
 
     //Filters
     $(".filtr__btn").click(function() {
@@ -67,13 +94,13 @@ $(document).ready(function() {
             $(".work-gallery__item").addClass("hide");
             setTimeout(function() {
               $(".work-gallery__item").removeClass("hide");
-            }, 500);
+            }, 300);
         }
         else {
           $(".work-gallery__item").addClass("hide");
           setTimeout(function() {
               $("." + category).removeClass("hide");
-            }, 500);
+            }, 300);
         }
     });
     
@@ -82,28 +109,61 @@ $(document).ready(function() {
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: false,
-        fade: true,
-        asNavFor: '.about-slider__nav-imgWrap'
+        asNavFor: '.about-slider__nav',
+        autoplay: true,
+        autoplaySpeed: 2000
       });
-      $('.about-slider__nav-imgWrap').slick({
-        slidesToShow: 3,
+      $('.about-slider__nav').slick({
+        slidesToShow: 4,
         slidesToScroll: 1,
         asNavFor: '.about-slider',
-        centerMode: true,
-        focusOnSelect: true
+        // centerMode: true,
+        focusOnSelect: true,
+        variableWidth: true,
+        prevArrow: '<button class="about-slider__nav-btn prev"><svg class="arrowLeft"><use xlink:href="#arrowLeft"></svg></button>',
+        nextArrow: '<button class="about-slider__nav-btn next"><svg class="arrowRight"><use xlink:href="#arrowRight"></svg></button>'
       });
    
+    //Masonry
+    function masonry() {
 
-	//Masonry gallery
-	$('.gallery-wrap').masonry({
-        // options
-        itemSelector: '.gallery-item',
-        columnWidth: 370,
-        fitWidth: true
-    });
-    $('.gallery-wrap-2').masonry({
-        itemSelector: '.gallery-item-2',
-        columnWidth: 370
-    });
+        $(".gallery-list").imagesLoaded(function() {
+            $(".gallery-list").masonry({
+                itemSelector: ".gallery-item",
+                columnWidth: ".gallery-item",
+                gutter: 10,
+                fitWidth: true
+               
+            });
+        });
+    }
+    masonry();
+
+    function masonryHiddenPhoto() {
+        let selector = $(".gallery-list .gallery-item");
+
+        for (let i = 9; i < selector.length; i++) {
+            $(selector[i]).addClass("hidden-photo");
+        }
+    }
+
+    function masonryShowPhoto() {
+        let selector = $(".gallery-list .gallery-item");
+        for (let i = 0; i < selector.length; i++) {
+            $(selector[i]).removeClass('hidden-photo')
+        }
+    }
+
+    function masonryButton() {
+        $('#loadGallery').click(function () {
+            setTimeout(function () {
+                masonryShowPhoto();
+                masonry();
+                $(".gallery-list").css({'margin-bottom': '100px'});
+                $('#loadGallery').hide();
+            }, 5000);
+        });
+    }
+    
 
 });

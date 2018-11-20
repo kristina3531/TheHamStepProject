@@ -1,87 +1,98 @@
 .about
-	+bg
-	+overlay(#2e4a5b, .5)
-	padding: rem(100px) 0
-	.container
-		position: relative
-		z-index: 3
-	.section-heading
-		color: #fff
-	&-slider
-		&__item
-			text-align: center
-		&__blockquote
-		&__icon
-			.blockqouteIcon
-				width: rem(44px)
-				height: rem(30px)
-				fill: $accentColor
-		&__quote
-			margin: rem(35px) 0
-			min-height: rem(120px)
-			font-size: rem(16px)
-			line-height: rem(30px)
-			font-weight: 300
-			color: #bbb
-		&__person-name
-			font-size: rem(16px)
-			line-height: rem(27px)
-			font-weight: 700
-			text-transform: uppercase
-			color: $accentColor
-		&__person-job
-			font-size: rem(13px)
-			font-weight: 300
-			color: #bbb
-		&__person-img, &__nav-img
-			border-radius: 50%
-			border: rem(10px) solid rgba($sliderImgBorderColor, .2)
-			img
-				display: block
-				width: 100%
-				border-radius: 50%
-		&__person-img
-			margin: rem(25px) auto 0
-			width: rem(164px)
-			height: rem(164px)
-			img
-				border: rem(4px) solid $accentColor
-		&__btn
-			width: rem(31px)
-			height: rem(31px)
-			border: 1px solid #bbb
-			outline: none
-			background-color: transparent
-			line-height: rem(31px)
-			transition: all .3s
-			.arrowLeft, .arrowRight
-				width: rem(8px)
-				height: rem(13px)
-				fill: #bbb
-				transition: all .3s
-			&:hover
-				border-color: $accentColor
-				background-color: $accentColor
-				.arrowLeft, .arrowRight
-					fill: #fff
-		&__nav
-			margin-top: rem(60px)
-			display: flex
-			align-items: center
-			&-imgWrap
-				padding: 0 rem(15px)
-				display: flex			
-			&-img
-				position: relative
-				cursor: pointer
-				margin: 0 rem(15px)
-				width: rem(69px)
-				height: rem(69px)
-				border-width: rem(4px)
-				img
-					border: rem(2px) solid transparent
-				&.active 
-					top: -10px
-					img
-						border-color: $accentColor
+  background-repeat: no-repeat !important
+  background-position: center !important
+  background-size: cover !important
+  +overlay(#2e4a5b, .5)
+  padding: rem(100px) 0
+  text-align: center
+  .container
+    position: relative
+    z-index: 3
+  .section-heading
+    color: #fff
+  &-slider
+    margin-bottom: rem(40px)
+    &__icon
+      .quote
+        fill: $accentColor
+        width: rem(44px)
+        height: rem(30px)
+    &__text
+      margin: rem(30px) 0
+      font-size: 16px
+      font-weight: 300
+      line-height: 30px
+      color: #bbb
+    &__person
+      &-name
+        color: $accentColor
+        font-size: rem(16px)
+        font-weight: bold
+        text-transform: uppercase
+      &-job
+        font-size: rem(13px)
+        font-weight: 300
+        line-height: rem(27px)
+        color: #bbb
+      &-img
+        margin: rem(25px) auto 0
+        width: rem(165px)
+        height: rem(165px)
+        border-radius: 50%
+        border: 10px solid rgba($accentColor, .2)
+        img
+          width: 100%
+          height: 100%
+          border-radius: 50%
+          border: rem(4px) solid $accentColor
+    &__nav
+      max-width: rem(375px)
+      margin: 0 auto
+      height: 90px
+      &-img
+        cursor: pointer
+        margin: 0 rem(15px)
+        width: rem(70px)
+        height: rem(70px)
+        border-radius: 50%
+        border: rem(4px) solid rgba($accentColor, .2)
+        position: relative
+        top: rem(10px)
+        &.slick-current
+          top: 0
+          img
+            border: rem(1px) solid $accentColor
+        img
+          width: 100%
+          height: 100%
+          border-radius: 50%
+      &-btn
+        width: rem(30px)
+        height: rem(30px)
+        border: rem(1px) solid #bbb
+        background-color: transparent
+        position: absolute
+        top: 50%
+        margin-top: rem(-15px)
+        transition: all .3s
+        &.prev
+          left: rem(-60px)
+        &.next
+          right: rem(-60px)
+        .arrowLeft, .arrowRight
+          width: rem(9px)
+          height: rem(13px)
+          fill: #bbb
+          position: relative
+          top: rem(2px)
+          transition: all .3s
+        &:hover
+          border-color: $accentColor
+          background-color: $accentColor
+          .arrowLeft, .arrowRight
+            fill: #fff
+            transform: scale(1.2)
+
+.slick-slide
+  outline: none
 

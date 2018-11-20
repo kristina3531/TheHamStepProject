@@ -145,6 +145,15 @@
 </g>
 </symbol>
 
+<symbol id="preload" class="filter" version="1.1">
+    <defs>
+      <filter id="gooeyness">
+        <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+        <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 20 -10" result="gooeyness" />
+        <feComposite in="SourceGraphic" in2="gooeyness" operator="atop" />
+      </filter>
+    </defs>
+  </symbol>
 
 </svg>
 
@@ -268,7 +277,19 @@
           </div>
           <div class="filtr-content work-gallery"></div>
         </div>
-        <button class="btn-load" id="loadMore">Load more</button>
+        <div class="preload-container">
+          <svg class="preload-icon">
+            <use xlink:href="#preload"></use>
+          </svg>
+          <div class="preload-dots">
+            <div class="preload-dot mainDot"></div>
+            <div class="preload-dot"></div>
+            <div class="preload-dot"></div>
+            <div class="preload-dot"></div>
+            <div class="preload-dot"></div>
+          </div>
+          <button class="preload-btn" id="loadMore">Load more</button>
+        </div>
       </div>
     </section>
     <section class="news">
@@ -328,296 +349,348 @@
     </section>
     <section class="about" style="background: url(img/about-bg.jpg);">
       <div class="container">
-        <h3 class="section-heading">What People Say About the Ham</h3>
+        <h3 class="section-heading">What People Say About theHam</h3>
         <div class="about-slider">
           <div class="about-slider__item">
-            <blockquote class="about-slider__blockquote">
-              <div class="about-slider__icon">
-                <svg class="blockqouteIcon">
+            <blockquote class="about-slider__blockquote"><span class="about-slider__icon">
+                <svg class="quote">
                   <use xlink:href="#quote"></use>
-                </svg>
+                </svg></span>
+              <p class="about-slider__text">Integer dignissim, augue tempus ultricies luctus, quam dui laoreet sem, non dictum odio nisi quis massa. Morbi pulvinar odio eget aliquam facilisis. Tempus ultricies luctus, quam dui laoreet sem, non dictum odio nisi quis massa. Morbi pulvinar odio eget aliquam facilisis.</p>
+              <div class="about-slider__person">
+                <div class="about-slider__person-name">Mary Smith</div>
+                <div class="about-slider__person-job">Backend Developer</div>
+                <div class="about-slider__person-img"><img src="img/slider/sliderImg1.jpg" alt="Person 1"/></div>
               </div>
-              <p class="about-slider__quote">Integer dignissim, augue tempus ultricies luctus, quam dui laoreet sem, non dictum odio nisi quis massa. Morbi pulvinar odio eget aliquam facilisis. Tempus ultricies luctus, quam dui laoreet sem, non dictum odio nisi quis massa. Morbi pulvinar odio eget aliquam facilisis.</p>
             </blockquote>
-            <div class="about-slider__person">
-              <h6 class="about-slider__person-name">Jane Johnson</h6><span class="about-slider__person-job">Backend Developer</span>
-              <div class="about-slider__person-img"><img src="img/slider/sliderImg1.jpg" alt="Slide 1"/></div>
-            </div>
           </div>
           <div class="about-slider__item">
-            <blockquote class="about-slider__blockquote">
-              <div class="about-slider__icon">
-                <svg class="blockqouteIcon">
-                  <use xlink:href="#quote"></use>
-                </svg>
+            <blockquote class="about-slider__blockquote"><span class="about-slider__icon">
+                <svg class="quote">
+                  <use xlink:href="#quote"> </use>
+                </svg></span>
+              <p class="about-slider__text">Integer dignissim, augue tempus ultricies luctus, quam dui laoreet sem, non dictum odio nisi quis massa. Morbi pulvinar odio eget aliquam facilisis. Tempus ultricies luctus, quam dui laoreet sem, non dictum odio nisi quis massa. Morbi pulvinar odio eget aliquam facilisis.</p>
+              <div class="about-slider__person">
+                <div class="about-slider__person-name">Habib Ali</div>
+                <div class="about-slider__person-job">Web Designer</div>
+                <div class="about-slider__person-img"><img src="img/slider/sliderImg2.jpg" alt="Person 2"/></div>
               </div>
-              <p class="about-slider__quote">Tempus ultricies luctus, quam dui laoreet sem, non dictum odio nisi quis massa. Morbi pulvinar odio eget aliquam facilisis.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, fugiat, porro. Aut possimus amet, in.</p>
             </blockquote>
-            <div class="about-slider__person">
-              <h6 class="about-slider__person-name">Peter Bracket</h6><span class="about-slider__person-job">Web Designer</span>
-              <div class="about-slider__person-img"><img src="img/slider/sliderImg2.jpg" alt="Slide 2"/></div>
-            </div>
           </div>
           <div class="about-slider__item">
-            <blockquote class="about-slider__blockquote">
-              <div class="about-slider__icon">
-                <svg class="blockqouteIcon">
+            <blockquote class="about-slider__blockquote"><span class="about-slider__icon">
+                <svg class="quote">
                   <use xlink:href="#quote"></use>
-                </svg>
+                </svg></span>
+              <p class="about-slider__text">Integer dignissim, augue tempus ultricies luctus, quam dui laoreet sem, non dictum odio nisi quis massa. Morbi pulvinar odio eget aliquam facilisis. Tempus ultricies luctus, quam dui laoreet sem, non dictum odio nisi quis massa. Morbi pulvinar odio eget aliquam facilisis.</p>
+              <div class="about-slider__person">
+                <div class="about-slider__person-name">Hasan Ali</div>
+                <div class="about-slider__person-job">UX Designer</div>
+                <div class="about-slider__person-img"><img src="img/slider/sliderImg3.jpg" alt="Person 3"/></div>
               </div>
-              <p class="about-slider__quote">Morbi pulvinar odio eget aliquam facilisis. Morbi pulvinar odio eget aliquam facilisis. Morbi pulvinar odio eget aliquam facilisis.</p>
             </blockquote>
-            <div class="about-slider__person">
-              <h6 class="about-slider__person-name">Hasan Ali</h6><span class="about-slider__person-job">UX Designer</span>
-              <div class="about-slider__person-img"><img src="img/slider/sliderImg3.jpg" alt="Slide 3"/></div>
-            </div>
           </div>
           <div class="about-slider__item">
-            <blockquote class="about-slider__blockquote">
-              <div class="about-slider__icon">
-                <svg class="blockqouteIcon">
+            <blockquote class="about-slider__blockquote"><span class="about-slider__icon">
+                <svg class="quote">
                   <use xlink:href="#quote"></use>
-                </svg>
+                </svg></span>
+              <p class="about-slider__text">Integer dignissim, augue tempus ultricies luctus, quam dui laoreet sem, non dictum odio nisi quis massa. Morbi pulvinar odio eget aliquam facilisis. Tempus ultricies luctus, quam dui laoreet sem, non dictum odio nisi quis massa. Morbi pulvinar odio eget aliquam facilisis.</p>
+              <div class="about-slider__person">
+                <div class="about-slider__person-name">Kitty</div>
+                <div class="about-slider__person-job">Cat Cat</div>
+                <div class="about-slider__person-img"><img src="img/slider/Kitty.jpg" alt="Kitty"/></div>
               </div>
-              <p class="about-slider__quote"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio possimus accusamus itaque laboriosam inventore sit. Quaerat vitae, corporis. Tenetur recusandae iure nobis natus doloribus. Maiores.</p>
             </blockquote>
-            <div class="about-slider__person">
-              <h6 class="about-slider__person-name">Jannet Nickson</h6><span class="about-slider__person-job">ceo</span>
-              <div class="about-slider__person-img"><img src="img/slider/sliderImg4.jpg" alt="Slide 4"/></div>
-            </div>
+          </div>
+          <div class="about-slider__item">
+            <blockquote class="about-slider__blockquote"><span class="about-slider__icon">
+                <svg class="quote">
+                  <use xlink:href="#quote"></use>
+                </svg></span>
+              <p class="about-slider__text">Integer dignissim, augue tempus ultricies luctus, quam dui laoreet sem, non dictum odio nisi quis massa. Morbi pulvinar odio eget aliquam facilisis. Tempus ultricies luctus, quam dui laoreet sem, non dictum odio nisi quis massa. Morbi pulvinar odio eget aliquam facilisis.</p>
+              <div class="about-slider__person">
+                <div class="about-slider__person-name">Jannet Johnson</div>
+                <div class="about-slider__person-job">Frontend Developer</div>
+                <div class="about-slider__person-img"><img src="img/slider/sliderImg4.jpg" alt="Person 4"/></div>
+              </div>
+            </blockquote>
           </div>
         </div>
         <div class="about-slider__nav">
-          <button class="about-slider__btn about-slider__btn-prev">
-            <svg class="arrowLeft">
-              <use xlink:href="#arrowLeft"></use>
-            </svg>
-          </button>
-          <div class="about-slider__nav-imgWrap">
-            <div class="about-slider__nav-img active"><img src="img/slider/sliderImg1.jpg" alt="Slide-nav 1"/></div>
-            <div class="about-slider__nav-img"><img src="img/slider/sliderImg2.jpg" alt="Slide-nav 2"/></div>
-            <div class="about-slider__nav-img"><img src="img/slider/sliderImg3.jpg" alt="Slide-nav 3"/></div>
-            <div class="about-slider__nav-img"><img src="img/slider/sliderImg4.jpg" alt="Slide-nav 4"/></div>
-          </div>
-          <button class="about-slider__btn about-slider__btn-next">
-            <svg class="arrowRight">
-              <use xlink:href="#arrowRight"></use>
-            </svg>
-          </button>
+          <div class="about-slider__nav-img"><img src="img/slider/sliderImg1.jpg" alt="Person Preview 1"/></div>
+          <div class="about-slider__nav-img"><img src="img/slider/sliderImg2.jpg" alt="Person Preview 2"/></div>
+          <div class="about-slider__nav-img"><img src="img/slider/sliderImg3.jpg" alt="Person Preview 3"/></div>
+          <div class="about-slider__nav-img"><img src="img/slider/Kitty.jpg" alt="Kitty Prewiew"/></div>
+          <div class="about-slider__nav-img"><img src="img/slider/sliderImg4.jpg" alt="Person Preview 4"/></div>
         </div>
       </div>
     </section>
     <section class="gallery" id="gallery">
       <div class="container">
         <h3 class="section-heading">Gallery of best images</h3>
-        <div class="gallery-wrap">
-          <div class="gallery-item"><img src="img/gallery/gallery1.jpg" alt="Gallery Image 1"/>
-            <div class="gallery-item_hover">
-              <div class="gallery-item_icons"></div><span class="gallery-item_icon">
-                <svg class="search">
-                  <use xlink:href="#search"></use>
-                </svg></span><span class="gallery-item_icon">
-                <svg class="resize">
-                  <use xlink:href="#resize"></use>
-                </svg></span>
-            </div>
-          </div>
-          <div class="gallery-item"><img src="img/gallery/gallery2.jpg" alt="Gallery Image 2"/>
-            <div class="gallery-item_hover">
-              <div class="gallery-item_icons"><span class="gallery-item_icon">
-                  <svg class="search">
-                    <use xlink:href="#search"></use>
-                  </svg></span><span class="gallery-item_icon">
-                  <svg class="resize">
-                    <use xlink:href="#resize"></use>
-                  </svg></span></div>
-            </div>
-          </div>
-          <div class="gallery-item"><img src="img/gallery/gallery3.jpg" alt="Gallery Image 3"/>
-            <div class="gallery-item_hover">
-              <div class="gallery-item_icons"><span class="gallery-item_icon">
-                  <svg class="search">
-                    <use xlink:href="#search"></use>
-                  </svg></span><span class="gallery-item_icon">
-                  <svg class="resize">
-                    <use xlink:href="#resize"></use>
-                  </svg></span></div>
-            </div>
-          </div>
-          <div class="gallery-item"><img src="img/gallery/gallery4.jpg" alt="Gallery Image 4"/>
-            <div class="gallery-item_hover">
-              <div class="gallery-item_icons"><span class="gallery-item_icon">
-                  <svg class="search">
-                    <use xlink:href="#search"></use>
-                  </svg></span><span class="gallery-item_icon">
-                  <svg class="resize">
-                    <use xlink:href="#resize"></use>
-                  </svg></span></div>
-            </div>
-          </div>
-          <div class="gallery-item"><img src="img/gallery/gallery5.jpg" alt="Gallery Image 5"/>
-            <div class="gallery-item_hover">
-              <div class="gallery-item_icons"><span class="gallery-item_icon">
-                  <svg class="search">
-                    <use xlink:href="#search"></use>
-                  </svg></span><span class="gallery-item_icon">
-                  <svg class="resize">
-                    <use xlink:href="#resize"></use>
-                  </svg></span></div>
-            </div>
-          </div>
-          <div class="gallery-item"><img src="img/gallery/gallery6.jpg" alt="Gallery Image 6"/>
-            <div class="gallery-item_hover">
-              <div class="gallery-item_icons"><span class="gallery-item_icon">
-                  <svg class="search">
-                    <use xlink:href="#search"></use>
-                  </svg></span><span class="gallery-item_icon">
-                  <svg class="resize">
-                    <use xlink:href="#resize"></use>
-                  </svg></span></div>
-            </div>
-          </div>
-          <div class="gallery-item gallery-wrap-2">
-            <div class="gallery-item-2"><img src="img/gallery/gallery7.jpg" alt="Gallery Image 7"/>
-              <div class="gallery-item_hover">
-                <div class="gallery-item_icons"><span class="gallery-item_icon">
+        <div class="gallery-list">
+          <div class="gallery-item">
+            <div class="gallery-item__img"><img src="img/gallery/gallery1.jpg" alt="Best Photo 1"/>
+              <div class="gallery-item__hover">
+                <div class="gallery-item__icons"><span class="gallery-item__icon">
                     <svg class="search">
                       <use xlink:href="#search"></use>
-                    </svg></span><span class="gallery-item_icon">
-                    <svg class="resize">
-                      <use xlink:href="#resize"></use>
-                    </svg></span></div>
-              </div>
-            </div>
-            <div class="gallery-item-2"><img src="img/gallery/gallery8.jpg" alt="Gallery Image 8"/>
-              <div class="gallery-item_hover">
-                <div class="gallery-item_icons"><span class="gallery-item_icon">
-                    <svg class="search">
-                      <use xlink:href="#search"></use>
-                    </svg></span><span class="gallery-item_icon">
+                    </svg></span><span class="gallery-item__icon">
                     <svg class="resize">
                       <use xlink:href="#resize"></use>
                     </svg></span></div>
               </div>
             </div>
           </div>
-          <div class="gallery-item gallery-wrap-2">
-            <div class="gallery-item-2"><img src="img/gallery/gallery9.jpg" alt="Gallery Image 9"/>
-              <div class="gallery-item_hover">
-                <div class="gallery-item_icons"><span class="gallery-item_icon">
+          <div class="gallery-item">
+            <div class="gallery-item__img"><img src="img/gallery/gallery2.jpg" alt="Best Photo 2"/>
+              <div class="gallery-item__hover">
+                <div class="gallery-item__icons"><span class="gallery-item__icon">
                     <svg class="search">
                       <use xlink:href="#search"></use>
-                    </svg></span><span class="gallery-item_icon">
-                    <svg class="resize">
-                      <use xlink:href="#resize"></use>
-                    </svg></span></div>
-              </div>
-            </div>
-            <div class="gallery-item-2"><img src="img/gallery/gallery10.jpg" alt="Gallery Image 10"/>
-              <div class="gallery-item_hover">
-                <div class="gallery-item_icons"><span class="gallery-item_icon">
-                    <svg class="search">
-                      <use xlink:href="#search"></use>
-                    </svg></span><span class="gallery-item_icon">
-                    <svg class="resize">
-                      <use xlink:href="#resize"></use>
-                    </svg></span></div>
-              </div>
-            </div>
-            <div class="gallery-item-2"><img src="img/gallery/gallery11.jpg" alt="Gallery Image 11"/>
-              <div class="gallery-item_hover">
-                <div class="gallery-item_icons"><span class="gallery-item_icon">
-                    <svg class="search">
-                      <use xlink:href="#search"></use>
-                    </svg></span><span class="gallery-item_icon">
-                    <svg class="resize">
-                      <use xlink:href="#resize"></use>
-                    </svg></span></div>
-              </div>
-            </div>
-            <div class="gallery-item-2"><img src="img/gallery/gallery12.jpg" alt="Gallery Image 12"/>
-              <div class="gallery-item_hover">
-                <div class="gallery-item_icons"><span class="gallery-item_icon">
-                    <svg class="search">
-                      <use xlink:href="#search"></use>
-                    </svg></span><span class="gallery-item_icon">
-                    <svg class="resize">
-                      <use xlink:href="#resize"></use>
-                    </svg></span></div>
-              </div>
-            </div>
-            <div class="gallery-item-2"><img src="img/gallery/gallery13.jpg" alt="Gallery Image 13"/>
-              <div class="gallery-item_hover">
-                <div class="gallery-item_icons"><span class="gallery-item_icon">
-                    <svg class="search">
-                      <use xlink:href="#search"></use>
-                    </svg></span><span class="gallery-item_icon">
-                    <svg class="resize">
-                      <use xlink:href="#resize"></use>
-                    </svg></span></div>
-              </div>
-            </div>
-            <div class="gallery-item-2"><img src="img/gallery/gallery14.jpg" alt="Gallery Image 14"/>
-              <div class="gallery-item_hover">
-                <div class="gallery-item_icons"><span class="gallery-item_icon">
-                    <svg class="search">
-                      <use xlink:href="#search"></use>
-                    </svg></span><span class="gallery-item_icon">
-                    <svg class="resize">
-                      <use xlink:href="#resize"></use>
-                    </svg></span></div>
-              </div>
-            </div>
-            <div class="gallery-item-2"><img src="img/gallery/gallery15.jpg" alt="Gallery Image 15"/>
-              <div class="gallery-item_hover">
-                <div class="gallery-item_icons"><span class="gallery-item_icon">
-                    <svg class="search">
-                      <use xlink:href="#search"></use>
-                    </svg></span><span class="gallery-item_icon">
-                    <svg class="resize">
-                      <use xlink:href="#resize"></use>
-                    </svg></span></div>
-              </div>
-            </div>
-            <div class="gallery-item-2"><img src="img/gallery/gallery16.jpg" alt="Gallery Image 16"/>
-              <div class="gallery-item_hover">
-                <div class="gallery-item_icons"><span class="gallery-item_icon">
-                    <svg class="search">
-                      <use xlink:href="#search"></use>
-                    </svg></span><span class="gallery-item_icon">
-                    <svg class="resize">
-                      <use xlink:href="#resize"></use>
-                    </svg></span></div>
-              </div>
-            </div>
-            <div class="gallery-item-2"><img src="img/gallery/gallery17.jpg" alt="Gallery Image 17"/>
-              <div class="gallery-item_hover">
-                <div class="gallery-item_icons"><span class="gallery-item_icon">
-                    <svg class="search">
-                      <use xlink:href="#search"></use>
-                    </svg></span><span class="gallery-item_icon">
+                    </svg></span><span class="gallery-item__icon">
                     <svg class="resize">
                       <use xlink:href="#resize"></use>
                     </svg></span></div>
               </div>
             </div>
           </div>
-          <div class="gallery-item"><img src="img/gallery/gallery18.jpg" alt="Gallery Image 18"/>
-            <div class="gallery-item_hover">
-              <div class="gallery-item_icons"><span class="gallery-item_icon">
-                  <svg class="search">
-                    <use xlink:href="#search"></use>
-                  </svg></span><span class="gallery-item_icon">
-                  <svg class="resize">
-                    <use xlink:href="#resize"></use>
-                  </svg></span></div>
+          <div class="gallery-item">
+            <div class="gallery-item__img"><img src="img/gallery/gallery7.jpg" alt="Best Photo 7"/>
+              <div class="gallery-item__hover">
+                <div class="gallery-item__icons"><span class="gallery-item__icon">
+                    <svg class="search">
+                      <use xlink:href="#search"></use>
+                    </svg></span><span class="gallery-item__icon">
+                    <svg class="resize">
+                      <use xlink:href="#resize"></use>
+                    </svg></span></div>
+              </div>
             </div>
+          </div>
+          <div class="gallery-item">
+            <div class="gallery-item__img"><img src="img/gallery/gallery8.jpg" alt="Best Photo 8"/>
+              <div class="gallery-item__hover">
+                <div class="gallery-item__icons"><span class="gallery-item__icon">
+                    <svg class="search">
+                      <use xlink:href="#search"></use>
+                    </svg></span><span class="gallery-item__icon">
+                    <svg class="resize">
+                      <use xlink:href="#resize"></use>
+                    </svg></span></div>
+              </div>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <div class="gallery-item__img"><img src="img/gallery/gallery9.jpg" alt="Best Photo 9"/>
+              <div class="gallery-item__hover">
+                <div class="gallery-item__icons"><span class="gallery-item__icon">
+                    <svg class="search">
+                      <use xlink:href="#search"></use>
+                    </svg></span><span class="gallery-item__icon">
+                    <svg class="resize">
+                      <use xlink:href="#resize"></use>
+                    </svg></span></div>
+              </div>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <div class="gallery-item__img"><img src="img/gallery/gallery10.jpg" alt="Best Photo 10"/>
+              <div class="gallery-item__hover">
+                <div class="gallery-item__icons"><span class="gallery-item__icon">
+                    <svg class="search">
+                      <use xlink:href="#search"></use>
+                    </svg></span><span class="gallery-item__icon">
+                    <svg class="resize">
+                      <use xlink:href="#resize"></use>
+                    </svg></span></div>
+              </div>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <div class="gallery-item__img"><img src="img/gallery/gallery11.jpg" alt="Best Photo 11"/>
+              <div class="gallery-item__hover">
+                <div class="gallery-item__icons"><span class="gallery-item__icon">
+                    <svg class="search">
+                      <use xlink:href="#search"></use>
+                    </svg></span><span class="gallery-item__icon">
+                    <svg class="resize">
+                      <use xlink:href="#resize"></use>
+                    </svg></span></div>
+              </div>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <div class="gallery-item__img"><img src="img/gallery/gallery12.jpg" alt="Best Photo 12"/>
+              <div class="gallery-item__hover">
+                <div class="gallery-item__icons"><span class="gallery-item__icon">
+                    <svg class="search">
+                      <use xlink:href="#search"></use>
+                    </svg></span><span class="gallery-item__icon">
+                    <svg class="resize">
+                      <use xlink:href="#resize"></use>
+                    </svg></span></div>
+              </div>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <div class="gallery-item__img"><img src="img/gallery/gallery13.jpg" alt="Best Photo 13"/>
+              <div class="gallery-item__hover">
+                <div class="gallery-item__icons"><span class="gallery-item__icon">
+                    <svg class="search">
+                      <use xlink:href="#search"></use>
+                    </svg></span><span class="gallery-item__icon">
+                    <svg class="resize">
+                      <use xlink:href="#resize"></use>
+                    </svg></span></div>
+              </div>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <div class="gallery-item__img"><img src="img/gallery/gallery14.jpg" alt="Best Photo 14"/>
+              <div class="gallery-item__hover">
+                <div class="gallery-item__icons"><span class="gallery-item__icon">
+                    <svg class="search">
+                      <use xlink:href="#search"></use>
+                    </svg></span><span class="gallery-item__icon">
+                    <svg class="resize">
+                      <use xlink:href="#resize"></use>
+                    </svg></span></div>
+              </div>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <div class="gallery-item__img"><img src="img/gallery/gallery15.jpg" alt="Best Photo 15"/>
+              <div class="gallery-item__hover">
+                <div class="gallery-item__icons"><span class="gallery-item__icon">
+                    <svg class="search">
+                      <use xlink:href="#search"></use>
+                    </svg></span><span class="gallery-item__icon">
+                    <svg class="resize">
+                      <use xlink:href="#resize"></use>
+                    </svg></span></div>
+              </div>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <div class="gallery-item__img"><img src="img/gallery/gallery16.jpg" alt="Best Photo 16"/>
+              <div class="gallery-item__hover">
+                <div class="gallery-item__icons"><span class="gallery-item__icon">
+                    <svg class="search">
+                      <use xlink:href="#search"></use>
+                    </svg></span><span class="gallery-item__icon">
+                    <svg class="resize">
+                      <use xlink:href="#resize"></use>
+                    </svg></span></div>
+              </div>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <div class="gallery-item__img"><img src="img/gallery/gallery17.jpg" alt="Best Photo 17"/>
+              <div class="gallery-item__hover">
+                <div class="gallery-item__icons"><span class="gallery-item__icon">
+                    <svg class="search">
+                      <use xlink:href="#search"></use>
+                    </svg></span><span class="gallery-item__icon">
+                    <svg class="resize">
+                      <use xlink:href="#resize"></use>
+                    </svg></span></div>
+              </div>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <div class="gallery-item__img"><img src="img/gallery/gallery3.jpg" alt="Best Photo 3"/>
+              <div class="gallery-item__hover">
+                <div class="gallery-item__icons"><span class="gallery-item__icon">
+                    <svg class="search">
+                      <use xlink:href="#search"></use>
+                    </svg></span><span class="gallery-item__icon">
+                    <svg class="resize">
+                      <use xlink:href="#resize"></use>
+                    </svg></span></div>
+              </div>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <div class="gallery-item__img"><img src="img/gallery/gallery4.jpg" alt="Best Photo 4"/>
+              <div class="gallery-item__hover">
+                <div class="gallery-item__icons"><span class="gallery-item__icon">
+                    <svg class="search">
+                      <use xlink:href="#search"></use>
+                    </svg></span><span class="gallery-item__icon">
+                    <svg class="resize">
+                      <use xlink:href="#resize"></use>
+                    </svg></span></div>
+              </div>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <div class="gallery-item__img"><img src="img/gallery/gallery5.jpg" alt="Best Photo 5"/>
+              <div class="gallery-item__hover">
+                <div class="gallery-item__icons"><span class="gallery-item__icon">
+                    <svg class="search">
+                      <use xlink:href="#search"></use>
+                    </svg></span><span class="gallery-item__icon">
+                    <svg class="resize">
+                      <use xlink:href="#resize"></use>
+                    </svg></span></div>
+              </div>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <div class="gallery-item__img"><img src="img/gallery/gallery6.jpg" alt="Best Photo 6"/>
+              <div class="gallery-item__hover">
+                <div class="gallery-item__icons"><span class="gallery-item__icon">
+                    <svg class="search">
+                      <use xlink:href="#search"></use>
+                    </svg></span><span class="gallery-item__icon">
+                    <svg class="resize">
+                      <use xlink:href="#resize"></use>
+                    </svg></span></div>
+              </div>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <div class="gallery-item__img"><img src="img/gallery/gallery18.jpg" alt="Best Photo 18"/>
+              <div class="gallery-item__hover">
+                <div class="gallery-item__icons"><span class="gallery-item__icon">
+                    <svg class="search">
+                      <use xlink:href="#search"></use>
+                    </svg></span><span class="gallery-item__icon">
+                    <svg class="resize">
+                      <use xlink:href="#resize"></use>
+                    </svg></span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-button">
+          <div class="anime-container">
+            <div class="item item1"></div>
+            <div class="item item2"></div>
+            <div class="item item3"></div>
+            <div class="item item4"></div>
+          </div>
+          <div class="preload-container">
+            <svg class="preload-icon">
+              <use xlink:href="#preload"></use>
+            </svg>
+            <div class="preload-dots">
+              <div class="preload-dot mainDot"></div>
+              <div class="preload-dot"></div>
+              <div class="preload-dot"></div>
+              <div class="preload-dot"></div>
+              <div class="preload-dot"></div>
+            </div>
+            <button class="preload-btn" id="loadGallery">Load more</button>
           </div>
         </div>
       </div>
     </section>
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/slick.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
     <script src="js/masonry.pkgd.min.js"></script>
     <script src="js/main.js"></script>
   </body>
