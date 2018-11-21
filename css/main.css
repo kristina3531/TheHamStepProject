@@ -1327,80 +1327,18 @@ a {
 .slick-slide {
   outline: none; }
 
-.gallery {
-  padding: 5.9375rem 0 5rem;
-  background-color: #f8fcfe; }
-  .gallery .container {
-    border: 3px solid violet; }
-  .gallery-list {
-    border: 1px solid blue; }
-  .gallery-item {
-    border: 1px solid red; }
-    .gallery-item.hidden-photo {
-      display: none; }
-    .gallery-item__img {
-      position: relative; }
-      .gallery-item__img img {
-        display: block;
-        cursor: pointer; }
-    .gallery-item__hover {
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      background-color: rgba(73, 71, 63, 0.8);
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      justify-content: center;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center;
-      opacity: 0;
-      -webkit-transition: all .5s;
-      -o-transition: all .5s;
-      transition: all .5s; }
-      .gallery-item__hover:hover {
-        opacity: 1; }
-    .gallery-item__icons {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex; }
-    .gallery-item__icon {
-      cursor: pointer;
-      background-color: #14b9d5;
-      width: 2.5rem;
-      height: 2.5rem;
-      border-radius: 0.25rem;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      justify-content: center;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center; }
-      .gallery-item__icon:not(:first-child) {
-        margin-left: 0.625rem; }
-      .gallery-item__icon .search, .gallery-item__icon .resize {
-        fill: #fff;
-        width: 1.25rem;
-        height: 1.25rem;
-        -webkit-transition: all .3s;
-        -o-transition: all .3s;
-        transition: all .3s; }
-      .gallery-item__icon:hover .search, .gallery-item__icon:hover .resize {
-        -webkit-transform: scale(1.1);
-        -ms-transform: scale(1.1);
-        transform: scale(1.1); }
-  .gallery-button {
-    text-align: center; }
-    .gallery-button .btn-load {
-      margin-top: 2.9375rem; }
+.footer {
+  background-color: #22353f;
+  padding: 2.8125rem;
+  text-align: center; }
+  .footer__copywright {
+    font-size: 0.875rem;
+    font-weight: 300;
+    color: #aeaeae; }
+    .footer__copywright a {
+      color: #18cfab; }
+      .footer__copywright a:hover {
+        text-decoration: underline; }
 
 body {
   font: 0.875rem/1.5625rem Montserrat, Arial, sans-serif;

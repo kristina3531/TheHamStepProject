@@ -123,47 +123,5 @@ $(document).ready(function() {
         prevArrow: '<button class="about-slider__nav-btn prev"><svg class="arrowLeft"><use xlink:href="#arrowLeft"></svg></button>',
         nextArrow: '<button class="about-slider__nav-btn next"><svg class="arrowRight"><use xlink:href="#arrowRight"></svg></button>'
       });
-   
-    //Masonry
-    function masonry() {
-
-        $(".gallery-list").imagesLoaded(function() {
-            $(".gallery-list").masonry({
-                itemSelector: ".gallery-item",
-                columnWidth: ".gallery-item",
-                gutter: 10,
-                fitWidth: true
-               
-            });
-        });
-    }
-    masonry();
-
-    function masonryHiddenPhoto() {
-        let selector = $(".gallery-list .gallery-item");
-
-        for (let i = 9; i < selector.length; i++) {
-            $(selector[i]).addClass("hidden-photo");
-        }
-    }
-
-    function masonryShowPhoto() {
-        let selector = $(".gallery-list .gallery-item");
-        for (let i = 0; i < selector.length; i++) {
-            $(selector[i]).removeClass('hidden-photo')
-        }
-    }
-
-    function masonryButton() {
-        $('#loadGallery').click(function () {
-            setTimeout(function () {
-                masonryShowPhoto();
-                masonry();
-                $(".gallery-list").css({'margin-bottom': '100px'});
-                $('#loadGallery').hide();
-            }, 5000);
-        });
-    }
-    
 
 });
