@@ -124,4 +124,104 @@ $(document).ready(function() {
         nextArrow: '<button class="about-slider__nav-btn next"><svg class="arrowRight"><use xlink:href="#arrowRight"></svg></button>'
       });
 
+      //Masonry
+
+      // указываем элемент-контейнер в котором расположены блоки для динамической верстки
+        $(".gallery-list").masonry({
+            // указываем класс элемента являющегося блоком в нашей сетке
+            itemSelector: ".gallery-item",
+            gutter: 20,
+            // true - если у вас все блоки одинаковой ширины
+            singleMode: true,
+            columnWidth: ".gallery-item",
+            // перестраивает блоки при изменении размеров окна
+            isResizable: true,
+            // анимируем перестроение блоков
+            isAnimated: true,
+            // опции анимации - очередь и продолжительность анимации
+            animationOptions: {
+                queue: false,
+                duration: 500
+            },
+    
+            fitWidth: true
+    
+          });
+
+
+      let $grid = $('.grid').imagesLoaded(function() {
+
+        $('.grid').masonry({
+            // указываем класс элемента являющегося блоком в нашей сетке
+            itemSelector: ".grid-item",
+            // gutter: 3, не работает
+            // true - если у вас все блоки одинаковой ширины
+            singleMode: false,
+            // columnWidth: 119,
+            // перестраивает блоки при изменении размеров окна
+            isResizable: true,
+            // анимируем перестроение блоков
+            isAnimated: true,
+            // опции анимации - очередь и продолжительность анимации
+            animationOptions: {
+                queue: false,
+                duration: 500
+            }
+    
+          });
+
+      });
+
+    //   //Add images in Masonry container
+    //   let imgCounter = 1;
+    //   $('#loadGallery').on('click', function() {
+    //     setTimeout(function() {
+    //         let countToAdd = 8;
+    //         let elems = [];
+    //         for (let i = 0; i < countToAdd; i++) {
+    //             elems.push(getItemElement());
+    //         }
+    //         let $elems = $(elems);
+    //         $grid.append($elems).masonry('appended', $elems);
+
+    //     }, 5000);
+    //   });
+
+    // // create <div class="gallery-item"></div>
+    // function getItemElement() {
+    //     // let elem = document.createElement('div');
+    //     // elem.className = 'gallery-item';
+    //     // elem.innerHTML = `<img src="https://unsplash.it/480/480?image=${imgCounter++}" alt="Masonry Brick #${imgCounter}">`;
+    //     // return elem;
+
+    //     // let galleryItemImg = document.createElement('div');
+    //     // galleryItemImg.className = 'gallery-item__img';
+        
+    //     // let galleryItemHover = document.createElement('div');
+    //     // galleryItemHover.className = 'gallery-item__hover';
+
+    //     // let galleryItemIcons = document.createElement('div');
+    //     // galleryItemIcons.className = 'gallery-item__icons';
+
+    //     // let galleryItemIcon = document.createElement('div');
+    //     // galleryItemIcon.className = 'gallery-item__icon';
+
+    //     // let galleryItemSearch = document.createElement('svg');
+    //     // galleryItemSearch.className = 'search';
+
+    //     // let galleryItemResize = document.createElement('svg');
+    //     // galleryItemResize.className = 'resize';
+        
+    //     let galleryItem = document.createElement('div');
+    //     galleryItem.className = 'gallery-item';
+
+    //     galleryItem.insertAdjacentHTML('afterbegin', '<div class="gallery-item__img"/>');
+    //     galleryItem.insertAdjacentHTML('beforeend', '<div class="gallery-item__hover"/>');
+    //     galleryItem.insertAdjacentHTML('beforeend', '<div class="gallery-item__icons"/>');
+        
+    //     galleryItemImg.insertAdjacentHTML('afterbegin', `<img src="img/gallery/uploadGallery-${imgCounter++}.jpg" alt="Masonry Brick #${imgCounter}">`);
+    //     $('.gallery-list').append(galleryItem);
+    // }
+    // getItemElement();
+
 });
